@@ -9,46 +9,14 @@ type Country = {
 };
 
 const countries: Country[] = [
-    {
-        name: "BÉNIN",
-        flag: "https://flagcdn.com/w320/bj.png",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "CÔTE D’IVOIRE",
-        flag: "https://flagcdn.com/w320/ci.png",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "CAMEROUN",
-        flag: "https://flagcdn.com/w320/cm.png",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "TANZANIE",
-        flag: "https://flagcdn.com/w320/tz.png",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "ZANZIBAR",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Zanzibar.svg",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "GHANA",
-        flag: "https://flagcdn.com/w320/gh.png",
-        visas: ["Tourist Visa",],
-    },
-    {
-        name: "RWANDA",
-        flag: "https://flagcdn.com/w320/rw.png",
-        visas: ["Tourist Visa"],
-    },
-    {
-        name: "TOGO",
-        flag: "https://flagcdn.com/w320/tg.png",
-        visas: ["Tourist Visa"],
-    },
+    { name: "BÉNIN", flag: "https://flagcdn.com/w320/bj.png", visas: ["Tourist Visa"] },
+    { name: "CÔTE D’IVOIRE", flag: "https://flagcdn.com/w320/ci.png", visas: ["Tourist Visa"] },
+    { name: "CAMEROUN", flag: "https://flagcdn.com/w320/cm.png", visas: ["Tourist Visa"] },
+    { name: "TANZANIE", flag: "https://flagcdn.com/w320/tz.png", visas: ["Tourist Visa"] },
+    { name: "ZANZIBAR", flag: "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Zanzibar.svg", visas: ["Tourist Visa"] },
+    { name: "GHANA", flag: "https://flagcdn.com/w320/gh.png", visas: ["Tourist Visa"] },
+    { name: "RWANDA", flag: "https://flagcdn.com/w320/rw.png", visas: ["Tourist Visa"] },
+    { name: "TOGO", flag: "https://flagcdn.com/w320/tg.png", visas: ["Tourist Visa"] },
 ];
 
 export default function VisaSection() {
@@ -85,7 +53,7 @@ export default function VisaSection() {
             </div>
 
             {/* Bloc pays */}
-            <div className="flex overflow-x-auto md:overflow-visible">
+            <div className="flex overflow-x-auto md:overflow-visible no-scrollbar scroll-smooth">
                 {countries.map((country) => (
                     <div
                         key={country.name}

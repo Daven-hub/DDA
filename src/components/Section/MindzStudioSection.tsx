@@ -13,7 +13,7 @@ export default function MindzStudioSection() {
                     className="space-y-6"
                 >
                     <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight">
-                        Mindz Studio
+                        Mindz Studio {" "}
                         <span >
                             Agence digitale & stratégie commerciale
                         </span>

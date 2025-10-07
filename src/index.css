@@ -12,3 +12,13 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE et Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

@@ -32,19 +32,19 @@ export const paysData = [
   {
     titre: "GHANA",
     description: "Le Ghana est riche en histoire, traditions et festivals culturels, offrant une expérience africaine authentique.",
-    image: "https://images.unsplash.com/photo-1556244576-fb7ef61b8ba4?w=600",
+    image: "/images/GHANA.jpg",
     drapeau: "https://flagcdn.com/w40/gh.png",
   },
   {
     titre: "RWANDA",
     description: "Le Rwanda est un pays aux paysages montagneux et aux initiatives culturelles et environnementales remarquables.",
-    image: "https://images.unsplash.com/photo-1589561454227-5e13cee806a0?w=600",
+    image: "/images/mont.png",
     drapeau: "https://flagcdn.com/w40/rw.png",
   },
   {
     titre: "TOGO",
     description: "Le Togo séduit par ses traditions, sa musique, son artisanat et ses paysages variés allant de plages aux montagnes.",
-    image: "https://images.unsplash.com/photo-1578352956775-d54d4abfa5b3?w=600",
+    image: "/images/togo.png",
     drapeau: "https://flagcdn.com/w40/tg.png",
   },
 ];

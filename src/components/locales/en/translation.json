@@ -67,5 +67,211 @@
             "description": "Mindz Studio is your partner in digital strategy and branding. We create strong brand universes, develop engaging content, and deploy campaigns tailored to your ambitions. Our mission: to turn your ideas into memorable digital experiences.",
             "button": "Discover our services"
         }
+    },
+    "slideshow": {
+        "slide1": {
+            "title": "Cameroonian Art & Culture",
+            "subtitle": "The Akiba Brunch"
+        },
+        "slide2": {
+            "title": "Explore Africa Differently",
+            "subtitle": "Duchesse d’Afric-Art"
+        },
+        "slide3": {
+            "title": "High-Quality Wines & Crémants",
+            "subtitle": "Domaines Vinsmoselle"
+        },
+        "slide4": {
+            "title": "Digital Strategy & Branding",
+            "subtitle": "Mindz Studio"
+        }
+    },
+    "aboutSection": {
+        "tagline": "Leadership & Innovation",
+        "title": "A Cultural & Entrepreneurial Vision",
+        "description": "Duchesse d’Afric-Art is a collective of cultural entrepreneurs and branding experts based in Cameroon. We create experiences that highlight African identity: responsible travels, wine events, cultural gatherings, and digital services.",
+        "ctaProjects": "Explore Our Projects",
+        "ctaUniverse": "Discover Our World"
+    },
+    "visionValeurs": {
+        "title": "Our Vision & Values",
+        "vision": {
+            "title": "Vision",
+            "description": "To become a reference in Central Africa for responsible cultural travels, high-end event organization, and authentic brand strategy."
+        },
+        "valeurs": [
+            "Authenticity",
+            "Responsibility",
+            "Quality",
+            "Local Collaboration",
+            "Service Excellence"
+        ],
+        "gallery": [
+            {
+                "description": "Authentic cultural experiences"
+            },
+            {
+                "description": "Sustainable partnerships"
+            },
+            {
+                "description": "Premium quality"
+            }
+        ]
+    },
+    "servicesSection": {
+        "title": "Our Areas of Expertise",
+        "subtitle": "Overview of our services and expertise",
+        "ctaGlobal": "Learn more"
+    },
+    "services": {
+        "duchesse": {
+            "title": "Duchesse d’Afric-Art",
+            "subtitle": "Cultural & responsible travel",
+            "description": "Tailor-made itineraries to experience Africa in its authenticity. Themed circuits focused on crafts, heritage, gastronomy, and music.",
+            "longDescription": "Each trip is designed as an immersion. We work with local guides, artisans, and chefs to offer you a human, ethical, and sustainable experience. Whether you are passionate about art, culture, or gastronomy, our circuits will let you discover Africa like never before.",
+            "highlights": [
+                "Ethical and sustainable trips",
+                "Authentic human encounters",
+                "Personalized itineraries",
+                "Professional local guidance"
+            ],
+            "stats": [
+                "Trips organized",
+                "Local partners",
+                "Years of experience",
+                "Satisfied clients"
+            ],
+            "quote": "“Traveling is meeting yourself through others.” – Duchesse d’Afric-Art",
+            "cta": "Book your adventure"
+        },
+        "vinsmoselle": {
+            "title": "Domaines Vinsmoselle | Poll – Fabaire Cameroon",
+            "subtitle": "Wine representation & events",
+            "description": "Tastings, branding, and events around quality wines and crémants. Importing, masterclasses, and wine image consulting.",
+            "longDescription": "Our mission is to showcase Luxembourgish and European know-how through exclusive tastings and unique sensory experiences. We support companies, restaurants, and individuals in organizing elegant and memorable events.",
+            "highlights": [
+                "Official representation of Poll-Fabaire",
+                "Wine tastings and training",
+                "Prestige event organization"
+            ],
+            "stats": [
+                "Events organized",
+                "International partners",
+                "Years of collaboration",
+                "Client satisfaction"
+            ],
+            "quote": "“Wine is bottled poetry.” – Robert Louis Stevenson",
+            "cta": "Organize an event"
+        },
+        "akiba": {
+            "title": "The Akiba Brunch",
+            "subtitle": "Cultural & artistic brunch",
+            "description": "A friendly meeting that promotes the Cameroonian creative scene. Between food, music, and artisan market.",
+            "longDescription": "The Akiba Brunch is more than a meal: it’s a sensory and artistic experience. We highlight local artists, artisans, and chefs to offer a unique moment of sharing and discovery.",
+            "highlights": [
+                "Local artistic and musical scene",
+                "African fusion cuisine",
+                "Creative artisan market"
+            ],
+            "stats": [
+                "Successful editions",
+                "Guest artists",
+                "Participants",
+                "Cities covered"
+            ],
+            "quote": "“Where art meets conviviality, the soul of Cameroon expresses itself.”",
+            "cta": "Discover the next brunch"
+        },
+        "mindz": {
+            "title": "Mindz Studio",
+            "subtitle": "Digital agency & business strategy",
+            "description": "Content creation, branding, and community management. Strong and coherent digital identities.",
+            "longDescription": "We combine creativity, strategy, and technology to boost your brand. From graphic design to social media management, we offer comprehensive support to maximize your visibility and sales.",
+            "highlights": [
+                "Branding & visual identity",
+                "Creative community management",
+                "Tailor-made marketing strategy"
+            ],
+            "stats": [
+                "Brands supported",
+                "Total views",
+                "Creative experts",
+                "Successful campaigns"
+            ],
+            "quote": "“A strong brand is not told, it is experienced.” – Mindz Studio",
+            "cta": "Discuss your project"
+        }
+    },
+    "cta": {
+        "backgroundAlt": "CTA Background",
+        "title": "Ready to live the experience?",
+        "description": "Join our events, discover our trips, and grow your brand with our services. A unique adventure awaits you.",
+        "servicesButton": "Discover our services",
+        "contactButton": "Contact us"
+    },
+    "missions": {
+        "title": "Our Missions",
+        "description": "We believe in inclusive cultural, social, and economic development, creating synergies between tradition and modernity.",
+        "mission1": {
+            "title": "Promote African culture",
+            "description": "We celebrate the richness of African heritage through arts, music, fashion, and gastronomy, to inspire and connect communities."
+        },
+        "mission2": {
+            "title": "Create unique experiences",
+            "description": "Each event and project is designed to amaze and immerse our participants in memorable and interactive experiences."
+        },
+        "mission3": {
+            "title": "Support local communities",
+            "description": "We collaborate with local artisans and actors to generate a positive and sustainable impact, highlighting local talents."
+        }
+    },
+    "visa": {
+        "title": "Our Destinations",
+        "description": "Discover Africa differently with our cultural and responsible trips",
+        "contactButton": "CONTACT US",
+        "visas": {
+            "touristVisa": "Tourist Visa"
+        },
+        "countries": {
+            "benin": "Benin",
+            "cote_divoire": "Ivory Coast",
+            "cameroon": "Cameroon",
+            "tanzania": "Tanzania",
+            "zanzibar": "Zanzibar",
+            "ghana": "Ghana",
+            "rwanda": "Rwanda",
+            "togo": "Togo"
+        }
+    },
+    "mindzStudio": {
+        "title": "Mindz Studio",
+        "subtitle": "Digital Agency",
+        "description": "Content creation, branding, and community management that convert. Mindz Studio develops strong digital identities and effective marketing campaigns tailored to your goals.",
+        "servicesButton": "Discover our services",
+        "contactButton": "Contact us",
+        "altMainImage": "Digital creation",
+        "altFloatingImage": "Marketing strategy"
+    },
+    "vinsmoselle": {
+        "title": "Vinsmoselle Estates | Poll – Fabaire Cameroon",
+        "subtitle": "Representation & Wine Events",
+        "description": "Tastings, branding, and events around quality wines and sparkling wines. We support companies, individuals, and institutions with importation, masterclasses, and wine image consulting.",
+        "servicesButton": "Explore our events",
+        "contactButton": "Contact us",
+        "alt1": "Wine event",
+        "alt2": "Tasting",
+        "alt3": "Wine bottles",
+        "alt4": "Wine masterclass",
+        "backgroundAlt": "Wine background"
+    },
+    "partners": {
+        "title": "Our Partners",
+        "description": "We collaborate with trusted partners who share our vision of excellence and innovation.",
+        "items": {
+            "franchiseIT": {
+                "name": "Franchise IT",
+                "description": "Our exclusive partner in digital strategy and technological innovation. Together, we build sustainable and creative solutions."
+            }
+        }
     }
 }

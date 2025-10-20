@@ -1,35 +1,33 @@
 import { motion } from "framer-motion";
 import { FaGlobeAfrica, FaMagic, FaHandsHelping } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function MissionsSection() {
+    const { t } = useTranslation();
+
     const missions = [
         {
             id: 1,
-            title: "Valoriser la culture africaine",
-            description:
-                "Nous célébrons la richesse du patrimoine africain à travers les arts, la musique, la mode et la gastronomie, pour inspirer et connecter les communautés.",
+            title: t("missions.mission1.title"),
+            description: t("missions.mission1.description"),
             icon: <FaGlobeAfrica className="text-accent-green w-12 h-12" />,
         },
         {
             id: 2,
-            title: "Créer des expériences uniques",
-            description:
-                "Chaque événement et projet est conçu pour émerveiller et immerger nos participants dans des expériences mémorables et interactives.",
+            title: t("missions.mission2.title"),
+            description: t("missions.mission2.description"),
             icon: <FaMagic className="text-accent-green w-12 h-12" />,
         },
         {
             id: 3,
-            title: "Soutenir les communautés locales",
-            description:
-                "Nous collaborons avec les artisans et acteurs locaux pour générer un impact positif et durable, en valorisant les talents locaux.",
+            title: t("missions.mission3.title"),
+            description: t("missions.mission3.description"),
             icon: <FaHandsHelping className="text-accent-green w-12 h-12" />,
         },
     ];
 
     return (
         <section className="relative w-full py-12 overflow-hidden">
-            {/* Image de fond animée en bas à gauche */}
-           
             <div className="px-[10%] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
@@ -40,7 +38,7 @@ export default function MissionsSection() {
                         viewport={{ once: true }}
                         className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight"
                     >
-                        Nos Missions
+                        {t("missions.title")}
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}
@@ -49,7 +47,7 @@ export default function MissionsSection() {
                         viewport={{ once: true }}
                         className="mt-4 leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90 max-w-2xl mx-auto"
                     >
-                        Nous croyons en un développement culturel, social et économique inclusif, en créant des synergies entre traditions et modernité.
+                        {t("missions.description")}
                     </motion.p>
                 </div>
 
@@ -64,15 +62,10 @@ export default function MissionsSection() {
                             viewport={{ once: true }}
                             className="bg-white shadow-md border border-gray-200 p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300"
                         >
-                            {/* Icon */}
                             <div className="mb-4">{mission.icon}</div>
-
-                            {/* Title */}
                             <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold mb-3">
                                 {mission.title}
                             </h3>
-
-                            {/* Description */}
                             <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90">
                                 {mission.description}
                             </p>

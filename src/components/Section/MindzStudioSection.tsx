@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function MindzStudioSection() {
+    const { t } = useTranslation();
+
     return (
-        <section className="relative  px-[10%] py-12 overflow-hidden">
+        <section className="relative px-[10%] py-12 overflow-hidden">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                 {/* Texte */}
                 <motion.div
@@ -13,27 +16,22 @@ export default function MindzStudioSection() {
                     className="space-y-6"
                 >
                     <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight">
-                        Mindz Studio {" "}
-                        <span >
-                            Agence digitale & stratégie commerciale
-                        </span>
+                        {t("mindzStudio.title")}{" "}
+                        <span>{t("mindzStudio.subtitle")}</span>
                     </h2>
 
                     <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl">
-                        Création de contenu, branding et community management qui
-                        convertissent. Mindz Studio développe des identités digitales
-                        percutantes et des campagnes marketing efficaces adaptées à vos
-                        ambitions.
+                        {t("mindzStudio.description")}
                     </p>
 
                     <div className="flex gap-4">
-                        <motion.a 
+                        <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="/services"
                             className="px-6 py-3 bg-accent-yellow text-accent-blue font-semibold shadow-lg"
                         >
-                            Découvrir nos services
+                            {t("mindzStudio.servicesButton")}
                         </motion.a>
 
                         <motion.a
@@ -42,7 +40,7 @@ export default function MindzStudioSection() {
                             href="/contact"
                             className="px-6 py-3 border-2 border-accent-yellow text-accent-blue font-semibold hover:bg-gray-100 transition"
                         >
-                            Contactez-nous
+                            {t("mindzStudio.contactButton")}
                         </motion.a>
                     </div>
                 </motion.div>
@@ -59,17 +57,10 @@ export default function MindzStudioSection() {
                     <div className="relative w-full h-96 overflow-hidden shadow-2xl">
                         <img
                             src="/images/dev.png"
-                            alt="Création digitale"
+                            alt={t("mindzStudio.altMainImage")}
                             className="object-cover w-full h-full"
                         />
                     </div>
-                     {/* <div className="relative w-72 h-96 overflow-hidden shadow-2xl">
-                        <img
-                            src="/images/informatique.jpg"
-                            alt="Création digitale"
-                            className="object-cover w-full h-full"
-                        />
-                    </div> */}
 
                     {/* Image flottante */}
                     <motion.div
@@ -81,7 +72,7 @@ export default function MindzStudioSection() {
                     >
                         <img
                             src="/images/marketing.png"
-                            alt="Stratégie marketing"
+                            alt={t("mindzStudio.altFloatingImage")}
                             className="object-cover w-full h-full"
                         />
                     </motion.div>

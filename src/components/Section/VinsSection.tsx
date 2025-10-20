@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const AboutSectionExperimenter: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef<HTMLElement>(null);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -36,23 +38,21 @@ const AboutSectionExperimenter: React.FC = () => {
             ></motion.div>
 
             <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                {/* Left: Images */}
+                {/* Left: Image */}
                 <div className="flex-1 flex flex-col gap-6 w-full">
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={isVisible ? { scale: 1, opacity: 1 } : {}}
                         transition={{ duration: 0.8 }}
                         whileHover={{ scale: 1.05, rotate: 1 }}
-                        className="w-full h-80 lg:h-[500px]  overflow-hidden shadow-xl cursor-pointer"
+                        className="w-full h-80 lg:h-[500px] overflow-hidden shadow-xl cursor-pointer"
                     >
                         <img
                             src="/images/aboutS.png"
-                            alt="Voyages culturels et responsables"
+                            alt={t("aboutSection.title")}
                             className="w-full h-full object-cover object-top transition-transform duration-500"
                         />
                     </motion.div>
-
-
                 </div>
 
                 {/* Right: Text */}
@@ -62,36 +62,32 @@ const AboutSectionExperimenter: React.FC = () => {
                     className="flex-1 flex flex-col gap-6"
                 >
                     <span className="text-sm font-semibold text-accent-yellow uppercase tracking-wider">
-                        Leadership & Innovation
+                        {t("aboutSection.tagline")}
                     </span>
 
-                    <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight text-black/90">
-                        Une Vision <span className="">Culturelle</span> &{" "}
-                        <span className="">Entrepreneuriale</span>
+                    <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight">
+                        {t("aboutSection.title")}
                     </h2>
 
                     <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl text-gray-600">
-                        Duchesse d’Afric-Art est un collectif d’entrepreneurs culturels et d’experts du branding basé au Cameroun. Nous créons des expériences qui font rayonner l’identité africaine : voyages responsables, événements œnologiques, rendez-vous culturels et prestations digitales.
+                        {t("aboutSection.description")}
                     </p>
-
-
-
 
                     {/* CTA */}
                     <div className="flex flex-wrap gap-4 mt-6">
                         <motion.a
                             href="/services"
                             whileHover={{ scale: 1.05, rotate: 2 }}
-                            className="px-6 py-3 bg-accent-yellow text-accent-blue  font-semibold flex items-center gap-2"
+                            className="px-6 py-3 bg-accent-yellow text-accent-blue font-semibold flex items-center gap-2"
                         >
-                            Explorer ses Projets
+                            {t("aboutSection.ctaProjects")}
                         </motion.a>
                         <motion.a
                             href="/about"
                             whileHover={{ scale: 1.05, rotate: -2 }}
-                            className="px-6 py-3 border-2 border-accent-yellow text-primary  font-semibold flex items-center gap-2"
+                            className="px-6 py-3 border-2 border-accent-yellow text-primary font-semibold flex items-center gap-2"
                         >
-                            Découvrir son Univers
+                            {t("aboutSection.ctaUniverse")}
                         </motion.a>
                     </div>
                 </motion.div>

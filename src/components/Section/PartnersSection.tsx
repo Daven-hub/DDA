@@ -1,23 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const partners = [
+const partnersData = [
     {
-        name: "Franchise IT",
+        key: "franchiseIT",
         logo: "/images/fit.png",
-        description:
-            "Notre partenaire exclusif en stratégie numérique et innovation technologique. Ensemble, nous bâtissons des solutions durables et créatives.",
     },
-    // Ajoute d'autres partenaires ici à l’avenir :
-    // {
-    //   name: "Autre Partenaire",
-    //   logo: "/images/autre.png",
-    //   description: "Description du partenaire.",
-    // },
+    // Tu peux ajouter d'autres partenaires ici
 ];
 
 export default function PartnersSection() {
+    const { t } = useTranslation();
+
     return (
         <section className="relative w-full py-12 px-[10%] bg-gradient-to-br from-gray-50 via-white to-green-50 overflow-hidden">
             {/* Titre */}
@@ -29,7 +25,7 @@ export default function PartnersSection() {
                     viewport={{ once: true }}
                     className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight"
                 >
-                    Nos Partenaires
+                    {t("partners.title")}
                 </motion.h2>
 
                 <motion.p
@@ -39,8 +35,7 @@ export default function PartnersSection() {
                     viewport={{ once: true }}
                     className="text-black/90 mt-3 leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mx-auto"
                 >
-                    Nous collaborons avec des partenaires de confiance qui partagent notre vision de
-                    l’excellence et de l’innovation.
+                    {t("partners.description")}
                 </motion.p>
             </div>
 
@@ -52,9 +47,9 @@ export default function PartnersSection() {
                 viewport={{ once: true }}
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center"
             >
-                {partners.map((partner, index) => (
+                {partnersData.map((partner, index) => (
                     <motion.div
-                        key={index}
+                        key={partner.key}
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -75,7 +70,7 @@ export default function PartnersSection() {
                         {/* Logo */}
                         <motion.img
                             src={partner.logo}
-                            alt={partner.name}
+                            alt={t(`partners.items.${partner.key}.name`)}
                             className="relative z-10 w-36 h-36 object-contain mb-5"
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 200 }}
@@ -84,10 +79,10 @@ export default function PartnersSection() {
                         {/* Détails */}
                         <div className="relative z-10">
                             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-                                {partner.name}
+                                {t(`partners.items.${partner.key}.name`)}
                             </h3>
                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                {partner.description}
+                                {t(`partners.items.${partner.key}.description`)}
                             </p>
                         </div>
                     </motion.div>

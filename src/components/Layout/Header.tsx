@@ -45,7 +45,7 @@ const Header: FC = () => {
     },
     { path: "/destinations", label: t("header.nav.destinations") },
     { path: "/about", label: t("header.nav.about") },
-    { path: "/blog", label: "Blog" }, 
+    { path: "/blog", label: "Blog" },
     { path: "/contact", label: t("header.nav.contact") },
   ];
 

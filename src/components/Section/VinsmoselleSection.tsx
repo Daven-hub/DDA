@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function VinsmoselleSection() {
+    const { t } = useTranslation();
+
     return (
         <section className="relative w-full px-[10%] py-12 overflow-hidden">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -16,7 +19,7 @@ export default function VinsmoselleSection() {
                     <div className="col-span-2 h-64 overflow-hidden shadow-xl">
                         <img
                             src="/images/vins1.png"
-                            alt="Événement vins"
+                            alt={t("vinsmoselle.alt1")}
                             className="object-cover w-full h-full"
                         />
                     </div>
@@ -24,7 +27,7 @@ export default function VinsmoselleSection() {
                     <motion.div whileHover={{ scale: 1.05 }} className="h-40 overflow-hidden shadow-lg">
                         <img
                             src="/images/vins2.png"
-                            alt="Dégustation"
+                            alt={t("vinsmoselle.alt2")}
                             className="object-cover w-full h-full"
                         />
                     </motion.div>
@@ -32,7 +35,7 @@ export default function VinsmoselleSection() {
                     <motion.div whileHover={{ scale: 1.05 }} className="h-40 overflow-hidden shadow-lg">
                         <img
                             src="/images/caraf.jpg"
-                            alt="Bouteilles de vin"
+                            alt={t("vinsmoselle.alt3")}
                             className="object-cover w-full h-full"
                         />
                     </motion.div>
@@ -40,7 +43,7 @@ export default function VinsmoselleSection() {
                     <motion.div whileHover={{ scale: 1.05 }} className="col-span-2 h-52 overflow-hidden shadow-lg">
                         <img
                             src="/images/present.jpg"
-                            alt="Masterclass vinicole"
+                            alt={t("vinsmoselle.alt4")}
                             className="object-cover w-full h-full"
                         />
                     </motion.div>
@@ -55,16 +58,14 @@ export default function VinsmoselleSection() {
                     className="space-y-6 relative z-20"
                 >
                     <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight">
-                        Domaines Vinsmoselle | Poll – Fabaire Cameroun
+                        {t("vinsmoselle.title")}
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-pink-600 to-orange-500">
-                            Représentation & événements vins
+                            {t("vinsmoselle.subtitle")}
                         </span>
                     </h2>
 
                     <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl">
-                        Dégustations, branding et événements autour de vins et crémants de
-                        qualité. Nous accompagnons entreprises, particuliers et institutions
-                        avec importation, masterclasses et conseils en image vinicole.
+                        {t("vinsmoselle.description")}
                     </p>
 
                     <div className="flex gap-4">
@@ -74,7 +75,7 @@ export default function VinsmoselleSection() {
                             href="/services"
                             className="px-6 py-3 bg-gradient-to-r from-red-700 to-pink-600 text-white font-semibold shadow-lg"
                         >
-                            Explorer nos événements
+                            {t("vinsmoselle.servicesButton")}
                         </motion.a>
 
                         <motion.a
@@ -83,7 +84,7 @@ export default function VinsmoselleSection() {
                             href="/contact"
                             className="px-6 py-3 border-2 border-red-700 text-gray-800 font-semibold hover:bg-gray-100 transition"
                         >
-                            Contactez-nous
+                            {t("vinsmoselle.contactButton")}
                         </motion.a>
                     </div>
                 </motion.div>
@@ -93,7 +94,7 @@ export default function VinsmoselleSection() {
             <div className="absolute inset-y-0 right-0 w-1/2 opacity-10 mix-blend-multiply">
                 <img
                     src="/images/vin.png"
-                    alt="Fond vin"
+                    alt={t("vinsmoselle.backgroundAlt")}
                     className="w-full h-full object-cover"
                 />
             </div>

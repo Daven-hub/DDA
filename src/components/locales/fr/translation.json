@@ -1,0 +1,71 @@
+{
+    "header": {
+        "schedule": "09h00 – 18h00",
+        "call1": "+237 698 03 21 81",
+        "call2": "+237 671 28 21 49",
+        "request_quote": "Demander un devis",
+        "destinations_title": "Destinations",
+        "nav": {
+            "home": "Accueil",
+            "services": "Nos Services",
+            "destinations": "Destinations",
+            "about": "À propos",
+            "contact": "Contact"
+        },
+        "sub_services": {
+            "voyages": "Voyages Culturels & Responsables",
+            "vins": "Dégustations & Événements Vins",
+            "digital": "Agence Digitale & Stratégie Commerciale",
+            "evenements": "Événements Culturels & Artistiques"
+        }
+    },
+    "footer": {
+        "description": "Duchesse d’Afric-Art célèbre la richesse culturelle africaine à travers des expériences uniques : voyages, événements, dégustations et créations digitales.",
+        "quick_links_title": "Liens rapides",
+        "quick_links": {
+            "home": "Accueil",
+            "about": "À propos",
+            "services": "Nos Services",
+            "businesses": "Nos Entreprises",
+            "contact": "Contact"
+        },
+        "destinations_title": "Destinations",
+        "contact_title": "Contact",
+        "contact": {
+            "phone_label": "Téléphone",
+            "phone": "+237 698 03 21 81 / +237 671 28 21 49",
+            "email_label": "Email",
+            "email": "contact@duchessedafricart.com",
+            "hours_label": "Heures",
+            "hours": "Lun – Sam : 09h00 – 18h00"
+        },
+        "rights_reserved": "Tous droits réservés.",
+        "design_by": "Design & Développement par"
+    },
+    "hero": {
+        "slide1": {
+            "title": "Célébrons l’Art & la Culture Camerounaise",
+            "subtitle": "The Akiba Brunch",
+            "description": "The Akiba Brunch n’est pas seulement un brunch : c’est une scène où se rencontrent gastronomie locale, art contemporain et musique live. Chaque édition met en lumière le talent camerounais et crée des passerelles entre les cultures, dans une ambiance chaleureuse et inspirante.",
+            "button": "Participer à la prochaine édition"
+        },
+        "slide2": {
+            "title": "Voyages Culturels & Responsables",
+            "subtitle": "Duchesse d’Afric-Art",
+            "description": "Avec Duchesse d’Afric-Art, explorez l’Afrique autrement. Nos circuits vous emmènent au cœur des traditions, des savoir-faire et des patrimoines uniques. En valorisant les communautés locales et en respectant l’environnement, nous transformons chaque voyage en une expérience humaine et authentique.",
+            "button": "Explorer nos circuits"
+        },
+        "slide3": {
+            "title": "Dégustations Raffinées",
+            "subtitle": "Domaines Vinsmoselle",
+            "description": "En tant qu’ambassadrice des Domaines Vinsmoselle au Cameroun, nous proposons des dégustations et des événements autour de vins et crémants d’exception. Alliant élégance, convivialité et savoir-faire, chaque rencontre est une immersion dans l’art de vivre et le plaisir des sens.",
+            "button": "Réserver une dégustation"
+        },
+        "slide4": {
+            "title": "Identité Digitale & Communication",
+            "subtitle": "Mindz Studio",
+            "description": "Mindz Studio est votre partenaire en stratégie digitale et branding. Nous créons des univers de marque percutants, développons des contenus engageants et déployons des campagnes adaptées à vos ambitions. Notre mission : transformer vos idées en expériences digitales mémorables.",
+            "button": "Découvrir nos services"
+        }
+    }
+}

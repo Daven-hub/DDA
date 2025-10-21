@@ -86,7 +86,7 @@ const Header: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -127,13 +127,15 @@ const Header: FC = () => {
               <social.icon />
             </a>
           ))}
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
         </div>
       </div>
 
       {/* Navbar principale */}
       <nav
-        className={`transition-all duration-500 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-2" : "bg-white py-4"
+        className={`transition-all duration-500 ${isScrolled
+            ? "bg-white/90 backdrop-blur-md shadow-md py-2"
+            : "bg-white py-4"
           }`}
       >
         <div className="flex items-center justify-between px-[10%]">
@@ -149,7 +151,9 @@ const Header: FC = () => {
                   {item.label}
                 </Link>
                 <span
-                  className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
+                  className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                     }`}
                 />
               </li>
@@ -161,7 +165,8 @@ const Header: FC = () => {
             <img
               src={logoPng}
               alt="Logo"
-              className={`transition-all ${isScrolled || isMobile ? "h-14" : "h-20"}`}
+              className={`transition-all ${isScrolled || isMobile ? "h-14" : "h-20"
+                }`}
             />
           </Link>
 
@@ -177,7 +182,9 @@ const Header: FC = () => {
                   {item.label}
                 </Link>
                 <span
-                  className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
+                  className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                     }`}
                 />
               </li>
@@ -196,64 +203,80 @@ const Header: FC = () => {
 
           {/* Bouton menu mobile */}
           <button
-            className="lg:hidden text-2xl"
+            className="lg:hidden text-3xl text-gray-800"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Menu mobile"
           >
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </nav>
 
-      {/* Menu mobile overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center text-white space-y-6 text-xl animate-fadeIn">
+      {/* Menu mobile */}
+      <div
+        className={`fixed inset-0 z-40 bg-black/90 backdrop-blur-xl text-white flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform ${isMobileMenuOpen
+            ? "opacity-100 translate-y-0 visible"
+            : "opacity-0 -translate-y-10 invisible"
+          }`}
+      >
+        {/* Bouton X visible */}
+        <button
+          className="absolute top-6 right-6 text-3xl hover:text-accent-yellow transition-colors"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <FaTimes />
+        </button>
+
+        {/* Liens */}
+        <div className="space-y-6 text-lg text-center mt-10">
           {navigationItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className="hover:text-accent-yellow"
               onClick={() => setIsMobileMenuOpen(false)}
+              className={`block hover:text-accent-yellow transition ${location.pathname === item.path ? "text-accent-yellow" : ""
+                }`}
             >
               {item.label}
             </Link>
           ))}
+        </div>
 
-          {/* Destinations */}
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold mb-2">
-              {t("header.destinations_title")}
-            </h4>
-            <div className="flex flex-wrap gap-2 justify-center">
-              {destinations.map((destination) => (
-                <span
-                  key={destination}
-                  className="text-sm bg-white/20 px-3 py-1 rounded-full"
-                >
-                  {destination}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Réseaux sociaux + Langue */}
-          <div className="flex flex-col items-center gap-4 mt-6">
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-accent-green to-accent-yellow text-white hover:scale-110 transition-transform"
-                >
-                  <social.icon />
-                </a>
-              ))}
-            </div>
-            <LanguageSwitcher />
+        {/* Destinations */}
+        <div className="mt-8 text-center">
+          <h4 className="text-lg font-semibold mb-3">
+            {t("header.destinations_title")}
+          </h4>
+          <div className="flex flex-wrap gap-2 justify-center">
+            {destinations.map((destination) => (
+              <span
+                key={destination}
+                className="text-sm bg-white/20 px-3 py-1 rounded-full"
+              >
+                {destination}
+              </span>
+            ))}
           </div>
         </div>
-      )}
+
+        {/* Réseaux sociaux */}
+        <div className="flex flex-col items-center gap-4 mt-8">
+          <div className="flex gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-accent-green to-accent-yellow text-white hover:scale-110 transition-transform"
+              >
+                <social.icon />
+              </a>
+            ))}
+          </div>
+          <LanguageSwitcher />
+        </div>
+      </div>
     </header>
   );
 };

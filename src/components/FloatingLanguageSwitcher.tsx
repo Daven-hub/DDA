@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
-const LanguageSwitcher = () => {
+const SlimLanguageSwitcher = () => {
     const { i18n } = useTranslation();
     const [open, setOpen] = useState(false);
     const [currentLang, setCurrentLang] = useState(i18n.language);
@@ -23,7 +23,6 @@ const LanguageSwitcher = () => {
                 setOpen(false);
             }
         };
-
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
@@ -37,40 +36,38 @@ const LanguageSwitcher = () => {
     const activeLang = languages.find((l) => l.code === currentLang) || languages[0];
 
     return (
-        <div className="relative" ref={dropdownRef}>
-            <button
-                onClick={() => setOpen(!open)}
-                className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:border-accent-green group"
-            >
-                <span className="text-lg">{activeLang.flag}</span>
-                <span className="text-sm font-medium text-gray-700 hidden md:block">
-                    {activeLang.label}
-                </span>
-                <FaChevronDown
-                    className={`text-xs text-gray-500 transition-transform duration-300 group-hover:text-accent-green ${open ? "rotate-180" : ""
-                        }`}
-                />
-            </button>
-
+        <div
+            ref={dropdownRef}
+            className="fixed top-1/3 left-0 z-[1000] flex flex-col items-start"
+        >
+            {/* Dropdown */}
             {open && (
-                <div className="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50 animate-fadeIn">
+                <div className="mb-1 w-32 bg-white/95 backdrop-blur-md border border-gray-200 shadow-card rounded-r-xl overflow-hidden animate-slideDown">
                     {languages.map((lang) => (
                         <button
                             key={lang.code}
                             onClick={() => changeLanguage(lang.code)}
-                            className={`flex items-center gap-3 w-full px-4 py-3 text-left transition-all duration-200 ${lang.code === currentLang
-                                ? "bg-accent-green/10 text-accent-green font-semibold"
-                                : "text-gray-700 hover:bg-gray-50"
+                            className={`flex items-center gap-2 w-full px-3 py-1.5 text-left transition-all duration-300 ${lang.code === currentLang
+                                    ? "bg-accent-blue/20 text-accent-blue font-heading"
+                                    : "text-neutral.gray hover:bg-neutral.gray/10"
                                 }`}
                         >
-                            <span className="text-lg">{lang.flag}</span>
-                            <span className="text-sm font-medium">{lang.label}</span>
+                            <span className="text-base">{lang.flag}</span>
+                            <span className="text-xs font-sans">{lang.label}</span>
                         </button>
                     ))}
                 </div>
             )}
+
+            {/* Slim Button */}
+            <button
+                onClick={() => setOpen(!open)}
+                className="w-10 h-10 flex items-center justify-center bg-accent-blue shadow-soft hover:shadow-bold text-white font-bold rounded-r-lg transition-all duration-300 hover:bg-accent-blue/90 hover:scale-105"
+            >
+                {open ? <FaChevronUp className="text-white text-xs" /> : <span className="text-base">{activeLang.flag}</span>}
+            </button>
         </div>
     );
 };
 
-export default LanguageSwitcher;
+export default SlimLanguageSwitcher;

@@ -62,6 +62,7 @@ const Footer = () => {
                         <li><Link to="/entreprises" className="hover:text-accent-yellow">{t("footer.quick_links.businesses")}</Link></li>
                         <li><Link to="/contact" className="hover:text-accent-yellow">{t("footer.quick_links.contact")}</Link></li>
                     </ul>
+
                 </div>
 
                 {/* Destinations */}
@@ -116,6 +117,7 @@ const Footer = () => {
                         Franchise-it
                     </a>
                 </p>
+                
             </div>
         </footer>
     );

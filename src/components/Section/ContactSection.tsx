@@ -1,15 +1,19 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
+const images = ["/images/a.png", "/images/vins2.png", "/images/culte.png"]; // ajoute tes propres images ici
 
 const ContactSection = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
     });
-
-    const images = ["/images/a.png", "/images/vins2.png", "/images/culte.png"]; // ajoute tes propres images ici
     const [currentImage, setCurrentImage] = useState(0);
 
     // changement automatique d’image toutes les 5s
@@ -18,7 +22,7 @@ const ContactSection = () => {
             setCurrentImage((prev) => (prev + 1) % images.length);
         }, 5000);
         return () => clearInterval(interval);
-    }, [images.length]);
+    }, []);
 
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,10 +36,9 @@ const ContactSection = () => {
     };
 
     return (
-        <section className="relative overflow-hidden py-12 text-white bg-cover bg-center bg-no-repeat transition-all duration-1000"
-            style={{
-                backgroundImage: `url(${images[currentImage]})`,
-            }}
+        <section
+            className="relative overflow-hidden py-12 text-white bg-cover bg-center bg-no-repeat transition-all duration-1000"
+            style={{ backgroundImage: `url(${images[currentImage]})` }}
         >
             {/* Overlay sombre */}
             <div className="absolute inset-0 bg-black/70"></div>
@@ -49,11 +52,10 @@ const ContactSection = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold leading-tight bg-gradient-to-r from-accent-yellow via-accent-green to-white bg-clip-text text-transparent">
-                        Contactez-nous
+                        {t("contact.title")}
                     </h2>
                     <p className="text-gray-300 mt-4 leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mx-auto">
-                        Une question, une collaboration ou une idée à partager ?
-                        Nous serions ravis de vous lire.
+                        {t("contact.subtitle")}
                     </p>
                 </motion.div>
 
@@ -66,35 +68,21 @@ const ContactSection = () => {
                         transition={{ duration: 0.8 }}
                         className="space-y-10"
                     >
-                        <div className="flex items-start gap-4">
-                            <div className="p-4 bg-white/10 border border-white/20 backdrop-blur-sm">
-                                <FiMail className="text-2xl text-accent-yellow" />
-                            </div>
-                            <div>
-                                <h4 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">Email</h4>
-                                <p className="text-gray-300">contact@duchessedafricart.com</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start gap-4">
-                            <div className="p-4 bg-white/10 border border-white/20 backdrop-blur-sm">
-                                <FiPhone className="text-2xl text-accent-yellow" />
-                            </div>
-                            <div>
-                                <h4 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">Téléphone</h4>
-                                <p className="text-gray-300">+237 698 03 21 81 / +237 671 28 21 49</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start gap-4">
-                            <div className="p-4 bg-white/10 border border-white/20 backdrop-blur-sm">
-                                <FiMapPin className="text-2xl text-accent-yellow" />
-                            </div>
-                            <div>
-                                <h4 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">Adresse</h4>
-                                <p className="text-gray-300">Douala, Cameroun</p>
-                            </div>
-                        </div>
+                        <ContactInfo
+                            icon={<FiMail className="text-2xl text-accent-yellow" />}
+                            title={t("contact.email.title")}
+                            text={t("contact.email.text")}
+                        />
+                        <ContactInfo
+                            icon={<FiPhone className="text-2xl text-accent-yellow" />}
+                            title={t("contact.phone.title")}
+                            text={t("contact.phone.text")}
+                        />
+                        <ContactInfo
+                            icon={<FiMapPin className="text-2xl text-accent-yellow" />}
+                            title={t("contact.address.title")}
+                            text={t("contact.address.text")}
+                        />
 
                         {/* Carte intégrée */}
                         <div className="h-64 w-full border border-white/20 shadow-lg overflow-hidden">
@@ -117,50 +105,28 @@ const ContactSection = () => {
                         onSubmit={handleSubmit}
                         className="bg-black/50 border border-white/20 p-8 backdrop-blur-md shadow-2xl space-y-6"
                     >
-                        <div>
-                            <label htmlFor="name" className="block text-sm font-medium mb-2">
-                                Nom complet
-                            </label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                onChange={handleChange}
-                                required
-                                className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-yellow transition"
-                                placeholder="Votre nom"
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="email" className="block text-sm font-medium mb-2">
-                                Adresse email
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                onChange={handleChange}
-                                required
-                                className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-yellow transition"
-                                placeholder="votre@email.com"
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="message" className="block text-sm font-medium mb-2">
-                                Message
-                            </label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows={5}
-                                onChange={handleChange}
-                                required
-                                className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-green transition"
-                                placeholder="Votre message..."
-                            />
-                        </div>
+                        <FormInput
+                            label={t("contact.form.name")}
+                            name="name"
+                            placeholder={t("contact.form.namePlaceholder")}
+                            value={formData.name}
+                            onChange={handleChange}
+                        />
+                        <FormInput
+                            label={t("contact.form.email")}
+                            name="email"
+                            type="email"
+                            placeholder={t("contact.form.emailPlaceholder")}
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                        <FormTextarea
+                            label={t("contact.form.message")}
+                            name="message"
+                            placeholder={t("contact.form.messagePlaceholder")}
+                            value={formData.message}
+                            onChange={handleChange}
+                        />
 
                         <motion.button
                             whileHover={{ scale: 1.05 }}
@@ -169,7 +135,7 @@ const ContactSection = () => {
                             className="w-full py-3 flex items-center justify-center gap-2 bg-gradient-to-r from-accent-yellow to-accent-green text-white font-semibold shadow-lg hover:shadow-accent-green/30 transition-all"
                         >
                             <FiSend />
-                            Envoyer le message
+                            {t("contact.form.submit")}
                         </motion.button>
                     </motion.form>
                 </div>
@@ -179,3 +145,50 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
+// Composants réutilisables pour infos et inputs
+const ContactInfo = ({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) => (
+    <div className="flex items-start gap-4">
+        <div className="p-4 bg-white/10 border border-white/20 backdrop-blur-sm">{icon}</div>
+        <div>
+            <h4 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">{title}</h4>
+            <p className="text-gray-300">{text}</p>
+        </div>
+    </div>
+);
+
+const FormInput = ({ label, name, type = "text", placeholder, value, onChange }: any) => (
+    <div>
+        <label htmlFor={name} className="block text-sm font-medium mb-2">
+            {label}
+        </label>
+        <input
+            type={type}
+            id={name}
+            name={name}
+            value={value}
+            onChange={onChange}
+            required
+            placeholder={placeholder}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-yellow transition"
+        />
+    </div>
+);
+
+const FormTextarea = ({ label, name, placeholder, value, onChange }: any) => (
+    <div>
+        <label htmlFor={name} className="block text-sm font-medium mb-2">
+            {label}
+        </label>
+        <textarea
+            id={name}
+            name={name}
+            rows={5}
+            value={value}
+            onChange={onChange}
+            required
+            placeholder={placeholder}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-green transition"
+        />
+    </div>
+);

@@ -2,29 +2,33 @@ import React from "react";
 import { Globe2, HeartHandshake, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const newProjects = [
     {
         id: 3,
         image: "/images/voyageCulture.png",
-        title: "The Akiba Brunch",
-        subtitle: "Brunch culturel & artistique",
-        description:
-            "Un rendez-vous convivial qui valorise la scène créative camerounaise. Entre cuisine, musique, arts visuels et marché d’artisans, chaque édition rapproche artistes, marques et public dans une ambiance chaleureuse.",
-        cta: "En savoir plus",
+        titleKey: "features.projects.akiba.title",
+        subtitleKey: "features.projects.akiba.subtitle",
+        descriptionKey: "features.projects.akiba.description",
+        ctaKey: "features.projects.akiba.cta",
     },
     {
         id: 4,
         image: "/images/digital.png",
-        title: "Mindz Studio",
-        subtitle: "Agence digitale & stratégie commerciale",
-        description:
-            "Création de contenu, branding et community management qui convertissent. Mindz Studio développe des identités digitales percutantes et des campagnes marketing efficaces adaptées à vos ambitions.",
-        cta: "En savoir plus",
+        titleKey: "features.projects.mindz.title",
+        subtitleKey: "features.projects.mindz.subtitle",
+        descriptionKey: "features.projects.mindz.description",
+        ctaKey: "features.projects.mindz.cta",
     },
 ];
 
 const FeaturesSection: React.FC = () => {
+    const { t } = useTranslation();
+
+    // Récupérer les items avec le bon typage
+    const valuesItems = t("features.values.items", { returnObjects: true }) as string[];
+
     return (
         <section className="w-full py-12">
             <div className="px-[10%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -32,7 +36,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="grid grid-cols-2 gap-4">
                     <motion.img
                         src="/images/atr.png"
-                        alt="Artisanat africain"
+                        alt={t("features.images.atr")}
                         className="object-cover w-full h-64 lg:h-80"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +44,7 @@ const FeaturesSection: React.FC = () => {
                     />
                     <motion.img
                         src="/images/atb.png"
-                        alt="Exposition d’art africain"
+                        alt={t("features.images.atb")}
                         className="object-cover w-full h-64 lg:h-80"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +52,7 @@ const FeaturesSection: React.FC = () => {
                     />
                     <motion.img
                         src="/images/couture.png"
-                        alt="Créateurs africains"
+                        alt={t("features.images.couture")}
                         className="object-cover w-full h-64 lg:h-80 col-span-2"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -64,17 +68,13 @@ const FeaturesSection: React.FC = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h4 className="text-accent-yellow font-semibold uppercase tracking-wider mb-2">
-                            Notre Essence
+                            {t("features.essence.title")}
                         </h4>
-                        <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold  leading-tight text-black/90">
-                            L’Afrique créative, authentique et durable
+                        <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold leading-tight text-black/90">
+                            {t("features.essence.subtitle")}
                         </h2>
                         <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mt-4 text-black/90">
-                            Duchesse d’Afric’Art célèbre la richesse artistique du continent
-                            à travers des projets uniques mêlant art, design, culture et
-                            innovation. Chaque initiative soutient les talents africains et
-                            valorise le savoir-faire local dans une approche responsable et
-                            inclusive.
+                            {t("features.essence.description")}
                         </p>
                     </motion.div>
 
@@ -84,42 +84,40 @@ const FeaturesSection: React.FC = () => {
                         transition={{ duration: 0.7 }}
                     >
                         <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-accent-yellow mb-4">
-                            Nos valeurs
+                            {t("features.values.title")}
                         </h3>
 
                         <ul className="space-y-3 leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl text-black/90">
-                            <li className="flex items-center gap-2">
-                                <CheckCircle className="text-accent-yellow w-5 h-5" />
-                                Excellence & authenticité culturelle
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <CheckCircle className="text-accent-yellow w-5 h-5" />
-                                Collaboration avec les communautés locales
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <CheckCircle className="text-accent-yellow w-5 h-5" />
-                                Développement durable & innovation sociale
-                            </li>
+                            {valuesItems.map((item: string, idx: number) => (
+                                <li key={idx} className="flex items-center gap-2">
+                                    <CheckCircle className="text-accent-yellow w-5 h-5" />
+                                    {item}
+                                </li>
+                            ))}
                         </ul>
 
                         <div className="flex flex-col sm:flex-row gap-10 mt-10">
                             <div>
                                 <div className="flex items-center gap-2">
                                     <HeartHandshake className="text-[#C69446] w-6 h-6" />
-                                    <span className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-black/90">50+</span>
+                                    <span className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-black/90">
+                                        {t("features.stats.partners")}
+                                    </span>
                                 </div>
                                 <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mt-1 text-black/90">
-                                    Partenaires & artistes accompagnés
+                                    {t("features.stats.partnersLabel")}
                                 </p>
                             </div>
 
                             <div>
                                 <div className="flex items-center gap-2">
                                     <Globe2 className="text-[#C69446] w-6 h-6" />
-                                    <span className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-black/90">10</span>
+                                    <span className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-black/90">
+                                        {t("features.stats.countries")}
+                                    </span>
                                 </div>
                                 <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mt-1 text-black/90">
-                                    Pays d’Afrique représentés
+                                    {t("features.stats.countriesLabel")}
                                 </p>
                             </div>
                         </div>
@@ -131,7 +129,7 @@ const FeaturesSection: React.FC = () => {
                 {newProjects.map((project) => (
                     <motion.div
                         key={project.id}
-                        className="bg-white  shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                        className="bg-white shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -139,20 +137,22 @@ const FeaturesSection: React.FC = () => {
                     >
                         <img
                             src={project.image}
-                            alt={project.title}
+                            alt={t(project.titleKey)}
                             className="w-full h-64 object-cover"
                         />
                         <div className="p-6">
                             <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-black/90 mb-2">
-                                {project.title}
+                                {t(project.titleKey)}
                             </h3>
                             <h4 className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mb-2 text-accent-red">
-                                {project.subtitle}
+                                {t(project.subtitleKey)}
                             </h4>
-                            <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mb-4 text-black/90">{project.description}</p>
+                            <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mb-4 text-black/90">
+                                {t(project.descriptionKey)}
+                            </p>
                             <Link to={`/services/${project.id}`}>
-                                <button className="text-accent-blue bg-accent-yellow px-6 py-2   transition-colors">
-                                    {project.cta}
+                                <button className="text-accent-blue bg-accent-yellow px-6 py-2 transition-colors">
+                                    {t(project.ctaKey)}
                                 </button>
                             </Link>
                         </div>

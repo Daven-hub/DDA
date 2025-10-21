@@ -273,5 +273,165 @@
                 "description": "Notre partenaire exclusif en stratégie numérique et innovation technologique. Ensemble, nous bâtissons des solutions durables et créatives."
             }
         }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Une question, une collaboration ou une idée à partager ? Nous serions ravis de vous lire.",
+        "email": {
+            "title": "Email",
+            "text": "contact@duchessedafricart.com"
+        },
+        "phone": {
+            "title": "Téléphone",
+            "text": "+237 698 03 21 81 / +237 671 28 21 49"
+        },
+        "address": {
+            "title": "Adresse",
+            "text": "Douala, Cameroun"
+        },
+        "form": {
+            "name": "Nom complet",
+            "namePlaceholder": "Votre nom",
+            "email": "Adresse email",
+            "emailPlaceholder": "votre@email.com",
+            "message": "Message",
+            "messagePlaceholder": "Votre message...",
+            "submit": "Envoyer le message"
+        }
+    },
+    "stats": {
+        "travelers": "Voyageurs satisfaits",
+        "artisans": "Artistes & artisans soutenus",
+        "digital": "Projets digitaux réalisés",
+        "events": "Événements organisés",
+        "countries": "Pays explorés"
+    },
+    "testimonials": {
+        "title": "Ce que disent nos clients",
+        "traveler": "Voyageuse solidaire",
+        "sommelier": "Sommelier & partenaire",
+        "artist": "Créatrice artisanale",
+        "digitalEntrepreneur": "Entrepreneur digital",
+        "marketingDirector": "Directrice marketing",
+        "text1": "Un voyage culturel inoubliable ! L’équipe de Duchesse d’Afric-Art a su mêler authenticité, rencontres humaines et professionnalisme. Une expérience profondément enrichissante.",
+        "text2": "La collaboration avec l’équipe au Cameroun a été d’une qualité rare. Les dégustations étaient impeccablement organisées et la mise en valeur des vins, tout simplement remarquable.",
+        "text3": "Participer au Akiba Brunch a été une belle opportunité pour exposer mon art et échanger avec un public curieux et bienveillant. Une vraie vitrine pour les talents camerounais.",
+        "text4": "Mindz Studio m’a accompagné dans la refonte de mon identité de marque. Stratégie, design, communication : tout a été mené avec une précision et une créativité exemplaires.",
+        "text5": "Une équipe passionnée, à l’écoute, et toujours force de proposition. Mindz Studio est un véritable partenaire de croissance pour notre présence en ligne."
+    },
+    "service": {
+        "bannerAlt": "Services de Duchesse d’Afric’Art",
+        "bannerTitle": "Des expériences qui subliment l’art et la culture africaine",
+        "bannerDescription": "Duchesse d’Afric’Art accompagne artistes, marques et institutions dans la valorisation du patrimoine africain à travers des voyages culturels, des événements, des représentations de marques et des stratégies digitales sur mesure."
+    },
+    "features": {
+        "images": {
+            "atr": "Artisanat africain",
+            "atb": "Exposition d’art africain",
+            "couture": "Créateurs africains"
+        },
+        "essence": {
+            "title": "Notre Essence",
+            "subtitle": "L’Afrique créative, authentique et durable",
+            "description": "Duchesse d’Afric’Art célèbre la richesse artistique du continent à travers des projets uniques mêlant art, design, culture et innovation. Chaque initiative soutient les talents africains et valorise le savoir-faire local dans une approche responsable et inclusive."
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "items": [
+                "Excellence & authenticité culturelle",
+                "Collaboration avec les communautés locales",
+                "Développement durable & innovation sociale"
+            ]
+        },
+        "stats": {
+            "partners": "50+",
+            "partnersLabel": "Partenaires & artistes accompagnés",
+            "countries": "10",
+            "countriesLabel": "Pays d’Afrique représentés"
+        },
+        "projects": {
+            "akiba": {
+                "title": "The Akiba Brunch",
+                "subtitle": "Brunch culturel & artistique",
+                "description": "Un rendez-vous convivial qui valorise la scène créative camerounaise. Entre cuisine, musique, arts visuels et marché d’artisans, chaque édition rapproche artistes, marques et public dans une ambiance chaleureuse.",
+                "cta": "En savoir plus"
+            },
+            "mindz": {
+                "title": "Mindz Studio",
+                "subtitle": "Agence digitale & stratégie commerciale",
+                "description": "Création de contenu, branding et community management qui convertissent. Mindz Studio développe des identités digitales percutantes et des campagnes marketing efficaces adaptées à vos ambitions.",
+                "cta": "En savoir plus"
+            }
+        }
+    },
+    "destination": {
+        "banner": {
+            "title": "Duchesse d’Afric-Art",
+            "description": "Voyages culturels & responsables — Explorez l’Afrique autrement"
+        }
+    },
+    "sectionPays": {
+        "title": "Choisissez votre pays"
+    },
+    "pays": {
+        "benin": {
+            "title": "BÉNIN",
+            "description": "Découvrez le Bénin à travers ses richesses culturelles et historiques, ses traditions et sa gastronomie unique."
+        },
+        "cotedivoire": {
+            "title": "CÔTE D'IVOIRE",
+            "description": "La Côte d'Ivoire séduit par sa diversité culturelle, ses villes dynamiques et ses paysages naturels exceptionnels."
+        },
+        "cameroun": {
+            "title": "CAMEROUN",
+            "description": "Le Cameroun offre une incroyable variété culturelle, des paysages à couper le souffle et une gastronomie riche et authentique."
+        },
+        "tanzanie": {
+            "title": "TANZANIE",
+            "description": "La Tanzanie est connue pour ses safaris, le Kilimandjaro et ses plages paradisiaques, ainsi que pour sa culture locale unique."
+        },
+        "zanzibar": {
+            "title": "ZANZIBAR",
+            "description": "Zanzibar séduit par ses plages idylliques, son histoire fascinante et sa culture swahilie authentique."
+        },
+        "ghana": {
+            "title": "GHANA",
+            "description": "Le Ghana est riche en histoire, traditions et festivals culturels, offrant une expérience africaine authentique."
+        },
+        "rwanda": {
+            "title": "RWANDA",
+            "description": "Le Rwanda est un pays aux paysages montagneux et aux initiatives culturelles et environnementales remarquables."
+        },
+        "togo": {
+            "title": "TOGO",
+            "description": "Le Togo séduit par ses traditions, sa musique, son artisanat et ses paysages variés allant de plages aux montagnes."
+        }
+    },
+    "about": {
+        "bannerAlt": "Vue futuriste de Duchesse d’Afric’Art",
+        "bannerTitle": "L’Âme de l’Art Africain Contemporain",
+        "bannerDescription": "Duchesse d’Afric’Art, fondée par Melissa MBEUSSEUNE, est un hommage vibrant à la créativité africaine. Nous faisons rayonner les artistes et les savoir-faire du continent à travers des expériences culturelles, immersives et durables.",
+        "who": "Qui sommes-nous ?",
+        "title": "L’art comme passerelle entre l’Afrique et le monde",
+        "paragraph1": "Duchesse d’Afric’Art est une maison culturelle et artistique fondée par Melissa MBEUSSEUNE, entrepreneure et stratège de marque passionnée par la valorisation du patrimoine africain. Notre mission est de faire dialoguer les cultures à travers des expositions, des voyages culturels et des expériences sensorielles uniques.",
+        "paragraph2": "Chaque projet que nous portons est une invitation à explorer autrement l’Afrique — à découvrir ses artistes, ses artisans, ses créateurs et les émotions profondes qui émanent de leurs œuvres. Notre approche repose sur l’authenticité, la durabilité et le respect des racines culturelles.",
+        "founderAlt": "Fondatrice Melissa MBEUSSEUNE",
+        "founderName": "Melissa MBEUSSEUNE",
+        "founderIntro": "Consultante, CEO et Brand Strategist basée à Douala, Melissa MBEUSSEUNE est une figure inspirante de la nouvelle génération d’entrepreneures africaines. Elle évolue à l’intersection de la culture, du commerce et de la stratégie de marque.",
+        "roles": [
+            "Fondatrice & Gérante — Duchesse d’Afric’Art",
+            "Représentante Cameroun — Domaines Vinsmoselle | Poll – Fabair Cameroun",
+            "Promotrice — The Akiba Brunch, un brunch culturel et artistique",
+            "Directrice — Mindz Studio, agence digitale & stratégie commerciale"
+        ],
+        "founderConclusion": "À travers ses projets, Melissa œuvre pour une Afrique moderne, confiante et rayonnante. Elle croit au pouvoir du storytelling, du branding et de la collaboration créative pour transformer la perception du continent.",
+        "exploreProjects": "Explorer ses Projets",
+        "discoverUniverse": "Découvrir son Univers"
+    },
+    "contacts": {
+        "banner": {
+            "title": "Contactez-nous",
+            "description": "Entrons en relation — vos projets, nos talents"
+        }
     }
 }

@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { paysData } from "../../data/pays";
 import CartePays from "./paysSection";
 
 const SectionPays = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <div className="relative flex flex-col items-center text-center pt-12">
                 <span className="w-12 h-[2px] bg-fcc-blue mt-2 mb-4"></span>
                 <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/75 leading-[1.2]">
-                    Choisissez votre pays
+                    {t("sectionPays.title")}
                 </h2>
             </div>
 
@@ -17,8 +20,8 @@ const SectionPays = () => {
                         {paysData.map((pays, index) => (
                             <CartePays
                                 key={index}
-                                titre={pays.titre}
-                                description={pays.description}
+                                titre={t(pays.titreKey)}
+                                description={t(pays.descriptionKey)}
                                 image={pays.image}
                                 drapeau={pays.drapeau}
                                 isActive

@@ -10,7 +10,8 @@
             "services": "Nos Services",
             "destinations": "Destinations",
             "about": "À propos",
-            "contact": "Contact"
+            "contact": "Contact",
+            "galerie": "Galerie"
         },
         "sub_services": {
             "voyages": "Voyages Culturels & Responsables",
@@ -20,27 +21,30 @@
         }
     },
     "footer": {
-        "description": "Duchesse d’Afric-Art célèbre la richesse culturelle africaine à travers des expériences uniques : voyages, événements, dégustations et créations digitales.",
+        "description": "Duchesse d’Afric-Art valorise l’art et la culture africaine à travers des créations uniques et des expériences artistiques immersives.",
         "quick_links_title": "Liens rapides",
         "quick_links": {
             "home": "Accueil",
             "about": "À propos",
-            "services": "Nos Services",
-            "businesses": "Nos Entreprises",
+            "services": "Services",
+            "businesses": "Entreprises",
             "contact": "Contact"
         },
         "destinations_title": "Destinations",
         "contact_title": "Contact",
         "contact": {
             "phone_label": "Téléphone",
-            "phone": "+237 698 03 21 81 / +237 671 28 21 49",
+            "phone": "+237 698 03 21 81",
             "email_label": "Email",
             "email": "contact@duchessedafricart.com",
-            "hours_label": "Heures",
-            "hours": "Lun – Sam : 09h00 – 18h00"
+            "hours_label": "Horaires",
+            "hours": "Lun - Ven: 8h - 18h"
         },
+        "newsletter_text": "Abonnez-vous à notre newsletter pour recevoir nos actualités et événements.",
+        "newsletter_placeholder": "Votre email",
+        "newsletter_button": "S'abonner",
         "rights_reserved": "Tous droits réservés.",
-        "design_by": "Design & Développement par"
+        "design_by": "Design par"
     },
     "hero": {
         "slide1": {
@@ -226,36 +230,58 @@
         }
     },
     "visa": {
-        "title": "Nos Destinations",
-        "description": "Explorez l'Afrique autrement avec nos voyages culturels et responsables",
-        "contactButton": "CONTACTEZ-NOUS",
+        "title": "Explorez 8 destinations africaines autrement",
+        "description": "Duchesse d’Afric-Art Voyages vous ouvre les portes de l’Afrique authentique à travers des circuits culturels, responsables et riches en émotions. Découvrez des paysages fascinants, des peuples accueillants et des expériences inoubliables, du Cameroun à l’Afrique du Sud.",
+        "contactButton": "DEMANDER UN DEVIS",
         "visas": {
-            "touristVisa": "Visa Touristique"
+            "touristVisa": "Visa Touristique",
+            "culturalTour": "Voyage Culturel",
+            "adventureTrip": "Aventure & Nature",
+            "heritageTour": "Patrimoine & Traditions",
+            "coastalDiscovery": "Découverte Côtière",
+            "culturalImmersion": "Immersion Locale",
+            "safariExperience": "Expérience Safari",
+            "islandRetreat": "Évasion Insulaire",
+            "ecoTourism": "Écotourisme",
+            "urbanAdventure": "Aventure Urbaine"
         },
         "countries": {
-            "benin": "Bénin",
-            "cote_divoire": "Côte d’Ivoire",
             "cameroon": "Cameroun",
+            "togo": "Togo",
+            "benin": "Bénin",
+            "ghana": "Ghana",
+            "cote_divoire": "Côte d’Ivoire",
             "tanzania": "Tanzanie",
             "zanzibar": "Zanzibar",
-            "ghana": "Ghana",
             "rwanda": "Rwanda",
-            "togo": "Togo"
+            "south_africa": "Afrique du Sud"
         }
     },
     "mindzStudio": {
         "title": "Mindz Studio",
-        "subtitle": "Agence digitale ",
-        "description": "Création de contenu, branding et community management qui convertissent. Mindz Studio développe des identités digitales percutantes et des campagnes marketing efficaces adaptées à vos ambitions.",
-        "servicesButton": "Découvrir nos services",
-        "contactButton": "Contactez-nous",
-        "altMainImage": "Création digitale",
-        "altFloatingImage": "Stratégie marketing"
+        "subtitle": "– Agence digitale intégrée de Duchesse d’Afric-Art",
+        "description": "Mindz Studio est l’agence créative et technologique de Duchesse d’Afric-Art. Nous concevons des stratégies digitales performantes, des contenus engageants et des plateformes web innovantes qui propulsent votre marque vers le succès.",
+        "services": {
+            "content": "Création de contenus & Community Management",
+            "web": "Développement Web & Messagerie professionnelle",
+            "seo": "Référencement naturel (SEO) & Performance digitale",
+            "strategy": "Stratégie digitale & commerciale sur mesure"
+        },
+        "showcaseButton": "Voir nos réalisations",
+        "quoteButton": "Demander un devis",
+        "altMainImage": "Création et développement digital",
+        "altFloatingImage": "Stratégie marketing et communication"
     },
     "vinsmoselle": {
         "title": "Domaines Vinsmoselle | Poll – Fabaire Cameroun",
         "subtitle": "Représentation & événements vins",
         "description": "Dégustations, branding et événements autour de vins et crémants de qualité. Nous accompagnons entreprises, particuliers et institutions avec importation, masterclasses et conseils en image vinicole.",
+        "ddaTitle": "Duchesse d’Afric-Art Sparkling",
+        "dda1": "Partenaire officiel des Domaines Vinsmoselle (Poll-Fabaire).",
+        "dda2": "Produits : crémants & vins aromatisés.",
+        "dda3": "Distribution exclusive par 2FC Corporation SAS (mention dès le 1er novembre).",
+        "dda4": "Événements : dégustations, activations de marque, collaborations avec lounges (BYM, Le Boj, Café de Paris).",
+        "dda5": "Galerie photos : produits, événements, supports promotionnels.",
         "servicesButton": "Explorer nos événements",
         "contactButton": "Contactez-nous",
         "alt1": "Événement vins",
@@ -264,6 +290,22 @@
         "alt4": "Masterclass vinicole",
         "backgroundAlt": "Fond vin"
     },
+    "akiba": {
+        "title": "The Akiba Brunch",
+        "subtitle": "Événement signature & lifestyle",
+        "description": "Le rendez-vous incontournable du week-end. Entre gastronomie, art, musique et culture, The Akiba Brunch célèbre le savoir-faire local dans une ambiance raffinée et conviviale.",
+        "detailsTitle": "Présentation",
+        "detail1": "Événement signature mettant en valeur la créativité et l’excellence locale.",
+        "detail2": "Objectifs : valorisation du savoir-faire, networking, divertissement haut de gamme.",
+        "detail3": "Galerie photos & vidéos des éditions précédentes, moments forts et artistes invités.",
+        "detail4": "Mise en avant des partenaires, artisans et talents émergents.",
+        "reserveButton": "Réserver sa place",
+        "partnerButton": "Devenir partenaire",
+        "alt1": "Ambiance du brunch",
+        "alt2": "Artistes et invités",
+        "alt3": "Détails culinaires et décorations",
+        "alt4": "Public et moments festifs"
+    },
     "partners": {
         "title": "Nos Partenaires",
         "description": "Nous collaborons avec des partenaires de confiance qui partagent notre vision de l’excellence et de l’innovation.",
@@ -271,6 +313,14 @@
             "franchiseIT": {
                 "name": "Franchise IT",
                 "description": "Notre partenaire exclusif en stratégie numérique et innovation technologique. Ensemble, nous bâtissons des solutions durables et créatives."
+            },
+            "boj": {
+                "name": "Le Boj Restaurant",
+                "description": "Restaurant emblématique à Douala, Le Boj est un lieu de saveurs, d’élégance et de convivialité. Il valorise le savoir-faire culinaire local tout en offrant une expérience gastronomique unique dans un cadre raffiné."
+            },
+            "pari": {
+                "name": "Café de Paris",
+                "description": "Le Café de Paris, joyau culinaire de Douala, est un lieu où élégance et convivialité se rencontrent. Chaque plat est une célébration du savoir-faire local, sublimé par une présentation raffinée et une atmosphère chaleureuse. Que ce soit pour un déjeuner d'affaires, un dîner romantique ou un moment entre amis, le Café de Paris promet une expérience gastronomique inoubliable, mêlant saveurs authentiques et art de vivre à la française."
             }
         }
     },
@@ -367,44 +417,48 @@
     "destination": {
         "banner": {
             "title": "Duchesse d’Afric-Art",
-            "description": "Voyages culturels & responsables — Explorez l’Afrique autrement"
+            "description": "Partez à la découverte des joyaux de l’Afrique — voyages culturels, expériences uniques et souvenirs inoubliables."
         }
     },
     "sectionPays": {
-        "title": "Choisissez votre pays"
+        "title": "Choisissez votre prochaine aventure"
     },
     "pays": {
         "benin": {
             "title": "BÉNIN",
-            "description": "Découvrez le Bénin à travers ses richesses culturelles et historiques, ses traditions et sa gastronomie unique."
+            "description": "Plongez dans un pays où l’histoire danse avec la culture. Découvrez les temples vaudous, marchés colorés et une gastronomie riche en saveurs."
         },
         "cotedivoire": {
             "title": "CÔTE D'IVOIRE",
-            "description": "La Côte d'Ivoire séduit par sa diversité culturelle, ses villes dynamiques et ses paysages naturels exceptionnels."
+            "description": "Une destination vibrante, entre villes dynamiques, plages paradisiaques et traditions ancestrales à couper le souffle."
         },
         "cameroun": {
             "title": "CAMEROUN",
-            "description": "Le Cameroun offre une incroyable variété culturelle, des paysages à couper le souffle et une gastronomie riche et authentique."
+            "description": "Explorez le Cameroun, véritable mosaïque culturelle, paysages majestueux et cuisine authentique qui éveillent tous vos sens."
         },
         "tanzanie": {
             "title": "TANZANIE",
-            "description": "La Tanzanie est connue pour ses safaris, le Kilimandjaro et ses plages paradisiaques, ainsi que pour sa culture locale unique."
+            "description": "Savourez l’aventure : safaris spectaculaires, Kilimandjaro majestueux et plages idylliques à perte de vue."
         },
         "zanzibar": {
             "title": "ZANZIBAR",
-            "description": "Zanzibar séduit par ses plages idylliques, son histoire fascinante et sa culture swahilie authentique."
+            "description": "Paradis tropical et histoire fascinante vous attendent : plages de rêve, culture swahilie et ambiance inoubliable."
         },
         "ghana": {
             "title": "GHANA",
-            "description": "Le Ghana est riche en histoire, traditions et festivals culturels, offrant une expérience africaine authentique."
+            "description": "Laissez-vous emporter par la musique, les festivals, l’artisanat et les traditions d’un pays où la culture est reine."
         },
         "rwanda": {
             "title": "RWANDA",
-            "description": "Le Rwanda est un pays aux paysages montagneux et aux initiatives culturelles et environnementales remarquables."
+            "description": "Pays des mille collines : paysages grandioses, initiatives culturelles innovantes et nature préservée."
         },
         "togo": {
             "title": "TOGO",
-            "description": "Le Togo séduit par ses traditions, sa musique, son artisanat et ses paysages variés allant de plages aux montagnes."
+            "description": "Un voyage authentique entre plages, montagnes, artisanat et musique, où chaque instant devient une découverte."
+        },
+        "afriqueSud": {
+            "title": "AFRIQUE DU SUD",
+            "description": "Des safaris légendaires aux vignobles prestigieux, découvrez un pays aux multiples facettes et expériences inoubliables."
         }
     },
     "about": {
@@ -433,5 +487,17 @@
             "title": "Contactez-nous",
             "description": "Entrons en relation — vos projets, nos talents"
         }
+    },
+    "servicess": {
+        "notFound": "Service introuvable.",
+        "aboutTitle": "À propos du service",
+        "highlightsTitle": "Nos points forts",
+        "galleryTitle": "Galerie du service",
+        "videoNotSupported": "Votre navigateur ne supporte pas la vidéo.",
+        "contactTitle": "Contact & réservation",
+        "contactDescription": "Intéressé par ce service ? Contactez-nous pour un devis ou une collaboration.",
+        "contactCTA": "Nous contacter",
+        "otherServices": "Autres services",
+        "backToServices": "Retour aux services"
     }
 }

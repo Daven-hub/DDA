@@ -45,7 +45,7 @@ const Header: FC = () => {
     },
     { path: "/destinations", label: t("header.nav.destinations") },
     { path: "/about", label: t("header.nav.about") },
-    { path: "/blog", label: "Blog" },
+    { path: "/galerie", label: t("header.nav.galerie") },
     { path: "/contact", label: t("header.nav.contact") },
   ];
 
@@ -134,8 +134,8 @@ const Header: FC = () => {
       {/* Navbar principale */}
       <nav
         className={`transition-all duration-500 ${isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-md py-2"
-            : "bg-white py-4"
+          ? "bg-white/90 backdrop-blur-md shadow-md py-2"
+          : "bg-white py-4"
           }`}
       >
         <div className="flex items-center justify-between px-[10%]">
@@ -152,8 +152,8 @@ const Header: FC = () => {
                 </Link>
                 <span
                   className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
                     }`}
                 />
               </li>
@@ -183,8 +183,8 @@ const Header: FC = () => {
                 </Link>
                 <span
                   className={`absolute bottom-0 left-0 h-[2px] bg-accent-yellow transition-all duration-300 ${location.pathname === item.path
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
                     }`}
                 />
               </li>
@@ -193,12 +193,14 @@ const Header: FC = () => {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/237698032181"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-gradient-to-r from-accent-yellow to-accent-green text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-transform"
             >
               {t("header.request_quote")}
-            </Link>
+            </a>
           </div>
 
           {/* Bouton menu mobile */}
@@ -215,8 +217,8 @@ const Header: FC = () => {
       {/* Menu mobile */}
       <div
         className={`fixed inset-0 z-40 bg-black/90 backdrop-blur-xl text-white flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform ${isMobileMenuOpen
-            ? "opacity-100 translate-y-0 visible"
-            : "opacity-0 -translate-y-10 invisible"
+          ? "opacity-100 translate-y-0 visible"
+          : "opacity-0 -translate-y-10 invisible"
           }`}
       >
         {/* Bouton X visible */}

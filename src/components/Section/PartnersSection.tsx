@@ -8,7 +8,15 @@ const partnersData = [
         key: "franchiseIT",
         logo: "/images/fit.png",
     },
-    // Tu peux ajouter d'autres partenaires ici
+    {
+        key: "boj",
+        logo: "/images/boj.png",
+    },
+    {
+        key: "pari",
+        logo: "/images/paris.png",
+    }
+    
 ];
 
 export default function PartnersSection() {
@@ -60,7 +68,7 @@ export default function PartnersSection() {
                         }}
                         className="relative bg-white shadow-[0_6px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_45px_rgba(0,0,0,0.15)] transition-all duration-500 ease-out border border-gray-100 p-8 flex flex-col items-center text-center"
                     >
-                        {/* Glow subtil en arrière-plan */}
+                        {/* Glow subtil */}
                         <motion.div
                             className="absolute inset-0 bg-gradient-to-br from-green-100/30 via-transparent to-green-200/30"
                             animate={{ opacity: [0.3, 0.6, 0.3] }}

@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import SectionPays from "../components/Section/PaySection";
-import VinsmoselleSection from "../components/Section/VinsmoselleSection";
 import Banner from "../components/Ux/Banner";
+import CtaSection from "../components/Section/CtaSection";
+import VisaSection from "../components/Section/VisaSection";
 
 export const Destination = () => {
   const { t } = useTranslation();
@@ -14,8 +15,9 @@ export const Destination = () => {
         title={t("destination.banner.title")}
         description={t("destination.banner.description")}
       />
-      <VinsmoselleSection />
+      <VisaSection />
       <SectionPays />
+      <CtaSection/>
     </>
   );
 };

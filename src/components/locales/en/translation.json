@@ -10,7 +10,8 @@
             "services": "Our Services",
             "destinations": "Destinations",
             "about": "About Us",
-            "contact": "Contact"
+            "contact": "Contact",
+            "galerie": "Galery"
         },
         "sub_services": {
             "voyages": "Cultural & Responsible Travels",
@@ -20,27 +21,30 @@
         }
     },
     "footer": {
-        "description": "Duchesse d’Afric-Art celebrates African cultural richness through unique experiences: travels, events, tastings, and digital creations.",
+        "description": "Duchesse d’Afric-Art showcases African art and culture through unique creations and immersive artistic experiences.",
         "quick_links_title": "Quick Links",
         "quick_links": {
             "home": "Home",
             "about": "About",
-            "services": "Our Services",
-            "businesses": "Our Businesses",
+            "services": "Services",
+            "businesses": "Businesses",
             "contact": "Contact"
         },
         "destinations_title": "Destinations",
         "contact_title": "Contact",
         "contact": {
             "phone_label": "Phone",
-            "phone": "+237 698 03 21 81 / +237 671 28 21 49",
+            "phone": "+237 698 03 21 81",
             "email_label": "Email",
             "email": "contact@duchessedafricart.com",
             "hours_label": "Hours",
-            "hours": "Mon – Sat: 09:00 AM – 6:00 PM"
+            "hours": "Mon - Fri: 8am - 6pm"
         },
+        "newsletter_text": "Subscribe to our newsletter to receive updates and events.",
+        "newsletter_placeholder": "Your email",
+        "newsletter_button": "Subscribe",
         "rights_reserved": "All rights reserved.",
-        "design_by": "Design & Development by"
+        "design_by": "Design by"
     },
     "hero": {
         "slide1": {
@@ -226,36 +230,58 @@
         }
     },
     "visa": {
-        "title": "Our Destinations",
-        "description": "Discover Africa differently with our cultural and responsible trips",
-        "contactButton": "CONTACT US",
+        "title": "Explore 8 African destinations differently",
+        "description": "Duchesse d’Afric-Art Voyages invites you to discover authentic Africa through cultural, responsible and emotional journeys. From Cameroon to South Africa, experience breathtaking landscapes, warm people and unforgettable adventures.",
+        "contactButton": "REQUEST A QUOTE",
         "visas": {
-            "touristVisa": "Tourist Visa"
+            "touristVisa": "Tourist Visa",
+            "culturalTour": "Cultural Journey",
+            "adventureTrip": "Adventure & Nature",
+            "heritageTour": "Heritage & Traditions",
+            "coastalDiscovery": "Coastal Discovery",
+            "culturalImmersion": "Local Immersion",
+            "safariExperience": "Safari Experience",
+            "islandRetreat": "Island Retreat",
+            "ecoTourism": "Eco-Tourism",
+            "urbanAdventure": "Urban Adventure"
         },
         "countries": {
-            "benin": "Benin",
-            "cote_divoire": "Ivory Coast",
             "cameroon": "Cameroon",
+            "togo": "Togo",
+            "benin": "Benin",
+            "ghana": "Ghana",
+            "cote_divoire": "Ivory Coast",
             "tanzania": "Tanzania",
             "zanzibar": "Zanzibar",
-            "ghana": "Ghana",
             "rwanda": "Rwanda",
-            "togo": "Togo"
+            "south_africa": "South Africa"
         }
     },
     "mindzStudio": {
         "title": "Mindz Studio",
-        "subtitle": "Digital Agency",
-        "description": "Content creation, branding, and community management that convert. Mindz Studio develops strong digital identities and effective marketing campaigns tailored to your goals.",
-        "servicesButton": "Discover our services",
-        "contactButton": "Contact us",
-        "altMainImage": "Digital creation",
-        "altFloatingImage": "Marketing strategy"
+        "subtitle": "– Duchesse d’Afric-Art integrated digital agency",
+        "description": "Mindz Studio is Duchesse d’Afric-Art creative and technological agency. We craft impactful digital strategies, engaging content, and innovative web platforms that drive your brand to success.",
+        "services": {
+            "content": "Content Creation & Community Management",
+            "web": "Web Development & Professional Email Solutions",
+            "seo": "SEO & Digital Performance Optimization",
+            "strategy": "Tailored Digital & Business Strategy"
+        },
+        "showcaseButton": "View our projects",
+        "quoteButton": "Request a quote",
+        "altMainImage": "Digital creation and development",
+        "altFloatingImage": "Marketing and communication strategy"
     },
     "vinsmoselle": {
         "title": "Vinsmoselle Estates | Poll – Fabaire Cameroon",
         "subtitle": "Representation & Wine Events",
         "description": "Tastings, branding, and events around quality wines and sparkling wines. We support companies, individuals, and institutions with importation, masterclasses, and wine image consulting.",
+        "ddaTitle": "Duchesse d’Afric-Art Sparkling",
+        "dda1": "Official partner of Domaines Vinsmoselle (Poll-Fabaire).",
+        "dda2": "Products: sparkling wines & flavored wines.",
+        "dda3": "Exclusive distribution by 2FC Corporation SAS (starting November 1st).",
+        "dda4": "Events: tastings, brand activations, collaborations with lounges (BYM, Le Boj, Café de Paris).",
+        "dda5": "Photo gallery: products, events, and promotional materials.",
         "servicesButton": "Explore our events",
         "contactButton": "Contact us",
         "alt1": "Wine event",
@@ -264,6 +290,22 @@
         "alt4": "Wine masterclass",
         "backgroundAlt": "Wine background"
     },
+    "akiba": {
+        "title": "The Akiba Brunch",
+        "subtitle": "Signature & Lifestyle Event",
+        "description": "The unmissable weekend gathering. Blending gastronomy, art, music, and culture, The Akiba Brunch celebrates local craftsmanship in a refined, convivial atmosphere.",
+        "detailsTitle": "Overview",
+        "detail1": "Signature event showcasing creativity and local excellence.",
+        "detail2": "Objectives: promoting craftsmanship, networking, and premium entertainment.",
+        "detail3": "Photo & video gallery from previous editions, featuring highlights and artists.",
+        "detail4": "Spotlight on partners, artisans, and emerging talents.",
+        "reserveButton": "Book your seat",
+        "partnerButton": "Become a partner",
+        "alt1": "Brunch atmosphere",
+        "alt2": "Artists and guests",
+        "alt3": "Culinary details and decor",
+        "alt4": "Public and festive moments"
+    },
     "partners": {
         "title": "Our Partners",
         "description": "We collaborate with trusted partners who share our vision of excellence and innovation.",
@@ -271,6 +313,14 @@
             "franchiseIT": {
                 "name": "Franchise IT",
                 "description": "Our exclusive partner in digital strategy and technological innovation. Together, we build sustainable and creative solutions."
+            },
+            "boj": {
+                "name": "The Boj Restaurant",
+                "description": "A renowned restaurant in Douala, Le Boj is a place of flavors, elegance, and conviviality. It celebrates local culinary expertise while offering a unique gastronomic experience in a refined setting."
+            },
+            "pari": {
+                "name": "Café de Paris",
+                "description": "Café de Paris, a culinary gem in Douala, is a place where elegance meets conviviality. Each dish celebrates local expertise, enhanced by refined presentation and a warm atmosphere. Whether for a business lunch, a romantic dinner, or a gathering with friends, Café de Paris offers an unforgettable gastronomic experience, blending authentic flavors with the art of French living."
             }
         }
     },
@@ -433,5 +483,17 @@
             "title": "Contact Us",
             "description": "Let’s connect — your projects, our talents"
         }
+    },
+    "servicess": {
+        "notFound": "Service not found.",
+        "aboutTitle": "About the service",
+        "highlightsTitle": "Our key strengths",
+        "galleryTitle": "Service gallery",
+        "videoNotSupported": "Your browser does not support the video.",
+        "contactTitle": "Contact & Booking",
+        "contactDescription": "Interested in this service? Contact us for a quote or collaboration.",
+        "contactCTA": "Contact us",
+        "otherServices": "Other services",
+        "backToServices": "Back to services"
     }
 }

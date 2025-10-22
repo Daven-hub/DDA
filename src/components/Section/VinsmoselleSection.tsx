@@ -68,6 +68,19 @@ export default function VinsmoselleSection() {
                         {t("vinsmoselle.description")}
                     </p>
 
+                    <div className="bg-gray-50/50 p-4 rounded-xl border-l-4 border-red-600 shadow-sm">
+                        <h3 className="text-lg font-semibold text-red-700 mb-2">
+                            {t("vinsmoselle.ddaTitle")}
+                        </h3>
+                        <ul className="list-disc pl-5 space-y-1 text-[.93rem] text-gray-700">
+                            <li>{t("vinsmoselle.dda1")}</li>
+                            <li>{t("vinsmoselle.dda2")}</li>
+                            <li>{t("vinsmoselle.dda3")}</li>
+                            <li>{t("vinsmoselle.dda4")}</li>
+                            {/* <li>{t("vinsmoselle.dda5")}</li> */}
+                        </ul>
+                    </div>
+
                     <div className="flex gap-4">
                         <motion.a
                             whileHover={{ scale: 1.05 }}

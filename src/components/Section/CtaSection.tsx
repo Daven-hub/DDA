@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default function CtaSection() {
     const { t } = useTranslation();
@@ -23,12 +24,19 @@ export default function CtaSection() {
                     {t("cta.description")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="px-6 py-3 bg-white text-black font-semibold text-base md:text-lg hover:bg-gray-200 transition-colors rounded-none">
-                        {t("cta.servicesButton")}
-                    </button>
-                    <button className="px-6 py-3 border border-white text-white font-semibold text-base md:text-lg hover:bg-white hover:text-black transition-colors rounded-none">
+                    <Link to={'/services'}>
+                        <button className="px-6 py-3 bg-white text-black font-semibold text-base md:text-lg hover:bg-gray-200 transition-colors rounded-none">
+                            {t("cta.servicesButton")}
+                        </button>
+                    </Link>
+                    <a
+                        href="https://wa.me/237698032181?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 border border-white text-white font-semibold text-base md:text-lg hover:bg-white hover:text-black transition-colors rounded-none inline-block"
+                    >
                         {t("cta.contactButton")}
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

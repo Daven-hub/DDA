@@ -1,23 +1,23 @@
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 type Country = {
-    key: string; // clé unique pour la traduction
+    key: string;
     flag: string;
-    visas: string[]; // clé pour chaque visa
+    visas: string[];
 };
 
 const countries: Country[] = [
-    { key: "benin", flag: "https://flagcdn.com/w320/bj.png", visas: ["touristVisa"] },
-    { key: "cote_divoire", flag: "https://flagcdn.com/w320/ci.png", visas: ["touristVisa"] },
-    { key: "cameroon", flag: "https://flagcdn.com/w320/cm.png", visas: ["touristVisa"] },
-    { key: "tanzania", flag: "https://flagcdn.com/w320/tz.png", visas: ["touristVisa"] },
-    { key: "zanzibar", flag: "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Zanzibar.svg", visas: ["touristVisa"] },
-    { key: "ghana", flag: "https://flagcdn.com/w320/gh.png", visas: ["touristVisa"] },
-    { key: "rwanda", flag: "https://flagcdn.com/w320/rw.png", visas: ["touristVisa"] },
-    { key: "togo", flag: "https://flagcdn.com/w320/tg.png", visas: ["touristVisa"] },
+    { key: "cameroon", flag: "https://flagcdn.com/w320/cm.png", visas: ["touristVisa", "culturalTour"] },
+    { key: "togo", flag: "https://flagcdn.com/w320/tg.png", visas: ["touristVisa", "adventureTrip"] },
+    { key: "benin", flag: "https://flagcdn.com/w320/bj.png", visas: ["touristVisa", "heritageTour"] },
+    { key: "ghana", flag: "https://flagcdn.com/w320/gh.png", visas: ["touristVisa", "coastalDiscovery"] },
+    { key: "cote_divoire", flag: "https://flagcdn.com/w320/ci.png", visas: ["touristVisa", "culturalImmersion"] },
+    { key: "tanzania", flag: "https://flagcdn.com/w320/tz.png", visas: ["touristVisa", "safariExperience"] },
+    { key: "zanzibar", flag: "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Zanzibar.svg", visas: ["touristVisa", "islandRetreat"] },
+    { key: "rwanda", flag: "https://flagcdn.com/w320/rw.png", visas: ["touristVisa", "ecoTourism"] },
+    { key: "south_africa", flag: "https://flagcdn.com/w320/za.png", visas: ["touristVisa", "urbanAdventure"] },
 ];
 
 export default function VisaSection() {
@@ -34,6 +34,7 @@ export default function VisaSection() {
                 <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold leading-tight mb-4">
                     {t("visa.title")}
                 </h2>
+
                 <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] mb-6 max-w-lg">
                     {t("visa.description")}
                 </p>
@@ -47,11 +48,14 @@ export default function VisaSection() {
                     ))}
                 </div>
 
-                <Link to="/contact">
-                    <button className="bg-accent-yellow text-accent-blue font-semibold px-6 py-3 w-fit">
-                        {t("visa.contactButton")}
-                    </button>
-                </Link>
+                <a
+                    href="https://wa.me/237698032181"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-accent-yellow text-accent-blue font-semibold px-6 py-3 w-fit hover:scale-105 transition-transform rounded-lg inline-block"
+                >
+                    {t("visa.contactButton")}
+                </a>
             </div>
 
             {/* Bloc pays */}
@@ -60,7 +64,7 @@ export default function VisaSection() {
                     <div
                         key={country.key}
                         className={`flex flex-col items-center justify-between py-6 px-4 cursor-pointer transition-all min-w-[80px] md:min-w-0
-                        ${activeCountry.key === country.key
+              ${activeCountry.key === country.key
                                 ? "bg-[#0a2b5c] text-white"
                                 : "bg-[#082246]/80 text-gray-300 hover:bg-[#0a2b5c]"
                             }`}

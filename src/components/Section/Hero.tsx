@@ -14,7 +14,7 @@ type Slide = {
 const slides: Slide[] = [
     {
         id: 1,
-        image: "/images/culture.png",
+        image: "/images/cul.png",
         titleKey: "hero.slide1.title",
         subtitleKey: "hero.slide1.subtitle",
         descriptionKey: "hero.slide1.description",
@@ -22,7 +22,7 @@ const slides: Slide[] = [
     },
     {
         id: 2,
-        image: "/images/ar.png",
+        image: "/images/touriste.png",
         titleKey: "hero.slide2.title",
         subtitleKey: "hero.slide2.subtitle",
         descriptionKey: "hero.slide2.description",
@@ -30,7 +30,7 @@ const slides: Slide[] = [
     },
     {
         id: 3,
-        image: "/images/present.jpg",
+        image: "/images/vin3.png",
         titleKey: "hero.slide3.title",
         subtitleKey: "hero.slide3.subtitle",
         descriptionKey: "hero.slide3.description",
@@ -128,8 +128,11 @@ const Hero: React.FC = () => {
                     {t(slides[current].descriptionKey)}
                 </motion.p>
 
-                <motion.button
-                    className="px-6 py-3 bg-accent-yellow text-accent-blue font-semibold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-glow mt-4"
+                <motion.a
+                    href="https://wa.me/237698032181"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-accent-yellow text-accent-blue font-semibold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-glow mt-4 inline-block text-center"
                     key={slides[current].buttonTextKey}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -138,7 +141,7 @@ const Hero: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                 >
                     {t(slides[current].buttonTextKey)}
-                </motion.button>
+                </motion.a>
             </div>
 
             {/* Dots navigation */}
@@ -148,8 +151,8 @@ const Hero: React.FC = () => {
                         key={index}
                         onClick={() => setCurrent(index)}
                         className={`w-3 h-3 rounded-full border border-white transition-all duration-300 ${index === current
-                                ? "bg-white shadow-glow scale-125"
-                                : "bg-white/40 hover:bg-white/70"
+                            ? "bg-white shadow-glow scale-125"
+                            : "bg-white/40 hover:bg-white/70"
                             }`}
                         aria-label={`Aller au slide ${index + 1}`}
                     />

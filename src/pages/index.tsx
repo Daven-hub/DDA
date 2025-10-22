@@ -1,4 +1,5 @@
 import FreightOptions from "../components/Section/AbstractService"
+import AkibaBrunchSection from "../components/Section/AkibaBrunchSection"
 import ContactSection from "../components/Section/ContactSection"
 import CtaSection from "../components/Section/CtaSection"
 import EvenementSection from "../components/Section/EvenementSection"
@@ -30,7 +31,7 @@ export const Home = () => {
             <VisaSection/>
             <MindzStudioSection/>
             <VinsmoselleSection/>
-            {/* <AkibaBrunchSection/> */}
+            <AkibaBrunchSection/>
             <PartnersSection/>
             <ContactSection/>
             <StatisticsSection/>

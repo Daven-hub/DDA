@@ -47,5 +47,11 @@ export const paysData = [
     descriptionKey: "pays.togo.description",
     image: "/images/togo.png",
     drapeau: "https://flagcdn.com/w40/tg.png",
+  },
+  {
+    titreKey: "pays.afriqueSud.title",
+    descriptionKey: "pays.afriqueSud.description",
+    image: "/images/afriqueSud.png",
+    drapeau: "https://flagcdn.com/w40/za.png",
   }
 ];

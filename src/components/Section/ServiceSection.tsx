@@ -1,21 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-export type ServiceItem = {
-    id: number | string;
-    image: string;
-    titleKey: string;
-    subtitleKey?: string;
-    descriptionKey?: string;
-    longDescriptionKey?: string;
-    highlightsKey?: string[];
-    gallery?: string[];
-    quoteKey?: string;
-    stats?: { number: string; labelKey: string }[];
-    video?: string;
-    ctaKey?: string;
-};
+import type { ServiceItem } from "../../data/Service";
 
 type Props = {
     items: ServiceItem[];
@@ -93,7 +79,6 @@ export default function ServiceSectionCarousel({
         deltaX.current = 0;
     };
 
-    // Fonction pour obtenir les données traduites
     const getTranslatedItem = (item: ServiceItem) => ({
         id: item.id,
         image: item.image,
@@ -143,23 +128,37 @@ export default function ServiceSectionCarousel({
                     )}
                 </div>
 
-                {/* MOBILE */}
                 {isMobile ? (
                     <div className="grid grid-cols-1 gap-6 relative z-10">
                         {items.map((it) => {
                             const translatedItem = getTranslatedItem(it);
                             return (
-                                <article key={it.id} className="bg-white border border-gray-200 shadow-sm flex flex-col overflow-hidden">
-                                    <img src={translatedItem.image} alt={translatedItem.title} className="object-cover w-full h-48 sm:h-60" />
+                                <article
+                                    key={it.id}
+                                    className="bg-white border border-gray-200 shadow-sm flex flex-col overflow-hidden"
+                                >
+                                    <img
+                                        src={translatedItem.image}
+                                        alt={translatedItem.title}
+                                        className="object-cover w-full h-48 sm:h-60"
+                                    />
                                     <div className="p-4 flex flex-col flex-grow">
-                                        <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">{translatedItem.title}</h3>
+                                        <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">
+                                            {translatedItem.title}
+                                        </h3>
                                         {translatedItem.subtitle && (
-                                            <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90 mt-1">{translatedItem.subtitle}</p>
+                                            <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90 mt-1">
+                                                {translatedItem.subtitle}
+                                            </p>
                                         )}
-                                        {translatedItem.description && <p className="mt-2 text-[.9rem] text-black/90">{translatedItem.description}</p>}
+                                        {translatedItem.description && (
+                                            <p className="mt-2 text-[.9rem] text-black/90">
+                                                {translatedItem.description}
+                                            </p>
+                                        )}
                                         {translatedItem.cta && (
                                             <Link
-                                                to={`/services/${it.id}`}
+                                                to={`/services/${translatedItem.title}`}
                                                 className="mt-3 px-4 py-2 border border-accent-yellow text-accent-blue font-medium hover:bg-accent-yellow hover:text-accent-blue text-center transition-colors text-sm"
                                             >
                                                 {translatedItem.cta}
@@ -171,7 +170,6 @@ export default function ServiceSectionCarousel({
                         })}
                     </div>
                 ) : (
-                    /* DESKTOP */
                     <div
                         className="relative overflow-hidden rounded-none"
                         onMouseEnter={() => (hoveringRef.current = true)}
@@ -190,18 +188,34 @@ export default function ServiceSectionCarousel({
                             {extendedItems.map((it, index) => {
                                 const translatedItem = getTranslatedItem(it);
                                 return (
-                                    <article key={`${it.id}-${index}`} className="flex-shrink-0" style={{ width: `${100 / slidesToShow}%` }}>
+                                    <article
+                                        key={`${it.id}-${index}`}
+                                        className="flex-shrink-0"
+                                        style={{ width: `${100 / slidesToShow}%` }}
+                                    >
                                         <div className="bg-white border border-gray-200 shadow-sm h-full flex flex-col overflow-hidden rounded-none">
-                                            <img src={translatedItem.image} alt={translatedItem.title} className="object-cover w-full h-48 sm:h-60 md:h-72 lg:h-80" />
+                                            <img
+                                                src={translatedItem.image}
+                                                alt={translatedItem.title}
+                                                className="object-cover w-full h-48 sm:h-60 md:h-72 lg:h-80"
+                                            />
                                             <div className="p-4 sm:p-6 flex flex-col flex-grow">
-                                                <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">{translatedItem.title}</h3>
+                                                <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold">
+                                                    {translatedItem.title}
+                                                </h3>
                                                 {translatedItem.subtitle && (
-                                                    <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90 mt-1">{translatedItem.subtitle}</p>
+                                                    <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90 mt-1">
+                                                        {translatedItem.subtitle}
+                                                    </p>
                                                 )}
-                                                {translatedItem.description && <p className="mt-3 leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90">{translatedItem.description}</p>}
+                                                {translatedItem.description && (
+                                                    <p className="mt-3 leading-relaxed text-[.95rem] md:text-[1.07rem] text-black/90">
+                                                        {translatedItem.description}
+                                                    </p>
+                                                )}
                                                 {translatedItem.cta && (
                                                     <Link
-                                                        to={`/services/${it.id}`}
+                                                        to={`/services/${translatedItem.title}`}
                                                         className="mt-3 px-4 py-2 border border-accent-yellow text-accent-blue font-medium hover:bg-accent-yellow hover:text-accent-blue text-center transition-colors text-sm"
                                                     >
                                                         {translatedItem.cta}
@@ -216,7 +230,6 @@ export default function ServiceSectionCarousel({
                     </div>
                 )}
 
-                {/* GLOBAL CTA */}
                 <div className="mt-10 flex justify-center relative z-10">
                     <Link
                         to="/services"

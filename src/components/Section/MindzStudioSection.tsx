@@ -7,7 +7,6 @@ export default function MindzStudioSection() {
     return (
         <section className="relative px-[10%] py-16 overflow-hidden bg-gradient-to-b from-white to-gray-50">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-                {/* Texte */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,6 @@ export default function MindzStudioSection() {
                         {t("mindzStudio.description")}
                     </p>
 
-                    {/* Liste des services */}
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[.95rem] text-gray-800">
                         <li className="flex items-center gap-2">
                             <span className="text-accent-yellow">•</span> {t("mindzStudio.services.content")}
@@ -40,7 +38,6 @@ export default function MindzStudioSection() {
                         </li>
                     </ul>
 
-                    {/* CTA */}
                     <div className="flex gap-4 pt-4">
                         <motion.a
                             whileHover={{ scale: 1.05 }}
@@ -62,7 +59,6 @@ export default function MindzStudioSection() {
                     </div>
                 </motion.div>
 
-                {/* Images */}
                 <motion.div
                     initial={{ opacity: 0, x: 40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +66,6 @@ export default function MindzStudioSection() {
                     viewport={{ once: true }}
                     className="relative flex justify-center items-center"
                 >
-                    {/* Image principale */}
                     <div className="relative w-full h-96 overflow-hidden shadow-2xl rounded-2xl">
                         <img
                             src="/images/dev.png"
@@ -79,7 +74,6 @@ export default function MindzStudioSection() {
                         />
                     </div>
 
-                    {/* Image flottante */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9, y: 30 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -96,7 +90,6 @@ export default function MindzStudioSection() {
                 </motion.div>
             </div>
 
-            {/* Arrière-plan décoratif */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.1 }}

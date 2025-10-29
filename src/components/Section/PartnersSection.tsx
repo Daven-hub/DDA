@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const partnersData = [
     {
         key: "franchiseIT",
-        logo: "/images/fit.png",
+        logo: "/images/franchise_it.png",
     },
     {
         key: "boj",
@@ -16,7 +16,7 @@ const partnersData = [
         key: "pari",
         logo: "/images/paris.png",
     }
-    
+
 ];
 
 export default function PartnersSection() {
@@ -24,7 +24,6 @@ export default function PartnersSection() {
 
     return (
         <section className="relative w-full py-12 px-[10%] bg-gradient-to-br from-gray-50 via-white to-green-50 overflow-hidden">
-            {/* Titre */}
             <div className="text-center mb-12">
                 <motion.h2
                     initial={{ opacity: 0, y: 40 }}
@@ -47,7 +46,6 @@ export default function PartnersSection() {
                 </motion.p>
             </div>
 
-            {/* Grille des partenaires */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -68,14 +66,12 @@ export default function PartnersSection() {
                         }}
                         className="relative bg-white shadow-[0_6px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_45px_rgba(0,0,0,0.15)] transition-all duration-500 ease-out border border-gray-100 p-8 flex flex-col items-center text-center"
                     >
-                        {/* Glow subtil */}
                         <motion.div
                             className="absolute inset-0 bg-gradient-to-br from-green-100/30 via-transparent to-green-200/30"
                             animate={{ opacity: [0.3, 0.6, 0.3] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                         />
 
-                        {/* Logo */}
                         <motion.img
                             src={partner.logo}
                             alt={t(`partners.items.${partner.key}.name`)}
@@ -84,7 +80,6 @@ export default function PartnersSection() {
                             transition={{ type: "spring", stiffness: 200 }}
                         />
 
-                        {/* Détails */}
                         <div className="relative z-10">
                             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
                                 {t(`partners.items.${partner.key}.name`)}

@@ -26,13 +26,11 @@ const newProjects = [
 const FeaturesSection: React.FC = () => {
     const { t } = useTranslation();
 
-    // Récupérer les items avec le bon typage
     const valuesItems = t("features.values.items", { returnObjects: true }) as string[];
 
     return (
         <section className="w-full py-12">
             <div className="px-[10%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Images principales */}
                 <div className="grid grid-cols-2 gap-4">
                     <motion.img
                         src="/images/atr.png"
@@ -60,7 +58,6 @@ const FeaturesSection: React.FC = () => {
                     />
                 </div>
 
-                {/* Texte et valeurs */}
                 <div className="space-y-8">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -150,7 +147,7 @@ const FeaturesSection: React.FC = () => {
                             <p className="leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mb-4 text-black/90">
                                 {t(project.descriptionKey)}
                             </p>
-                            <Link to={`/services/${project.id}`}>
+                            <Link to={`/services/${t(project.titleKey)}`}>
                                 <button className="text-accent-blue bg-accent-yellow px-6 py-2 transition-colors">
                                     {t(project.ctaKey)}
                                 </button>

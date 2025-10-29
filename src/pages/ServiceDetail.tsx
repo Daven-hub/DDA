@@ -8,8 +8,11 @@ import { useTranslation } from "react-i18next";
 
 const ServiceDetail: React.FC = () => {
     const { t } = useTranslation();
-    const { id } = useParams();
-    const service = serviceData.find((s) => String(s.id) === id);
+    const { titleKey } = useParams<{ titleKey: string }>();
+
+    // Décodage de l'URL et recherche du service
+    const decodedTitle = decodeURIComponent(titleKey || "");
+    const service = serviceData.find((s) => t(s.titleKey) === decodedTitle);
 
     if (!service) {
         return (
@@ -21,7 +24,6 @@ const ServiceDetail: React.FC = () => {
 
     return (
         <>
-            {/* SECTION BANNIÈRE */}
             <motion.section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -29,7 +31,7 @@ const ServiceDetail: React.FC = () => {
                 transition={{ duration: 0.8 }}
                 className="w-full bg-gradient-to-b from-white to-gray-50 overflow-hidden"
             >
-                {/* HERO */}
+                {/* Hero Banner */}
                 <div
                     className="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center"
                     style={{
@@ -40,7 +42,6 @@ const ServiceDetail: React.FC = () => {
                     }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
-
                     <motion.div
                         className="relative z-10 text-center text-white px-6 md:px-12"
                         initial={{ opacity: 0, y: 40 }}
@@ -58,11 +59,11 @@ const ServiceDetail: React.FC = () => {
                     </motion.div>
                 </div>
 
-                {/* CONTENU */}
+                {/* Main Content */}
                 <div className="px-[10%] py-16 grid grid-cols-1 lg:grid-cols-3 gap-14">
-                    {/* COLONNE PRINCIPALE */}
+                    {/* Left Column */}
                     <div className="lg:col-span-2 space-y-14">
-                        {/* À PROPOS */}
+                        {/* About */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -83,7 +84,7 @@ const ServiceDetail: React.FC = () => {
                             )}
                         </motion.div>
 
-                        {/* POINTS FORTS */}
+                        {/* Highlights */}
                         {service.highlightsKey && (
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
@@ -106,7 +107,7 @@ const ServiceDetail: React.FC = () => {
                             </motion.div>
                         )}
 
-                        {/* GALERIE */}
+                        {/* Gallery */}
                         {service.gallery && (
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
@@ -124,7 +125,7 @@ const ServiceDetail: React.FC = () => {
                                             key={i}
                                             src={img}
                                             alt={`${t(service.titleKey)}-${i}`}
-                                            className="shadow-md hover:scale-105 transition-transform duration-300"
+                                            className="shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer"
                                             whileHover={{ scale: 1.05 }}
                                         />
                                     ))}
@@ -132,7 +133,7 @@ const ServiceDetail: React.FC = () => {
                             </motion.div>
                         )}
 
-                        {/* CITATION */}
+                        {/* Quote */}
                         {service.quoteKey && (
                             <motion.blockquote
                                 initial={{ opacity: 0 }}
@@ -145,7 +146,7 @@ const ServiceDetail: React.FC = () => {
                             </motion.blockquote>
                         )}
 
-                        {/* VIDÉO */}
+                        {/* Video */}
                         {service.video && (
                             <motion.div
                                 className="mt-12 overflow-hidden shadow-md"
@@ -164,7 +165,7 @@ const ServiceDetail: React.FC = () => {
                             </motion.div>
                         )}
 
-                        {/* CONTACT */}
+                        {/* Contact CTA */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -187,7 +188,7 @@ const ServiceDetail: React.FC = () => {
                         </motion.div>
                     </div>
 
-                    {/* ASIDE */}
+                    {/* Right Column */}
                     <motion.aside
                         className="bg-white/90 backdrop-blur-sm shadow-lg p-8 border-t-4 border-accent-yellow sticky top-24 self-start"
                         initial={{ opacity: 0, x: 50 }}
@@ -200,11 +201,11 @@ const ServiceDetail: React.FC = () => {
                         </h4>
                         <ul className="space-y-4 mb-8">
                             {serviceData
-                                .filter((s) => s.id !== service.id)
+                                .filter((s) => s.titleKey !== service.titleKey)
                                 .map((s) => (
-                                    <li key={s.id}>
+                                    <li key={s.titleKey}>
                                         <Link
-                                            to={`/services/${s.id}`}
+                                            to={`/services/${encodeURIComponent(t(s.titleKey))}`}
                                             className="block text-gray-700 hover:text-accent-yellow font-medium transition"
                                         >
                                             {t(s.titleKey)}
@@ -228,7 +229,7 @@ const ServiceDetail: React.FC = () => {
                     </motion.aside>
                 </div>
 
-                {/* RETOUR */}
+                {/* Back Button */}
                 <div className="px-[10%] pb-20 flex justify-center md:justify-start">
                     <motion.div whileHover={{ x: -5 }}>
                         <Link
@@ -242,7 +243,6 @@ const ServiceDetail: React.FC = () => {
                 </div>
             </motion.section>
 
-            {/* SECTION ÉVÉNEMENT */}
             <EvenementSection />
         </>
     );

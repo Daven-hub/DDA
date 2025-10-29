@@ -9,27 +9,46 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0066B3", // bleu profond (logo)
-        secondary: "#BA0000", // rouge
+        primary: {
+          DEFAULT: "#005B99", // Bleu principal : confiance, professionnalisme
+          light: "#007ACC",   // Survols, liens
+          dark: "#003F6B",    // Fonds foncés, header
+        },
+        secondary: {
+          DEFAULT: "#B00020", // Rouge profond : énergie maîtrisée
+          light: "#D32F2F",
+          dark: "#7F0000",
+        },
         accent: {
-          yellow: "#FFD300", // jaune vif
-          green: "#00843D",  // vert
-          blue: "#0066B3",   // bleu
-          red: "#BA0000",    // rouge
+          yellow: "#FFD700", // Jaune vif mais équilibré
+          green: "#00A651",  // Croissance, fiabilité
+          blue: "#007ACC",   // Accent clair
+          red: "#C62828",    // Alerte / erreur
         },
         neutral: {
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          300: "#D1D5DB",
+          400: "#9CA3AF",
+          500: "#6B7280",
+          600: "#4B5563",
+          700: "#374151",
+          800: "#1F2937",
+          900: "#111827",
           black: "#000000",
           white: "#FFFFFF",
-          gray: "#6B7280",
         },
       },
 
+
       fontFamily: {
-        sans: ["'Poppins'", "ui-sans-serif", "system-ui"], // lisible et moderne
-        heading: ["'Montserrat'", "ui-sans-serif", "system-ui"], // titres élégants
-        artistic: ["'Dancing Script'", "cursive"], // pour rappeler "galerie"
-        serif: ["'Lora'", "serif"], // pour un ton raffiné
+        sans: ["'Poppins'", "ui-sans-serif", "system-ui"],
+        heading: ["'Montserrat'", "ui-sans-serif", "system-ui"],
+        serif: ["'Lora'", "serif"],
+        artistic: ["'Dancing Script'", "cursive"],
       },
+
 
       screens: {
         xs: "480px",
@@ -39,6 +58,7 @@ const config: Config = {
         xl: "1280px",
         "2xl": "1536px",
       },
+
 
       container: {
         center: true,
@@ -51,6 +71,7 @@ const config: Config = {
         },
       },
 
+
       borderRadius: {
         DEFAULT: "0.5rem",
         xl: "1rem",
@@ -59,12 +80,14 @@ const config: Config = {
         full: "9999px",
       },
 
+
       boxShadow: {
         soft: "0 4px 12px rgba(0, 0, 0, 0.08)",
         bold: "0 6px 20px rgba(0, 0, 0, 0.15)",
         card: "0 10px 25px rgba(0, 0, 0, 0.1)",
-        glow: "0 0 15px rgba(0, 102, 179, 0.5)", // effet artistique
+        glow: "0 0 15px rgba(0, 102, 179, 0.5)", // effet lumineux sur hover
       },
+
 
       keyframes: {
         fadeIn: {
@@ -97,11 +120,15 @@ const config: Config = {
         rotate: "rotate 6s linear infinite",
       },
 
+
       spacing: {
         128: "32rem",
         144: "36rem",
         160: "40rem",
       },
+
+
+      darkMode: "class",
     },
   },
   plugins: [

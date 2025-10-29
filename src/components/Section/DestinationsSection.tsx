@@ -50,7 +50,6 @@ const destinations: Destination[] = [
 export default function DestinationsSection() {
     return (
         <section className="relative w-full min-h-screen py-24 md:py-32 bg-gray-50 overflow-hidden flex flex-col justify-center">
-            {/* Image de fond animée */}
             <motion.div
                 initial={{ opacity: 0, x: -50, y: 50 }}
                 animate={{ opacity: 0.1, x: 0, y: 0 }}
@@ -61,7 +60,6 @@ export default function DestinationsSection() {
             </motion.div>
 
             <div className="px-6 md:px-[10%] mx-auto w-full">
-                {/* Header */}
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
@@ -83,7 +81,6 @@ export default function DestinationsSection() {
                     </motion.p>
                 </div>
 
-                {/* Destinations Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {destinations.map((destination, index) => (
                         <motion.div

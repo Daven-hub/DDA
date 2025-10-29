@@ -74,7 +74,6 @@ const Hero: React.FC = () => {
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
         >
-            {/* Background images */}
             <div className="absolute inset-0">
                 {slides.map((slide, index) => (
                     <motion.img
@@ -92,10 +91,8 @@ const Hero: React.FC = () => {
                 ))}
             </div>
 
-            {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-10" />
 
-            {/* Content */}
             <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-[10%] py-20 space-y-6 z-20">
                 <motion.p
                     className="text-sm md:text-base font-light tracking-[0.3em] uppercase mb-2"
@@ -144,7 +141,6 @@ const Hero: React.FC = () => {
                 </motion.a>
             </div>
 
-            {/* Dots navigation */}
             <div className="absolute right-5 top-1/2 -translate-y-1/2 flex flex-col space-y-3 z-30">
                 {slides.map((_, index) => (
                     <button

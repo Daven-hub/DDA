@@ -21,7 +21,6 @@ const About = () => {
                 overlayIntensity="medium"
             />
 
-            {/* --- Section histoire --- */}
             <section className="px-[10%] py-16 flex flex-col md:flex-row items-center gap-12">
                 <motion.img
                     src="/images/aboutS.png"
@@ -54,7 +53,6 @@ const About = () => {
                 </motion.div>
             </section>
 
-            {/* --- Section statistiques --- */}
             <section className="relative w-full">
                 <div
                     className="absolute inset-0"
@@ -74,7 +72,6 @@ const About = () => {
                 </div>
             </section>
 
-            {/* --- Section fondatrice --- */}
             <section className="px-[10%] py-20 bg-primary/5 flex flex-col md:flex-row items-center gap-12">
                 <motion.div
                     className="w-full md:w-1/2 flex-shrink-0"

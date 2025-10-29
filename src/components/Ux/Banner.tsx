@@ -64,7 +64,6 @@ const Banner = ({
         <section
             className={`relative w-full ${heightClasses[height]} flex items-end justify-start overflow-hidden`}
         >
-            {/* Image de fond */}
             <motion.div
                 className="absolute inset-0 w-full h-full"
                 variants={imageVariants}

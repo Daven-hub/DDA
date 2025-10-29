@@ -499,5 +499,11 @@
         "contactCTA": "Nous contacter",
         "otherServices": "Autres services",
         "backToServices": "Retour aux services"
+    },
+    "gallery": {
+        "bannerTitle": "Notre Action en Images",
+        "bannerDescription": "Découvrez les moments forts de notre engagement",
+        "title": "Galerie immersive",
+        "subtitle": "Explorez nos plus beaux instants en image. Cliquez pour agrandir."
     }
 }

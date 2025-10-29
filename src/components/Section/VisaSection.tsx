@@ -29,7 +29,6 @@ export default function VisaSection() {
             className="flex flex-col md:flex-row bg-cover bg-center min-h-[70vh]"
             style={{ backgroundImage: "url('/images/avion.png')" }}
         >
-            {/* Bloc gauche */}
             <div className="flex-1 bg-accent-green/70 text-white px-[10%] py-12 flex flex-col justify-center">
                 <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold leading-tight mb-4">
                     {t("visa.title")}
@@ -58,7 +57,6 @@ export default function VisaSection() {
                 </a>
             </div>
 
-            {/* Bloc pays */}
             <div className="flex overflow-x-auto md:overflow-visible no-scrollbar scroll-smooth">
                 {countries.map((country) => (
                     <div

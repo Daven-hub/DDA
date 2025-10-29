@@ -51,7 +51,7 @@ export const paysData = [
   {
     titreKey: "pays.afriqueSud.title",
     descriptionKey: "pays.afriqueSud.description",
-    image: "/images/afriqueSud.png",
+    image: "/images/sud.png",
     drapeau: "https://flagcdn.com/w40/za.png",
   }
 ];

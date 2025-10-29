@@ -8,7 +8,6 @@ export default function AkibaBrunchSection() {
     <section className="relative w-full px-[10%] py-16 bg-gradient-to-br from-orange-50 via-white to-yellow-50 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
-        {/* Texte à gauche */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -61,7 +60,6 @@ export default function AkibaBrunchSection() {
           </div>
         </motion.div>
 
-        {/* Galerie photos à droite */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -103,7 +101,6 @@ export default function AkibaBrunchSection() {
         </motion.div>
       </div>
 
-      {/* Décor lumineux */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.1 }}

@@ -40,7 +40,6 @@ const SlimLanguageSwitcher = () => {
             ref={dropdownRef}
             className="fixed top-1/3 left-0 z-[1000] flex flex-col items-start"
         >
-            {/* Dropdown */}
             {open && (
                 <div className="mb-1 w-32 bg-white/95 backdrop-blur-md border border-gray-200 shadow-card rounded-r-xl overflow-hidden animate-slideDown">
                     {languages.map((lang) => (
@@ -59,7 +58,6 @@ const SlimLanguageSwitcher = () => {
                 </div>
             )}
 
-            {/* Slim Button */}
             <button
                 onClick={() => setOpen(!open)}
                 className="w-10 h-10 flex items-center justify-center bg-accent-blue shadow-soft hover:shadow-bold text-white font-bold rounded-r-lg transition-all duration-300 hover:bg-accent-blue/90 hover:scale-105"

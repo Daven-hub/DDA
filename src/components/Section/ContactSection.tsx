@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const images = ["/images/a.png", "/images/vins2.png", "/images/culte.png"]; // ajoute tes propres images ici
+const images = ["/images/a.png", "/images/vins2.png", "/images/culte.png"];
 
 const ContactSection = () => {
     const { t } = useTranslation();
@@ -16,7 +16,6 @@ const ContactSection = () => {
     });
     const [currentImage, setCurrentImage] = useState(0);
 
-    // changement automatique d’image toutes les 5s
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
@@ -40,11 +39,9 @@ const ContactSection = () => {
             className="relative overflow-hidden py-12 text-white bg-cover bg-center bg-no-repeat transition-all duration-1000"
             style={{ backgroundImage: `url(${images[currentImage]})` }}
         >
-            {/* Overlay sombre */}
             <div className="absolute inset-0 bg-black/70"></div>
 
             <div className="relative z-10 px-[10%] mx-auto">
-                {/* Titre */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -59,9 +56,7 @@ const ContactSection = () => {
                     </p>
                 </motion.div>
 
-                {/* Contenu principal */}
                 <div className="grid md:grid-cols-2 gap-12">
-                    {/* Infos de contact */}
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -84,7 +79,6 @@ const ContactSection = () => {
                             text={t("contact.address.text")}
                         />
 
-                        {/* Carte intégrée */}
                         <div className="h-64 w-full border border-white/20 shadow-lg overflow-hidden">
                             <iframe
                                 title="map-douala"
@@ -97,7 +91,6 @@ const ContactSection = () => {
                         </div>
                     </motion.div>
 
-                    {/* Formulaire */}
                     <motion.form
                         initial={{ opacity: 0, x: 40 }}
                         whileInView={{ opacity: 1, x: 0 }}

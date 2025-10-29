@@ -39,7 +39,6 @@ export default function SlideShow() {
 
     return (
         <div className="w-full py-12 px-[10%]">
-            {/* Version mobile : Carousel */}
             <div className="md:hidden">
                 <Swiper
                     modules={[Pagination]}
@@ -63,7 +62,6 @@ export default function SlideShow() {
                 </Swiper>
             </div>
 
-            {/* Version desktop : Grille */}
             <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-10">
                 {slides.map((slide) => (
                     <div

@@ -29,7 +29,6 @@ export default function MissionsSection() {
     return (
         <section className="relative w-full py-12 overflow-hidden">
             <div className="px-[10%] mx-auto">
-                {/* Header */}
                 <div className="text-center mb-12">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
@@ -51,7 +50,6 @@ export default function MissionsSection() {
                     </motion.p>
                 </div>
 
-                {/* Missions Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {missions.map((mission, index) => (
                         <motion.div

@@ -33,7 +33,6 @@ export default function VisionValeurs() {
 
     return (
         <section className="relative w-full px-[10%] py-12 bg-gray-900 text-white overflow-hidden">
-            {/* Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div
                     className="w-full h-full -scale-x-100"
@@ -48,13 +47,11 @@ export default function VisionValeurs() {
             <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-400/5 blur-lg"></div>
 
             <motion.div ref={ref} initial="hidden" animate={inView ? "visible" : "hidden"} variants={containerVariants} className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                {/* Texte */}
                 <motion.div variants={itemVariants} className="space-y-8">
                     <motion.h2 variants={itemVariants} className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-white leading-tight">
                         {t("visionValeurs.title")}
                     </motion.h2>
 
-                    {/* Vision */}
                     <motion.div variants={itemVariants} className="group p-6 bg-white/5 backdrop-blur-sm border border-white/10 hover:border-green-400/30 transition-all duration-500 hover:-translate-y-2">
                         <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-accent-green mb-4 flex items-center">
                             <FaEye className="w-5 h-5 mr-3 animate-pulse" />
@@ -65,7 +62,6 @@ export default function VisionValeurs() {
                         </p>
                     </motion.div>
 
-                    {/* Valeurs */}
                     <motion.div variants={itemVariants} className="group p-6 bg-white/5 backdrop-blur-sm border border-white/10 hover:border-purple-400/30 transition-all duration-500 hover:-translate-y-2">
                         <h3 className="text-[.9rem] md:text-[1.4rem] font-heading font-bold text-accent-green mb-4 flex items-center">
                             <FaHeart className="w-5 h-5 mr-3 animate-pulse" />
@@ -81,7 +77,6 @@ export default function VisionValeurs() {
                     </motion.div>
                 </motion.div>
 
-                {/* Galerie */}
                 <motion.div variants={itemVariants} className="relative">
                     <div className="grid grid-cols-2 gap-4">
                         {galleryImages.map((img, idx) => (

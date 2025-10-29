@@ -25,7 +25,6 @@ const AboutSectionExperimenter: React.FC = () => {
             ref={sectionRef}
             className="relative bg-gradient-to-b from-white to-gray-50 py-12 px-[10%] overflow-hidden"
         >
-            {/* Background Shapes */}
             <motion.div
                 animate={{ rotate: 360, x: [0, 50, 0], y: [0, -50, 0] }}
                 transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
@@ -38,7 +37,6 @@ const AboutSectionExperimenter: React.FC = () => {
             ></motion.div>
 
             <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                {/* Left: Image */}
                 <div className="flex-1 flex flex-col gap-6 w-full">
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
@@ -55,7 +53,6 @@ const AboutSectionExperimenter: React.FC = () => {
                     </motion.div>
                 </div>
 
-                {/* Right: Text */}
                 <motion.div
                     initial="hidden"
                     animate={isVisible ? "visible" : "hidden"}
@@ -73,7 +70,6 @@ const AboutSectionExperimenter: React.FC = () => {
                         {t("aboutSection.description")}
                     </p>
 
-                    {/* CTA */}
                     <div className="flex flex-wrap gap-4 mt-6">
                         <motion.a
                             href="/services"

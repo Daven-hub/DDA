@@ -495,5 +495,11 @@
         "contactCTA": "Contact us",
         "otherServices": "Other services",
         "backToServices": "Back to services"
+    },
+    "gallery": {
+        "bannerTitle": "Our Work in Pictures",
+        "bannerDescription": "Discover the highlights of our commitment",
+        "title": "Immersive Gallery",
+        "subtitle": "Explore our most beautiful moments in pictures. Click to enlarge."
     }
 }

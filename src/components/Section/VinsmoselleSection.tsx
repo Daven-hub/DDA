@@ -8,7 +8,6 @@ export default function VinsmoselleSection() {
         <section className="relative w-full px-[10%] py-12 overflow-hidden">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
-                {/* Images à gauche */}
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -49,7 +48,6 @@ export default function VinsmoselleSection() {
                     </motion.div>
                 </motion.div>
 
-                {/* Texte à droite */}
                 <motion.div
                     initial={{ opacity: 0, x: 40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -103,7 +101,6 @@ export default function VinsmoselleSection() {
                 </motion.div>
             </div>
 
-            {/* Image de fond subtile côté droit */}
             <div className="absolute inset-y-0 right-0 w-1/2 opacity-10 mix-blend-multiply">
                 <img
                     src="/images/vin.png"
@@ -112,7 +109,6 @@ export default function VinsmoselleSection() {
                 />
             </div>
 
-            {/* Background décoratif (bulles floues) */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.1 }}

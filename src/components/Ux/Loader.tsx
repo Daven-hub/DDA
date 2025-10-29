@@ -10,7 +10,6 @@ const colors = [
 const Loader = () => {
     return (
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-neutral-black text-neutral-white">
-            {/* Cercle principal avec rotation multicolore */}
             <div className="relative w-28 h-28 mb-8">
                 {colors.map((color, i) => (
                     <motion.div
@@ -31,7 +30,6 @@ const Loader = () => {
                 ))}
             </div>
 
-            {/* Effet de pulsation du texte */}
             <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{

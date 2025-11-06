@@ -81,7 +81,7 @@ const About = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <img
-                        src="/images/m.png"
+                        src="/images/fonder.png"
                         alt={t("about.founderAlt")}
                         className="shadow-card object-cover w-full h-auto rounded-md"
                     />

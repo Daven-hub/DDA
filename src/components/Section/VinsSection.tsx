@@ -43,10 +43,10 @@ const AboutSectionExperimenter: React.FC = () => {
                         animate={isVisible ? { scale: 1, opacity: 1 } : {}}
                         transition={{ duration: 0.8 }}
                         whileHover={{ scale: 1.05, rotate: 1 }}
-                        className="w-full h-80 lg:h-[500px] overflow-hidden shadow-xl cursor-pointer"
+                        className="w-full h-80 lg:h-[500px] overflow-hidden cursor-pointer"
                     >
                         <img
-                            src="/images/aboutS.png"
+                            src="/images/about2.png"
                             alt={t("aboutSection.title")}
                             className="w-full h-full object-cover object-top transition-transform duration-500"
                         />

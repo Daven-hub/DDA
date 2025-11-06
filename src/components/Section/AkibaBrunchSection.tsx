@@ -5,7 +5,7 @@ export default function AkibaBrunchSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative w-full px-[10%] py-16 bg-gradient-to-br from-orange-50 via-white to-yellow-50 overflow-hidden">
+    <section className="relative w-full px-[10%] py-16 bg-gradient-to-br from-green-50 via-white to-yellow-50 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
         <motion.div
@@ -17,7 +17,7 @@ export default function AkibaBrunchSection() {
         >
           <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-gray-900 leading-tight">
             {t("akiba.title")}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-500">
+            <span className="block text-transparent bg-clip-text bg-accent-green">
               {t("akiba.subtitle")}
             </span>
           </h2>
@@ -26,8 +26,8 @@ export default function AkibaBrunchSection() {
             {t("akiba.description")}
           </p>
 
-          <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border-l-4 border-amber-500 shadow-sm">
-            <h3 className="text-lg font-semibold text-amber-700 mb-2">
+          <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border-l-4 border-accent-yellow shadow-sm">
+            <h3 className="text-lg font-semibold text-accent-green mb-2">
               {t("akiba.detailsTitle")}
             </h3>
             <ul className="list-disc pl-5 space-y-1 text-[.93rem] text-gray-700">
@@ -44,7 +44,7 @@ export default function AkibaBrunchSection() {
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-500 text-white font-semibold shadow-lg rounded-lg"
+              className="px-6 py-3 bg-accent-green text-white font-semibold shadow-lg rounded-lg"
             >
               {t("akiba.reserveButton")}
             </motion.a>
@@ -53,7 +53,7 @@ export default function AkibaBrunchSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="/contact"
-              className="px-6 py-3 border-2 border-amber-500 text-gray-800 font-semibold hover:bg-amber-50 transition rounded-lg"
+              className="px-6 py-3 border-2 border-accent-green text-gray-800 font-semibold hover:bg-amber-50 transition rounded-lg"
             >
               {t("akiba.partnerButton")}
             </motion.a>

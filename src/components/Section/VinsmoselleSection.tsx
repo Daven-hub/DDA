@@ -17,7 +17,7 @@ export default function VinsmoselleSection() {
                 >
                     <div className="col-span-2 h-64 overflow-hidden shadow-xl">
                         <img
-                            src="/images/vins1.png"
+                            src="/images/blanc1.png"
                             alt={t("vinsmoselle.alt1")}
                             className="object-cover w-full h-full"
                         />
@@ -25,7 +25,7 @@ export default function VinsmoselleSection() {
 
                     <motion.div whileHover={{ scale: 1.05 }} className="h-40 overflow-hidden shadow-lg">
                         <img
-                            src="/images/vins2.png"
+                            src="/images/blanc2.png"
                             alt={t("vinsmoselle.alt2")}
                             className="object-cover w-full h-full"
                         />
@@ -57,7 +57,7 @@ export default function VinsmoselleSection() {
                 >
                     <h2 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight">
                         {t("vinsmoselle.title")}
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-pink-600 to-orange-500">
+                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-600 to-green-500">
                             {t("vinsmoselle.subtitle")}
                         </span>
                     </h2>
@@ -66,8 +66,8 @@ export default function VinsmoselleSection() {
                         {t("vinsmoselle.description")}
                     </p>
 
-                    <div className="bg-gray-50/50 p-4 rounded-xl border-l-4 border-red-600 shadow-sm">
-                        <h3 className="text-lg font-semibold text-red-700 mb-2">
+                    <div className="bg-gray-50/50 p-4 rounded-xl border-l-4 border-green-600 shadow-sm">
+                        <h3 className="text-lg font-semibold text-accent-green mb-2">
                             {t("vinsmoselle.ddaTitle")}
                         </h3>
                         <ul className="list-disc pl-5 space-y-1 text-[.93rem] text-gray-700">
@@ -84,7 +84,7 @@ export default function VinsmoselleSection() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="/services"
-                            className="px-6 py-3 bg-gradient-to-r from-red-700 to-pink-600 text-white font-semibold shadow-lg"
+                            className="px-6 py-3 bg-gradient-to-r from-green-700 to-green-600 text-white font-semibold shadow-lg"
                         >
                             {t("vinsmoselle.servicesButton")}
                         </motion.a>
@@ -93,7 +93,7 @@ export default function VinsmoselleSection() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="/contact"
-                            className="px-6 py-3 border-2 border-red-700 text-gray-800 font-semibold hover:bg-gray-100 transition"
+                            className="px-6 py-3 border-2 border-green-700 text-gray-800 font-semibold hover:bg-gray-100 transition"
                         >
                             {t("vinsmoselle.contactButton")}
                         </motion.a>

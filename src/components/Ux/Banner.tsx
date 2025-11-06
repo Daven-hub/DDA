@@ -1,6 +1,6 @@
 import { motion, type Variants, type Transition } from "framer-motion";
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface BannerProps {
     imageSrc: string;
@@ -55,10 +55,10 @@ const Banner = ({
         visible: { scale: 1, transition: { duration: 1.5, ease } },
     };
 
-    const handleScrollToServices = () => {
-        const section = document.getElementById("services");
-        if (section) section.scrollIntoView({ behavior: "smooth" });
-    };
+    // const handleScrollToServices = () => {
+    //     const section = document.getElementById("services");
+    //     if (section) section.scrollIntoView({ behavior: "smooth" });
+    // };
 
     return (
         <section
@@ -104,7 +104,7 @@ const Banner = ({
                     </motion.p>
                 )}
 
-                <Link to={'/services'}>
+                {/* <Link to={'/services'}>
                     <motion.button
                         onClick={handleScrollToServices}
                         className="px-7 py-3 bg-accent-yellow text-accent-blue font-semibold text-base sm:text-lg shadow-md hover:bg-yellow-400 hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300"
@@ -116,7 +116,7 @@ const Banner = ({
                     >
                         Nos services
                     </motion.button>
-                </Link>
+                </Link> */}
 
                 {children && (
                     <motion.div className="mt-6" variants={itemVariants}>

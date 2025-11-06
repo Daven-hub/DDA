@@ -4,33 +4,34 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const partnersData = [
-    {
-        key: "franchiseIT",
-        logo: "/images/franchise_it.png",
-    },
-    {
-        key: "boj",
-        logo: "/images/boj.png",
-    },
-    {
-        key: "pari",
-        logo: "/images/paris.png",
-    }
+    { key: "franchiseIT", logo: "/images/franchise_it.png" },
+    { key: "boj", logo: "/images/boj.png" },
+    { key: "pari", logo: "/images/paris.png" },
+    { key: "bym", logo: "/images/bym.jpg" },
+    { key: "cap", logo: "/images/cap.png" },
+    { key: "pro", logo: "/images/pro.png" },
+    { key: "stone", logo: "/images/stone.png" },
+    { key: "kom", logo: "/images/kom.png" },
+    { key: "cavi", logo: "/images/cavi.png" },
+    { key: "jd", logo: "/images/jd.png" }
 
 ];
 
 export default function PartnersSection() {
     const { t } = useTranslation();
 
+    const duplicatedPartners = [...partnersData, ...partnersData];
+
     return (
-        <section className="relative w-full py-12 px-[10%] bg-gradient-to-br from-gray-50 via-white to-green-50 overflow-hidden">
-            <div className="text-center mb-12">
+        <section className="relative w-full py-20 bg-gradient-to-br from-white via-gray-50 to-green-50 overflow-hidden">
+            {/* Titre */}
+            <div className="text-center mb-12 px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-black/90 leading-tight"
+                    className="text-[2rem] md:text-[3rem] font-heading font-bold text-gray-900"
                 >
                     {t("partners.title")}
                 </motion.h2>
@@ -40,57 +41,42 @@ export default function PartnersSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="text-black/90 mt-3 leading-relaxed text-[.95rem] md:text-[1.07rem] max-w-3xl mx-auto"
+                    className="text-gray-600 mt-3 leading-relaxed text-[1rem] md:text-[1.1rem] max-w-3xl mx-auto"
                 >
                     {t("partners.description")}
                 </motion.p>
             </div>
 
-            <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.7 }}
-                viewport={{ once: true }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center"
-            >
-                {partnersData.map((partner, index) => (
-                    <motion.div
-                        key={partner.key}
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: index * 0.2 }}
-                        viewport={{ once: true }}
-                        whileHover={{
-                            scale: 1.02,
-                            boxShadow: "0 12px 35px rgba(0,0,0,0.12)",
-                        }}
-                        className="relative bg-white shadow-[0_6px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_45px_rgba(0,0,0,0.15)] transition-all duration-500 ease-out border border-gray-100 p-8 flex flex-col items-center text-center"
-                    >
+            {/* Carrousel défilant */}
+            <div className="relative w-full overflow-hidden">
+                <motion.div
+                    className="flex items-center gap-10 w-max"
+                    animate={{ x: ["0%", "-50%"] }}
+                    transition={{
+                        duration: 20,
+                        ease: "linear",
+                        repeat: Infinity,
+                    }}
+                >
+                    {duplicatedPartners.map((partner, index) => (
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-br from-green-100/30 via-transparent to-green-200/30"
-                            animate={{ opacity: [0.3, 0.6, 0.3] }}
-                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                        />
-
-                        <motion.img
-                            src={partner.logo}
-                            alt={t(`partners.items.${partner.key}.name`)}
-                            className="relative z-10 w-36 h-36 object-contain mb-5"
+                            key={index}
                             whileHover={{ scale: 1.05 }}
-                            transition={{ type: "spring", stiffness: 200 }}
-                        />
+                            className=" flex items-center justify-center w-52 h-40 md:w-60 md:h-44 flex-shrink-0"
+                        >
+                            <img
+                                src={partner.logo}
+                                alt={t(`partners.items.${partner.key}.name`)}
+                                className="w-40 h-40 object-contain p-4"
+                            />
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
 
-                        <div className="relative z-10">
-                            <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-                                {t(`partners.items.${partner.key}.name`)}
-                            </h3>
-                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                {t(`partners.items.${partner.key}.description`)}
-                            </p>
-                        </div>
-                    </motion.div>
-                ))}
-            </motion.div>
+            {/* léger dégradé sur les bords pour effet immersif */}
+            <div className="pointer-events-none absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            <div className="pointer-events-none absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent"></div>
         </section>
     );
 }

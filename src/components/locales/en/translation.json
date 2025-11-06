@@ -101,7 +101,7 @@
         "title": "Our Vision & Values",
         "vision": {
             "title": "Vision",
-            "description": "To become a reference in Central Africa for responsible cultural travels, high-end event organization, and authentic brand strategy."
+            "description": "We are committed to promoting responsible and authentic tourism in Cameroon and Africa. Our long-term vision is to become a key player in the tourism and events sector in Cameroon by organizing unforgettable experiences such as team-building activities for local businesses, as well as unique tours and cultural events."
         },
         "valeurs": [
             "Authenticity",
@@ -166,25 +166,6 @@
             ],
             "quote": "“Wine is bottled poetry.” – Robert Louis Stevenson",
             "cta": "Organize an event"
-        },
-        "akiba": {
-            "title": "The Akiba Brunch",
-            "subtitle": "Cultural & artistic brunch",
-            "description": "A friendly meeting that promotes the Cameroonian creative scene. Between food, music, and artisan market.",
-            "longDescription": "The Akiba Brunch is more than a meal: it’s a sensory and artistic experience. We highlight local artists, artisans, and chefs to offer a unique moment of sharing and discovery.",
-            "highlights": [
-                "Local artistic and musical scene",
-                "African fusion cuisine",
-                "Creative artisan market"
-            ],
-            "stats": [
-                "Successful editions",
-                "Guest artists",
-                "Participants",
-                "Cities covered"
-            ],
-            "quote": "“Where art meets conviviality, the soul of Cameroon expresses itself.”",
-            "cta": "Discover the next brunch"
         },
         "mindz": {
             "title": "MindzStudio",
@@ -321,6 +302,34 @@
             "pari": {
                 "name": "Café de Paris",
                 "description": "Café de Paris, a culinary gem in Douala, is a place where elegance meets conviviality. Each dish celebrates local expertise, enhanced by refined presentation and a warm atmosphere. Whether for a business lunch, a romantic dinner, or a gathering with friends, Café de Paris offers an unforgettable gastronomic experience, blending authentic flavors with the art of French living."
+            },
+            "bym": {
+                "name": "",
+                "description": ""
+            },
+            "cap": {
+                "name": "",
+                "description": ""
+            },
+            "pro": {
+                "name": "",
+                "description": ""
+            },
+            "stone": {
+                "name": "",
+                "description": ""
+            },
+            "kom": {
+                "name": "",
+                "description": ""
+            },
+            "cavi": {
+                "name": "",
+                "description": ""
+            },
+            "jd": {
+                "name": "",
+                "description": ""
             }
         }
     },
@@ -501,5 +510,444 @@
         "bannerDescription": "Discover the highlights of our commitment",
         "title": "Immersive Gallery",
         "subtitle": "Explore our most beautiful moments in pictures. Click to enlarge."
+    },
+    "objectif": {
+        "title": "The Akiba Brunch",
+        "objectifs": "Objectives:",
+        "culture": {
+            "title": "Culture",
+            "description": "Promote Cameroon through its culture, gastronomy, and local talents via the involvement of artists, entrepreneurs, etc..."
+        },
+        "rencontre": {
+            "title": "Networking",
+            "description": "Create professional networking opportunities: provide a space for Cameroonian companies and entrepreneurs. Offer team-building opportunities for local companies, promoting team cohesion and creativity.",
+            "img1Alt": "Networking",
+            "img2Alt": "Team"
+        },
+        "divertissement": {
+            "title": "Entertainment",
+            "description": "Boost the event sector in Cameroon by offering a recurring event 2 to 3 times per year."
+        }
+    },
+    "sponsorSection": {
+        "title": "Why \nsponsor?",
+        "subtitle": "The Akiba Brunch",
+        "description": "This event offers unique visibility for Cameroonian companies. By becoming a sponsor, you associate your brand with an innovative and inspiring concept that promotes local culture and strengthens professional connections.",
+        "opportunitiesTitle": "Opportunities for sponsors:",
+        "opportunities": {
+            "list1": "Visibility through our communication channels (social media, traditional media, banners, etc.).",
+            "list2": "Enhancement of your brand or organization with our local and international audience.",
+            "list3": "Highlight your products/services/expertise during the event."
+        },
+        "stats": {
+            "networking": {
+                "label": "Networking",
+                "value": "100%"
+            },
+            "enjoy": {
+                "label": "Enjoy yourself",
+                "value": "100%"
+            }
+        },
+        "imageAlt": "Woman on the beach"
+    },
+    "perspectivesAvenir": {
+        "title": "Future Perspectives",
+        "subtitle": "Cameroon and beyond",
+        "description": "In 2025 and beyond, we plan to expand our offerings with more diverse tours in several African countries, while also strengthening our presence in Cameroon by offering:",
+        "points": [
+            "Local discovery stays for a day or a weekend, making these experiences accessible to all budgets.",
+            "An extended team-building program for companies wishing to organize tailor-made events."
+        ],
+        "finalText": {
+            "part1": "We will also continue to organize the ",
+            "highlight": "Akiba Brunch",
+            "part2": " several times a year to energize professional and cultural meetings in a friendly and relaxed setting."
+        },
+        "galleryButton": "View the gallery"
+    },
+    "akibaSection": {
+        "title": "Cultural & Artistic Brunch",
+        "subtitle": "A friendly event showcasing Cameroon's creative scene, including cuisine, music, and artisan markets.",
+        "description": "The Akiba Brunch is more than a meal: it's a sensory and artistic experience. We highlight local artists, artisans, and chefs to offer a unique moment of sharing and discovery.",
+        "highlights": {
+            "title": "Highlights:",
+            "points": [
+                "Local artistic and musical stage",
+                "African fusion cuisine",
+                "Creative artisan market"
+            ]
+        },
+        "quote": "\"Where art meets conviviality, the soul of Cameroon expresses itself.\"",
+        "ctaButton": "Discover the next brunch",
+        "imageAlt": "The Akiba Brunch"
+    },
+    "voyageObjectif": {
+        "title": "Duchesse d’Afric-Art Travels",
+        "subtitle": "Goals and Vision",
+        "immersionTitle": "Cultural and Human Immersion",
+        "immersionDescription": "Each trip is designed as an immersion. We work with local guides, artisans and chefs to provide you with a human, ethical and sustainable experience.",
+        "immersionPoints": [
+            "Discover local art and culture",
+            "Meet local artisans and chefs",
+            "Authentic culinary experiences"
+        ],
+        "rencontreTitle": "Encounters and Exchanges",
+        "rencontreDescription": "Encourage human exchanges and encounters with local communities and other travelers.",
+        "rencontrePoints": [
+            "Participate in cultural workshops",
+            "Share sessions with locals",
+            "Collaborative and educational activities"
+        ],
+        "experienceTitle": "Unforgettable Experience",
+        "experienceDescription": "Our tours will let you discover Africa like never before, from Cameroon to South Africa, in a responsible and ethical way."
+    },
+    "voyagePourquoi": {
+        "title": "Why choose Duchesse d’Afric-Art Travels?",
+        "subtitle": "Travel differently",
+        "description": "We offer immersive and responsible journeys designed for art, culture and gastronomy enthusiasts.",
+        "advantages": [
+            "Guided by experienced local guides",
+            "Total immersion in local culture and gastronomy",
+            "Ethical and sustainable experiences",
+            "Discover unique landscapes and heritage"
+        ],
+        "ctaButton": "Contact us for your trip",
+        "imageAlt": "Immersive travel in Africa"
+    },
+    "voyagePerspectives": {
+        "title": "Future Perspectives",
+        "subtitle": "Cultural and responsible travels",
+        "description": "We aim to expand our tours to new African destinations and strengthen immersive experiences in Cameroon.",
+        "points": [
+            "Offer new cultural and gastronomic circuits",
+            "Develop team-building programs for companies",
+            "Create tailored and ethical experiences"
+        ],
+        "galleryButton": "See the gallery"
+    },
+    "voyageImmersion": {
+        "title": "Immersive Presentation",
+        "subtitle": "A human and sustainable approach",
+        "description": "Duchesse d’Afric-Art Travels opens the doors to authentic Africa through emotional and human-rich circuits.",
+        "highlights": [
+            "Local guides and cultural experts",
+            "Gastronomic and artisan experiences",
+            "Discover Africa’s landscapes and peoples",
+            "Responsible and immersive tours"
+        ],
+        "ctaButton": "Book your trip",
+        "imageAlt": "Immersive travel with Duchesse d’Afric-Art"
+    },
+    "mindzStudi": {
+        "title": "Mindz Studio –",
+        "subtitle": "Integrated Digital Agency",
+        "description": "Mindz Studio is the creative and technological agency of Duchesse d’Afric-Art. We design high-performance digital strategies, engaging content, and innovative web platforms that drive your brand to success.",
+        "ctaHero": "Contact Us",
+        "whyUs": {
+            "title": "Why choose Mindz Studio?",
+            "description": "Our team guides you in creating unique digital experiences, combining creativity, technology, and performance. Discover what makes us stand out.",
+            "reasons": [
+                "Expertise in tailor-made digital strategy",
+                "Creation of engaging and innovative content",
+                "High-performance web solutions and applications",
+                "Comprehensive support and personalized follow-up",
+                "SEO optimization & enhanced visibility",
+                "Immersive UX/UI design"
+            ],
+            "titles": [
+                "Strategy",
+                "Content",
+                "Web & Apps",
+                "Support",
+                "SEO",
+                "UX/UI Design"
+            ]
+        },
+        "servicesTitle": "Our Expertise",
+        "servicesList": [
+            {
+                "title": "Content Creation",
+                "desc": "Design of visual and written content tailored to your audience and objectives.",
+                "img": "/images/mindzstudio/services/content.webp"
+            },
+            {
+                "title": "Web Development",
+                "desc": "Websites, applications, and professional messaging for a high-performing digital presence.",
+                "img": "/images/mindzstudio/services/web.webp"
+            },
+            {
+                "title": "Digital Strategy",
+                "desc": "Planning and deploying customized digital and commercial strategies.",
+                "img": "/images/mindzstudio/services/strategy.webp"
+            },
+            {
+                "title": "SEO & Performance",
+                "desc": "Optimization of natural referencing and digital platform performance.",
+                "img": "/images/mindzstudio/services/seo.webp"
+            }
+        ],
+        "process": {
+            "title": "Our Approach",
+            "steps": [
+                "In-depth analysis and needs assessment",
+                "Design of personalized digital strategies",
+                "Content creation and solution development",
+                "Optimization, monitoring, and performance reporting"
+            ]
+        },
+        "cta": {
+            "title": "Ready to elevate your brand?",
+            "subtitle": "Contact us today to bring your digital projects to life.",
+            "button": "Request a Quote"
+        },
+        "altMainImage": "Mindz Studio team in action",
+        "altFloatingImage": "Example of Mindz Studio workspace"
+    },
+    "mindz": {
+        "sectionTitle": "Our Digital Services",
+        "sectionDesc": "Every service we provide is designed as a strategic lever to elevate your brand toward digital success. Our approach is based on performance, creativity, and a deep understanding of digital behaviors.",
+        "button": "Let's discuss your project",
+        "services": [
+            {
+                "title": "Content Creation & Community Management",
+                "description": "At Mindz Studio, we believe that content is the soul of a brand. Our teams design powerful editorial strategies that evoke emotion, strengthen the connection with your audience, and amplify the reach of your message across every platform.\n\nFrom brand storytelling to the daily management of your social networks, we build a strong and engaging digital identity supported by flawless visual and editorial consistency.",
+                "advantages": [
+                    "Tailor-made visual and written content creation.",
+                    "Smart animation and moderation of your communities.",
+                    "Performance analysis and continuous strategy improvement.",
+                    "Creative digital campaigns to boost engagement.",
+                    "Development of an editorial line aligned with your brand values."
+                ]
+            },
+            {
+                "title": "Web Development & Digital Solutions",
+                "description": "We design modern, immersive, and high-performing websites and digital platforms. Each project combines design, fluidity, and technology to deliver an intuitive and impactful user experience.\n\nOur solutions go far beyond a simple showcase website — we build powerful and scalable digital ecosystems integrating professional messaging, SEO, and data security.",
+                "advantages": [
+                    "Custom showcase sites, e-commerce platforms, and web portals.",
+                    "High performance, accessibility, and multi-device compatibility.",
+                    "Integration of secure professional email systems.",
+                    "Technical optimization and SEO built-in from conception.",
+                    "Reliable hosting and scalable maintenance services."
+                ]
+            },
+            {
+                "title": "Tailor-Made Digital & Business Strategy",
+                "description": "Every business has its own story and unique potential. We analyze your positioning, objectives, and market to build a coherent and high-performing digital and business strategy.\n\nOur approach is rooted in data, creativity, and strategic vision. We support you from planning to execution, continuously measuring results to fine-tune your growth.",
+                "advantages": [
+                    "Comprehensive audit of your digital presence and market position.",
+                    "Development of a 360° marketing strategy tailored to your goals.",
+                    "Targeted multi-channel campaigns (social media, email, ads, SEO…).",
+                    "Implementation of performance dashboards and KPIs.",
+                    "Continuous support and agile optimization for sustainable growth."
+                ]
+            },
+            {
+                "title": "SEO & Digital Performance Optimization",
+                "description": "Your online visibility is not optional — it’s essential. We optimize your natural referencing so that your brand can be found, recognized, and chosen.\n\nOur SEO experts work on your site’s structure, content, and technical performance to sustainably improve your Google ranking and attract qualified traffic.",
+                "advantages": [
+                    "Comprehensive SEO audit and technical recommendations.",
+                    "Keyword optimization and high-quality content improvement.",
+                    "Enhancement of site speed and user experience.",
+                    "Long-term link building and content strategy.",
+                    "Regular performance monitoring and continuous adjustments."
+                ]
+            }
+        ]
+    },
+    "mindzPourquoi": {
+        "title": "Why Choose Mindz Studio?",
+        "description": "We don’t just do digital — we build relationships, emotions, and strategies. Mindz Studio represents the perfect balance between creativity, precision, and vision.",
+        "avantages": [
+            {
+                "title": "Human & Creative Approach",
+                "text": "Every project begins with a deep understanding of your needs and values. We create digital experiences that connect brands to their audiences with authenticity and emotion."
+            },
+            {
+                "title": "Performance & Innovation",
+                "text": "We combine creativity, data, and technology to design digital solutions that are effective, measurable, and sustainable. Innovation isn’t a word to us — it’s our daily mindset."
+            },
+            {
+                "title": "Multisector Expertise",
+                "text": "From culture to commerce, education to technology, our team adapts to every environment. We transform your ideas into tailor-made digital strategies."
+            }
+        ]
+    },
+    "mindzObjectif": {
+        "title": "Our Vision & Mission",
+        "description": "Mindz Studio aims to build a powerful African digital ecosystem where local brands can compete with international standards. We believe in technology serving people, and innovation serving purpose.",
+        "alt": "Mindz Studio creative vision",
+        "list": [
+            {
+                "text": "Showcase African creativity on a global scale."
+            },
+            {
+                "text": "Support businesses in their digital transformation."
+            },
+            {
+                "text": "Create intuitive, aesthetic, and high-performing web experiences."
+            }
+        ]
+    },
+    "mindzProcess": {
+        "title": "Our Methodology",
+        "steps": [
+            {
+                "title": "1. Analysis & Strategy",
+                "text": "We begin each project with a deep understanding of your vision, goals, and target audience."
+            },
+            {
+                "title": "2. Design & Concept",
+                "text": "Our designers translate your identity into immersive and consistent visual experiences."
+            },
+            {
+                "title": "3. Development & Integration",
+                "text": "Our developers bring your projects to life with precision, performance, and security."
+            },
+            {
+                "title": "4. Launch & Support",
+                "text": "We handle the launch, monitoring, and continuous improvement of your digital solutions."
+            }
+        ]
+    },
+    "mindzValeurs": {
+        "title": "Our Core Values",
+        "subtitle": "What drives every line of code, every idea, and every collaboration within Mindz Studio.",
+        "items": [
+            {
+                "title": "Human Creativity",
+                "text": "We merge human intuition and technology to craft unique digital experiences."
+            },
+            {
+                "title": "Continuous Innovation",
+                "text": "We relentlessly experiment to stay ahead of emerging technologies."
+            },
+            {
+                "title": "Excellence & Precision",
+                "text": "Every project is designed with care, discipline, and a love for detail."
+            },
+            {
+                "title": "Transparency & Trust",
+                "text": "Collaboration and clarity lie at the heart of all our client relationships."
+            }
+        ]
+    },
+    "mindzCTA": {
+        "title": "Ready to build your digital universe?",
+        "subtitle": "Let's discuss your vision and bring it to life through creativity, technology, and excellence.",
+        "button": "Contact us"
+    },
+    "sparkling": {
+        "titre": "Duchesse d’Afric-Art Sparkling: Our Goals",
+        "description": "Our ambition is to elevate the art of wine in Africa by creating a bridge between European winemaking traditions and Africa’s cultural richness. Every experience we offer is meant to be sensory, educational, and deeply human.",
+        "obj1": {
+            "alt": "Exclusive wine tastings",
+            "titre": "Promoting the Art of European Wine",
+            "texte": "Providing a showcase of excellence for wines and sparkling wines from Luxembourg and Europe through exclusive tastings and prestigious experiences.",
+            "citation": "“Wine is culture in liquid form.”"
+        },
+        "obj2": {
+            "alt": "Cultural exchange around wine",
+            "titre": "Building Cultural and Human Bridges",
+            "texte": "Bringing together African gastronomy and European winemaking traditions in a refined setting that honors the origins of each.",
+            "citation": "“Elegance is universal.”"
+        },
+        "obj3": {
+            "alt": "Wine education masterclass",
+            "titre": "Educating and Inspiring Through Wine",
+            "texte": "Offering masterclasses, training, and sensory workshops to introduce the public to oenological culture—from the vineyard to the table.",
+            "citation": "“Knowledge enhances every tasting.”"
+        },
+        "altFond": "Artistic background - Sparkling",
+        "altEvenement": "Sparkling event",
+        "imageTexte": "Events where refinement, sharing, and emotion meet.",
+        "visionTitre": "A Sustainable and Inspiring Vision",
+        "visionTexte1": "We believe in a responsible art of living, where every glass tells a story — one of terroir, craftsmanship, and human connection.",
+        "visionTexte2": "Our events are designed to awaken the senses, nourish the mind, and celebrate the beauty of sharing in a world of prestige and authenticity.",
+        "cta": "Join our next tasting"
+    },
+    "perspectives": {
+        "titre": "Perspectives & Ambitions",
+        "description": "Duchesse d’Afric-Art Sparkling pursues a clear vision: to build a cultural and sensory bridge between Africa and Europe through wine, art, and elegance. Our ambitions reflect a sustainable, inclusive approach filled with genuine emotions.",
+        "altImage": "Prestigious events",
+        "visionTitre": "A Continental Vision",
+        "visionTexte": "We aim to expand our influence throughout Central and West Africa by creating unique experiences around wine and gastronomy. The goal is to establish the Poll-Fabaire brand within major events, hotels, and institutions across the continent.",
+        "point1": "Development of a network of wine ambassadors",
+        "point2": "Creation of cultural programs around wine and art",
+        "point3": "Strategic partnerships with local chefs and artisans",
+        "cta": "Join the journey",
+        "citation": "“The future of African wine is not measured in bottles sold, but in emotions shared.”",
+        "signature": "– Duchesse d’Afric-Art Sparkling"
+    },
+    "sparklingExperience": {
+        "title": "The Sensory Experience of Wine",
+        "description": "Each tasting is a journey through aromas, textures, and emotions.",
+        "highlights": [
+            "Oenological masterclasses",
+            "Exclusive food & wine pairings",
+            "Personalized events"
+        ],
+        "cta": "View the gallery"
+    },
+    "sectors": {
+        "title": "Explore the Art of Living",
+        "subtitle": "Travel, wine, digital and culture united for an immersive experience.",
+        "voyages": "Duchesse d’Afric-Art Travels",
+        "vins": "Duchesse d’Afric-Art Sparkling",
+        "digital": "Mindz Studio",
+        "evenements": "The Akiba Brunch"
+    },
+    "ddaSparkling": {
+        "title": "Introduction to",
+        "intro": "Welcome to DDA Sparkling, the exclusive representative of the Luxembourgish house Domaine Vinsmoselle in Cameroon. Our mission is to select the finest wines and sparkling wines to satisfy the most demanding consumers, wholesalers, and prestigious establishments.",
+        "collection": "We are proud to offer you an exclusive collection of Poll-Fabaire sparkling wines, combining elegance, finesse, and European craftsmanship.",
+        "aboutTitle": "About Poll-Fabaire",
+        "aboutText1": "Founded in 1921, Poll-Fabaire is renowned for the exceptional quality of its sparkling wines, made from the finest Luxembourgish grape varieties. Their expertise and traditional method craftsmanship give their cuvées a unique finesse and complexity.",
+        "aboutText2": "Poll-Fabaire sparkling wines are recognized for their elegance, freshness, and distinctive character, offering an unforgettable experience with every tasting."
+    },
+    "sparklingGallery": {
+        "title": "Duchesse d’Afric-Art Sparkling Selection Catalog",
+        "subtitle": "Explore our refined collection showcasing the art of celebration, taste, and elegance through our sparkling creations.",
+        "viewText": "View Selection"
+    },
+    "ddaVoyagesIntro": {
+        "title": "Welcome to Duchesse d’Afric-Art Voyages",
+        "subtitle": "Your partner for unique travel experiences in Africa and beyond.",
+        "description": "We help you explore exceptional destinations with personalized services and local expertise.",
+        "cta": "Discover our offers"
+    },
+    "akibaWelcome": {
+        "title": "Welcome to Akiba Brunch",
+        "subtitle": "Experience an immersive journey of gastronomy, culture, and networking.",
+        "description": "Share unforgettable moments, discover new flavors, and connect with art and culture enthusiasts.",
+        "ctaButton": "Book Your Spot"
+    },
+    "akibaBrunch": {
+        "title": "The Akiba Brunch",
+        "subtitle": "A unique moment of gastronomy and culture",
+        "description": "Experience memorable moments around food, music, and art in a friendly environment.",
+        "highlightsTitle": "Highlights",
+        "highlights": [
+            "Refined gastronomy",
+            "Live music",
+            "Art exhibitions",
+            "Meetings & networking"
+        ],
+        "stats": {
+            "experience": {
+                "label": "Experience",
+                "value": "100%"
+            },
+            "culture": {
+                "label": "Culture & Art",
+                "value": "95%"
+            }
+        },
+        "imageAlt": "Highlighted image of Akiba Brunch"
+    },
+    "akibaGallery": {
+        "title": "Akiba Gallery",
+        "subtitle": "Explore unique moments and creations from the Akiba universe.",
+        "viewText": "View image"
     }
 }

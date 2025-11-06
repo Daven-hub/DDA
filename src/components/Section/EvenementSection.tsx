@@ -5,11 +5,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 const events = [
-    { id: 1, image: "/images/even1.png" },
-    { id: 2, image: "/images/even2.png" },
-    { id: 3, image: "/images/even3.png" },
-    { id: 4, image: "/images/even4.png" },
-    { id: 5, image: "/images/even1.png" },
+    { id: 1, image: "/images/voyage/2.png" },
+    { id: 2, image: "/images/voyage/3.png" },
+    { id: 3, image: "/images/voyage/4.png" },
+    { id: 4, image: "/images/voyage/5.png" },
+    { id: 5, image: "/images/voyage/6.png" },
+    { id: 6, image: "/images/voyage/7.png" },
+    { id: 7, image: "/images/voyage/8.png" },
+    { id: 8, image: "/images/voyage/9.png" },
 
 ];
 

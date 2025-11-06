@@ -9,6 +9,10 @@ import ServiceDetail from "./pages/ServiceDetail";
 import { Destination } from "./pages/Destination";
 import Loader from "./components/Ux/Loader";
 import Galerie from "./pages/Galerie";
+import { Akiba } from "./pages/Akiba";
+import { Voyages } from "./pages/voyages";
+import { Sparkling } from "./pages/Sparkling";
+import { Mindz } from "./pages/Mindz";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +34,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/:titleKey" element={<ServiceDetail />} />
         <Route path="/destinations" element={<Destination />} />
+        <Route path="/secteurs/evenements" element={<Akiba/>}/>
+        <Route path="/secteurs/voyages" element={<Voyages/>}/>
+        <Route path="/secteurs/vins" element={<Sparkling/>}/>
+        <Route path="/secteurs/digital" element={<Mindz/>}/>
       </Route>
     </Routes>
   );

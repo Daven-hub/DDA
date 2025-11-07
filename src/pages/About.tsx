@@ -1,9 +1,7 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Banner from "../components/Ux/Banner";
 import MissionsSection from "../components/Section/MissionsSection";
 import CtaSection from "../components/Section/CtaSection";
-import StatisticsSection from "../components/Section/StatisticsSection";
 import EvenementSection from "../components/Section/EvenementSection";
 import VisionValeurs from "../components/Section/VisionValeurs";
 
@@ -21,7 +19,7 @@ const About = () => {
                 overlayIntensity="medium"
             />
 
-            <section className="px-[10%] py-16 flex flex-col md:flex-row items-center gap-12">
+            {/* <section className="px-[10%] py-16 flex flex-col md:flex-row items-center gap-12">
                 <motion.img
                     src="/images/aboutS.png"
                     alt={t("about.historyAlt")}
@@ -125,7 +123,7 @@ const About = () => {
                         </motion.button>
                     </div>
                 </motion.div>
-            </section>
+            </section> */}
             <VisionValeurs />
             <MissionsSection />
             <CtaSection />

@@ -1,8 +1,9 @@
 {
     "header": {
         "schedule": "09h00 – 18h00",
-        "call1": "+237 698 03 21 81",
+        "call1": "+237 6 89 62 53 43",
         "call2": "+237 671 28 21 49",
+        "ad": "606 rue des écoles, Akwa, Douala BP 4187, Cameroun",
         "request_quote": "Demander un devis",
         "destinations_title": "Destinations",
         "nav": {
@@ -34,9 +35,9 @@
         "contact_title": "Contact",
         "contact": {
             "phone_label": "Téléphone",
-            "phone": "+237 698 03 21 81",
+            "phone": "+237 6 89 62 53 43",
             "email_label": "Email",
-            "email": "contact@duchessedafricart.com",
+            "email": "Contact@duchessedafricart.com",
             "hours_label": "Horaires",
             "hours": "Lun - Ven: 8h - 18h"
         },
@@ -347,6 +348,14 @@
                 "description": ""
             },
             "jd": {
+                "name": "",
+                "description": ""
+            },
+            "gvb": {
+                "name": "",
+                "description": ""
+            },
+            "hz": {
                 "name": "",
                 "description": ""
             }
@@ -944,8 +953,8 @@
     "sectors": {
         "title": "Explorez l’Art de Vivre",
         "subtitle": "Voyage, vins, digital et culture réunis pour une expérience immersive.",
-        "voyages": "Duchesse d’Afric-Art Voyages",
-        "vins": "Duchesse d’Afric-Art Sparkling",
+        "voyages": "DDA Voyages",
+        "vins": "DDA Sparkling",
         "digital": "Mindz Studio",
         "evenements": "The Akiba Brunch"
     },

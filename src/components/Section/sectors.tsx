@@ -8,7 +8,7 @@ const sectors = [
     {
         key: "voyages",
         titleKey: "sectors.voyages",
-        logo: "/DC.png",
+        logo: "/d.jpg",
     },
     {
         key: "vins",

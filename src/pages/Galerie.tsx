@@ -58,6 +58,11 @@ const Galerie: React.FC = () => {
         { id: 38, src: "/images/galerie/v28.png", alt: "" },
         { id: 39, src: "/images/galerie/v29.png", alt: "" },
         { id: 40, src: "/images/galerie/v30.png", alt: "" },
+        { id: 41, src: "/images/dda/d2.png", alt: "" },
+        { id: 42, src: "/images/dda/d3.png", alt: "" },
+        { id: 43, src: "/images/dda/d1.png", alt: "" },
+        { id: 44, src: "/images/dda/fa.jpeg", alt: "" },
+
     ];
 
 

@@ -3,6 +3,7 @@
         "schedule": "09:00 AM – 6:00 PM",
         "call1": "+237 698 03 21 81",
         "call2": "+237 671 28 21 49",
+        "ad": "606 rue des écoles, Akwa, Douala BP 4187, Cameroun",
         "request_quote": "Request a quote",
         "destinations_title": "Destinations",
         "nav": {
@@ -328,6 +329,14 @@
                 "description": ""
             },
             "jd": {
+                "name": "",
+                "description": ""
+            },
+            "gvb": {
+                "name": "",
+                "description": ""
+            },
+            "hz": {
                 "name": "",
                 "description": ""
             }
@@ -892,8 +901,8 @@
     "sectors": {
         "title": "Explore the Art of Living",
         "subtitle": "Travel, wine, digital and culture united for an immersive experience.",
-        "voyages": "Duchesse d’Afric-Art Travels",
-        "vins": "Duchesse d’Afric-Art Sparkling",
+        "voyages": "DDA Travels",
+        "vins": "DDA Sparkling",
         "digital": "Mindz Studio",
         "evenements": "The Akiba Brunch"
     },

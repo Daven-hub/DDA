@@ -75,7 +75,7 @@ export const SparklingExperience: React.FC = () => {
                     viewport={{ once: true }}
                 >
                     <img
-                        src="/images/sens.png"
+                        src="/images/dda/d0.png"
                         alt="Expérience sensorielle"
                         className="rounded-2xl shadow-lg object-cover w-full h-[450px]"
                     />

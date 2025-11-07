@@ -13,7 +13,9 @@ const partnersData = [
     { key: "stone", logo: "/images/stone.png" },
     { key: "kom", logo: "/images/kom.png" },
     { key: "cavi", logo: "/images/cavi.png" },
-    { key: "jd", logo: "/images/jd.png" }
+    { key: "jd", logo: "/images/jd.png" },
+    { key: "gvb", logo: "/images/gvb.png" },
+    { key: "hz", logo: "/images/hz.png" }
 
 ];
 

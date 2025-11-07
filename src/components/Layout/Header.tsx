@@ -14,6 +14,7 @@ import { FiClock, FiPhone, FiChevronDown } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import logoPng from "/DC.png";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { MapPin } from "lucide-react";
 
 const Header: FC = () => {
   const { t } = useTranslation();
@@ -83,6 +84,10 @@ const Header: FC = () => {
           <div className="flex items-center gap-2">
             <FiPhone className="text-accent-green" />
             <a href={`tel:${t("header.call2")}`} className="hover:text-primary font-bold">{t("header.call2")}</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPin className="text-accent-green" />
+            <p className="hover:text-primary font-bold">{t("header.ad")}</p>
           </div>
         </div>
 

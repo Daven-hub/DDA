@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const images = ["/images/a.png", "/images/vins2.png", "/images/culte.png"];
+const images = ["/images/dda/s28.png", "/images/dda/s29.png", "/images/galerie/v25.png"];
 
 const ContactSection = () => {
     const { t } = useTranslation();

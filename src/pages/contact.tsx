@@ -10,7 +10,7 @@ export const Contact = () => {
     return (
         <>
             <Banner
-                imageSrc="/images/client.png"
+                imageSrc="/images/teamsPlus.png"
                 imageAlt="Contact — Duchesse d’Afric’Art"
                 title={t("contacts.banner.title")}
                 description={t("contacts.banner.description")}

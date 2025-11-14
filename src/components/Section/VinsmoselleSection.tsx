@@ -7,7 +7,7 @@ export default function VinsmoselleSection() {
     return (
         <section className="relative w-full px-[10%] py-12 overflow-hidden">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-
+                {/* Galerie d'images */}
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -17,7 +17,7 @@ export default function VinsmoselleSection() {
                 >
                     <div className="col-span-2 h-64 overflow-hidden shadow-xl">
                         <img
-                            src="/images/blanc1.png"
+                            src="/images/galerie/neuf.jpg"
                             alt={t("vinsmoselle.alt1")}
                             className="object-cover w-full h-full"
                         />
@@ -25,7 +25,7 @@ export default function VinsmoselleSection() {
 
                     <motion.div whileHover={{ scale: 1.05 }} className="h-40 overflow-hidden shadow-lg">
                         <img
-                            src="/images/blanc2.png"
+                            src="/images/galerie/un.jpg"
                             alt={t("vinsmoselle.alt2")}
                             className="object-cover w-full h-full"
                         />
@@ -48,6 +48,7 @@ export default function VinsmoselleSection() {
                     </motion.div>
                 </motion.div>
 
+                {/* Contenu texte */}
                 <motion.div
                     initial={{ opacity: 0, x: 40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -75,7 +76,7 @@ export default function VinsmoselleSection() {
                             <li>{t("vinsmoselle.dda2")}</li>
                             <li>{t("vinsmoselle.dda3")}</li>
                             <li>{t("vinsmoselle.dda4")}</li>
-                            {/* <li>{t("vinsmoselle.dda5")}</li> */}
+                            <li>{t("vinsmoselle.dda5")}</li>
                         </ul>
                     </div>
 
@@ -101,6 +102,7 @@ export default function VinsmoselleSection() {
                 </motion.div>
             </div>
 
+            {/* Image de fond */}
             <div className="absolute inset-y-0 right-0 w-1/2 opacity-10 mix-blend-multiply">
                 <img
                     src="/images/vin.png"
@@ -109,6 +111,7 @@ export default function VinsmoselleSection() {
                 />
             </div>
 
+            {/* Effets visuels */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.1 }}

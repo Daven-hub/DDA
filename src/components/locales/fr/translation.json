@@ -80,11 +80,11 @@
         },
         "slide2": {
             "title": "Explorez l'Afrique Autrement",
-            "subtitle": "Duchesse d'Afric-Art"
+            "subtitle": "DDA Voyages"
         },
         "slide3": {
             "title": "Vins & Crémants de Qualité",
-            "subtitle": "Domaines Vinsmoselle"
+            "subtitle": "DDA Sparkling"
         },
         "slide4": {
             "title": "Stratégie Digitale & Branding",
@@ -232,7 +232,7 @@
     },
     "visa": {
         "title": "Explorez 8 destinations africaines autrement",
-        "description": "Duchesse d’Afric-Art Voyages vous ouvre les portes de l’Afrique authentique à travers des circuits culturels, responsables et riches en émotions. Découvrez des paysages fascinants, des peuples accueillants et des expériences inoubliables, du Cameroun à l’Afrique du Sud.",
+        "description": "DDA Voyages vous ouvre les portes de l’Afrique authentique à travers des circuits culturels, responsables et riches en émotions. Découvrez des paysages fascinants, des peuples accueillants et des expériences inoubliables, du Cameroun à l’Afrique du Sud.",
         "contactButton": "DEMANDER UN DEVIS",
         "visas": {
             "touristVisa": "Visa Touristique",
@@ -274,15 +274,15 @@
         "altFloatingImage": "Stratégie marketing et communication"
     },
     "vinsmoselle": {
-        "title": "Domaines Vinsmoselle | Poll – Fabaire Cameroun",
+        "title": "DDA Sparkling – Représentation Officielle de Poll-Fabaire au Cameroun",
         "subtitle": "Représentation & événements vins",
-        "description": "Dégustations, branding et événements autour de vins et crémants de qualité. Nous accompagnons entreprises, particuliers et institutions avec importation, masterclasses et conseils en image vinicole.",
-        "ddaTitle": "Duchesse d’Afric-Art Sparkling",
-        "dda1": "Partenaire officiel des Domaines Vinsmoselle (Poll-Fabaire).",
-        "dda2": "Produits : crémants & vins aromatisés.",
-        "dda3": "Distribution exclusive par 2FC Corporation SAS (mention dès le 1er novembre).",
-        "dda4": "Événements : dégustations, activations de marque, collaborations avec lounges (BYM, Le Boj, Café de Paris).",
-        "dda5": "Galerie photos : produits, événements, supports promotionnels.",
+        "description": "DDA Sparkling est la branche premium de Duchesse d’Afric-Art, dédiée à la représentation, la distribution et la promotion des Crémants Poll-Fabaire, issus des prestigieux Domaines Vinsmoselle du Luxembourg. Nous valorisons l’art de vivre à l’européenne à travers une expérience sensorielle unique : dégustations, branding, partenariats événementiels et campagnes lifestyle. Présente à Douala et Yaoundé, DDA Sparkling met à l’honneur le Crémant de Luxembourg dans les plus beaux lieux du Cameroun : hôtels, lounges, restaurants et événements d’exception.",
+        "ddaTitle": "Notre mission",
+        "dda1": "Faire découvrir la finesse du Crémant luxembourgeois au public africain.",
+        "dda2": "Promouvoir une consommation élégante et responsable.",
+        "dda3": "Créer des expériences exclusives autour du vin et du luxe.",
+        "dda4": "DDA Sparkling s’impose comme un des ambassadeurs du raffinement européen en Afrique, incarnant une vision du luxe accessible, conviviale et élégante.",
+        "dda5": "Chaque bouteille est une célébration de l’art de vivre, entre excellence, émotion et partage.",
         "servicesButton": "Explorer nos événements",
         "contactButton": "Contactez-nous",
         "alt1": "Événement vins",
@@ -615,34 +615,31 @@
         "imageAlt": "The Akiba Brunch"
     },
     "voyageObjectif": {
-        "title": "Duchesse d’Afric-Art Voyages",
+        "title": "DDA Voyages",
         "subtitle": "Objectifs et vision",
         "immersionTitle": "Immersion culturelle et humaine",
-        "immersionDescription": "Chaque voyage est pensé comme une immersion. Nous travaillons avec des guides locaux, artisans et chefs pour vous offrir une expérience humaine, éthique et durable.",
+        "immersionDescription": "Notre force : valoriser les richesses locales, les artisans, les traditions et le savoir-faire africain à travers un tourisme responsable et inspirant.",
         "immersionPoints": [
-            "Découverte de l’art et de la culture locale",
-            "Rencontres avec des artisans et chefs locaux",
-            "Expériences gastronomiques authentiques"
+            "Voyages & Circuits organisés : séjours culturels, excursions, randonnées, safaris, city tours.",
+            "Tourisme de détente : escapades balnéaires, week-ends découverte, voyages sur une journée.",
+            "Tourisme culturel & communautaire : immersion dans les traditions africaines, artisanat, gastronomie locale."
         ],
         "rencontreTitle": "Rencontres et échanges",
-        "rencontreDescription": "Favoriser les échanges et rencontres humaines avec les communautés locales et les autres voyageurs.",
+        "rencontreDescription": "Hébergement & logistique : hôtels partenaires, transferts, véhicules avec chauffeur, accueil VIP.",
         "rencontrePoints": [
-            "Participation à des ateliers culturels",
-            "Sessions de partage avec les habitants",
-            "Activités collaboratives et éducatives"
+            "Événementiel & Réseautage : organisation d’événements culturels comme The Akiba Brunch, vitrine du lifestyle africain."
         ],
         "experienceTitle": "Expérience inoubliable",
-        "experienceDescription": "Nos circuits vous feront découvrir l’Afrique comme jamais auparavant, du Cameroun à l’Afrique du Sud, dans une démarche responsable et éthique."
+        "experienceDescription": "Notre expertise s’étend sur l’ensemble du continent africain, offrant des expériences uniques, humaines et mémorables dans une démarche responsable et éthique."
     },
     "voyagePourquoi": {
-        "title": "Pourquoi choisir Duchesse d’Afric-Art Voyages ?",
-        "subtitle": "Voyager autrement",
-        "description": "Nous proposons des voyages immersifs et responsables, pensés pour les passionnés d’art, de culture et de gastronomie.",
+        "title": "Pourquoi choisir DDA Voyages ?",
+        "subtitle": "Notre mission",
+        "description": "DDA Voyages s’impose comme un ambassadeur du tourisme camerounais, mêlant élégance, authenticité et découverte. Avec nous, chaque voyage est une immersion, chaque étape une émotion, chaque rencontre une leçon de vie.",
         "advantages": [
-            "Accompagnement par des guides locaux expérimentés",
-            "Immersion totale dans la culture et la gastronomie",
-            "Expériences éthiques et durables",
-            "Découverte de paysages et patrimoines uniques"
+            "Promouvoir l’Afrique comme destination de rêve et de fierté.",
+            "Créer des liens humains et culturels durables entre les voyageurs et les territoires.",
+            "Offrir des voyages qui transforment, qui inspirent et qui rapprochent les peuples."
         ],
         "ctaButton": "Contactez-nous pour votre voyage",
         "imageAlt": "Voyage immersif en Afrique"
@@ -661,7 +658,7 @@
     "voyageImmersion": {
         "title": "Présentation immersive",
         "subtitle": "Une approche humaine et durable",
-        "description": "Duchesse d’Afric-Art Voyages vous ouvre les portes de l’Afrique authentique à travers des circuits riches en émotions et en rencontres.",
+        "description": "DDA Voyages vous ouvre les portes de l’Afrique authentique à travers des circuits riches en émotions et en rencontres.",
         "highlights": [
             "Guides locaux et experts culturels",
             "Expériences gastronomiques et artisanales",
@@ -909,7 +906,7 @@
         "button": "Nous contacter"
     },
     "sparkling": {
-        "titre": "Duchesse d’Afric-Art Sparkling : Nos Objectifs",
+        "titre": "DDA Sparkling : Nos Objectifs",
         "description": "Notre ambition est de sublimer l’art du vin en Afrique, en créant un pont entre les traditions viticoles européennes et la richesse culturelle africaine. Chaque expérience que nous proposons se veut sensorielle, éducative et profondément humaine.",
         "obj1": {
             "alt": "Dégustations exclusives",
@@ -939,7 +936,7 @@
     },
     "perspectives": {
         "titre": "Perspectives & Ambitions",
-        "description": "Duchesse d’Afric-Art Sparkling poursuit une vision claire : bâtir un pont culturel et sensoriel entre l’Afrique et l’Europe à travers le vin, l’art et l’élégance. Nos perspectives s’inscrivent dans une démarche durable, inclusive et porteuse d’émotions authentiques.",
+        "description": "DDA Sparkling poursuit une vision claire : bâtir un pont culturel et sensoriel entre l’Afrique et l’Europe à travers le vin, l’art et l’élégance. Nos perspectives s’inscrivent dans une démarche durable, inclusive et porteuse d’émotions authentiques.",
         "altImage": "Événements de prestige",
         "visionTitre": "Une vision continentale",
         "visionTexte": "Nous envisageons d’étendre notre influence à travers toute l’Afrique centrale et de l’Ouest, en créant des expériences inédites autour du vin et de la gastronomie. L’objectif est d’implanter la marque Poll-Fabaire dans les plus grands événements, hôtels et institutions du continent.",
@@ -967,18 +964,18 @@
         "aboutText2": "Les crémants Poll-Fabaire sont reconnus pour leur élégance, leur fraîcheur et leur caractère distinctif, offrant ainsi une expérience inoubliable à chaque dégustation."
     },
     "sparklingGallery": {
-        "title": "Catalogue des Sélections Duchesse d’Afric-Art Sparkling",
+        "title": "Catalogue des Sélections Duchesse DDA Sparkling",
         "subtitle": "Explorez notre collection raffinée illustrant l’art de la célébration, du goût et de l’élégance à travers nos créations pétillantes.",
         "viewText": "Voir la Sélection"
     },
     "ddaVoyagesIntro": {
-        "title": "Bienvenue chez Duchesse d’Afric-Art Voyages",
-        "subtitle": "Votre partenaire pour des expériences de voyage uniques en Afrique et au-delà.",
-        "description": "Nous vous accompagnons pour découvrir des destinations exceptionnelles tout en profitant d’un service personnalisé et d’une expertise locale.",
+        "title": "DDA Voyage – L’Art de Voyager Autrement",
+        "subtitle": "DDA Voyages est un tour leader, portée par la passion de Melissa MBEUSSEUNE, fondatrice de Duchesse d’Afric-Art.",
+        "description": "Nous créons des expériences authentiques, culturelles et humaines à travers l’Afrique, où chaque destination devient une histoire à vivre. Nous proposons des circuits sur mesure au Cameroun et dans 8 autres pays africains (Bénin, Côte d’Ivoire, Ghana, Togo, Rwanda, Tanzanie, Zanzibar, Afrique du Sud), combinant découverte, développement de l’économie locale à travers nos partenaires, immersion culturelle et détente.",
         "cta": "Découvrir nos offres"
     },
     "akibaWelcome": {
-        "title": "Bienvenue au Akiba Brunch",
+        "title": "Bienvenue au Akiba Brunch",    
         "subtitle": "Vivez une expérience immersive de gastronomie, culture et rencontres.",
         "description": "Partagez des moments uniques, découvrez de nouvelles saveurs et connectez avec des passionnés d'art et de culture.",
         "ctaButton": "Réservez votre place"

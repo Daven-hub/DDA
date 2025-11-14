@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const partnersData = [
     { key: "franchiseIT", logo: "/images/franchise_it.png" },
-    { key: "boj", logo: "/images/boj.png" },
+    { key: "boj", logo: "/images/bojs.png" },
     { key: "pari", logo: "/images/paris.png" },
     { key: "bym", logo: "/images/bym.jpg" },
     { key: "cap", logo: "/images/cap.png" },
@@ -77,8 +77,8 @@ export default function PartnersSection() {
             </div>
 
             {/* léger dégradé sur les bords pour effet immersif */}
-            <div className="pointer-events-none absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-            <div className="pointer-events-none absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent"></div>
+            {/* <div className="pointer-events-none absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            <div className="pointer-events-none absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent"></div> */}
         </section>
     );
 }

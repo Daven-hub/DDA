@@ -10,19 +10,20 @@ export const Voyages = () => {
     return (
         <>
             <div className="relative w-full min-h-screen scroll-mt-32 overflow-hidden mt-[120px]">
-                <Banner imageSrc={"/DC.png"} imageAlt={""} title={"Duchesse d’Afric-Art Voyages"} />
-                <VoyageIntro/>
-                <VisaSection />
+                <Banner imageSrc={"/images/ddaFond.png"} imageAlt={""} title={"DDA Voyages"} />
+                <VoyageIntro />
                 <EvenementSection />
                 <VoyageObjectif />
                 <VoyagePourquoi />
-                <VoyagePerspectives />
+                <VisaSection />
                 <VoyageImmersion />
+                <VoyagePerspectives />
                 <EvenementSection />
             </div>
         </>
     )
 }
+
 
 
 
@@ -33,76 +34,136 @@ export const VoyageObjectif: React.FC = () => {
     const rencontrePoints: string[] = t("voyageObjectif.rencontrePoints", { returnObjects: true }) as string[];
 
     return (
-        <section className="bg-gray-50 px-6 md:px-[10%] py-16">
-            <div className="mx-auto grid md:grid-cols-3 gap-10 items-start">
-                <div className="flex flex-col justify-between">
-                    <h1 className="text-[1.8rem] md:text-[3.1rem] font-heading font-bold text-gray-900 leading-tight mb-6">
+        <section className="bg-gray-50 px-6 md:px-[10%] py-20 relative overflow-hidden">
+            {/* décor doux */}
+            <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent pointer-events-none" />
+
+            <div className="mx-auto grid md:grid-cols-3 gap-12 items-start relative z-10">
+                {/* Colonne 1 – Titre / intro */}
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="flex flex-col justify-between space-y-6"
+                >
+                    <h1 className="text-[1.8rem] md:text-[3rem] font-heading font-bold text-gray-900 leading-tight">
                         {t("voyageObjectif.title")}
                     </h1>
-                    <h2 className="text-xl font-semibold text-primary mb-4">{t("voyageObjectif.subtitle")}</h2>
-                    <div className="w-40 h-28 bg-orange-300 rounded-md mb-6"></div>
-                    <img
-                        src="/images/destination.png"
-                        alt="Voyage Logo"
-                        className="hidden md:block w-full rounded-2xl object-cover h-[200px]"
-                    />
-                </div>
+                    <h2 className="text-xl md:text-2xl font-semibold text-accent-green mb-2">
+                        {t("voyageObjectif.subtitle")}
+                    </h2>
 
-                <div className="flex flex-col items-center text-center md:text-left">
+                    <div className="w-40 h-28 bg-orange-300 rounded-xl shadow-inner" />
+
                     <img
-                        src="/images/immersif.png"
-                        alt={t("voyageObjectif.immersionTitle")}
-                        className="w-full rounded-2xl object-cover h-[380px] mb-6"
+                        src="/images/voyage/ga14.png"
+                        alt="Voyage Logo"
+                        className="hidden md:block w-full rounded-2xl object-cover h-[220px] mt-6 shadow-md"
                     />
-                    <h3 className="text-[1.3rem] font-heading font-bold text-accent-green mb-3">
+                </motion.div>
+
+                {/* Colonne 2 – Immersion */}
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="flex flex-col items-center md:items-start text-center md:text-left"
+                >
+                    <img
+                        src="/images/voyage/g6.png"
+                        alt={t("voyageObjectif.immersionTitle")}
+                        className="w-full rounded-2xl object-cover h-[380px] mb-6 shadow-lg"
+                    />
+
+                    <h3 className="text-[1.4rem] font-heading font-bold text-accent-green mb-3">
                         {t("voyageObjectif.immersionTitle")}
                     </h3>
-                    <p className="text-black/70 leading-relaxed max-w-3xl mb-2">{t("voyageObjectif.immersionDescription")}</p>
-                    <ul className="list-disc ml-6 space-y-1">
+                    <p className="text-black/70 leading-relaxed mb-4 text-sm md:text-base">
+                        {t("voyageObjectif.immersionDescription")}
+                    </p>
+
+                    <ul className="space-y-2 text-sm md:text-base">
                         {immersionPoints.map((point, index) => (
-                            <li key={index}>{point}</li>
+                            <motion.li
+                                key={index}
+                                className="flex items-start gap-2"
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                            >
+                                <span className="w-2.5 h-2.5 bg-accent-green rounded-full mt-2"></span>
+                                <span>{point}</span>
+                            </motion.li>
                         ))}
                     </ul>
-                </div>
+                </motion.div>
 
+                {/* Colonne 3 – Rencontres + Expérience */}
                 <div className="flex flex-col gap-10">
-                    <div>
+                    {/* Bloc Rencontres */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                    >
                         <img
-                            src="/images/rencontre.png"
+                            src="/images/voyage/g8.png"
                             alt={t("voyageObjectif.rencontreTitle")}
-                            className="w-full rounded-2xl object-cover h-[200px] mb-4"
+                            className="w-full rounded-2xl object-cover h-[200px] mb-4 shadow-lg"
                         />
-                        <h3 className="text-[1.3rem] font-heading font-bold text-accent-green mb-3">
+                        <h3 className="text-[1.4rem] font-heading font-bold text-accent-green mb-3">
                             {t("voyageObjectif.rencontreTitle")}
                         </h3>
-                        <p className="text-black/70 leading-relaxed max-w-3xl mb-5">
+                        <p className="text-black/70 leading-relaxed mb-5 text-sm md:text-base">
                             {t("voyageObjectif.rencontreDescription")}
                         </p>
-                        <ul className="list-disc ml-6 space-y-1">
+
+                        <ul className="space-y-2 text-sm md:text-base">
                             {rencontrePoints.map((point, index) => (
-                                <li key={index}>{point}</li>
+                                <motion.li
+                                    key={index}
+                                    className="flex items-start gap-2"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <span className="w-2.5 h-2.5 bg-accent-green rounded-full mt-2"></span>
+                                    <span>{point}</span>
+                                </motion.li>
                             ))}
                         </ul>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    {/* Bloc Expérience */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
                         <img
-                            src="/images/culte.png"
+                            src="/images/voyage/g7.png"
                             alt={t("voyageObjectif.experienceTitle")}
-                            className="w-full rounded-2xl object-cover h-[200px] mb-4"
+                            className="w-full rounded-2xl object-cover h-[200px] mb-4 shadow-lg"
                         />
-                        <h3 className="text-[1.3rem] font-heading font-bold text-accent-green mb-3">
+                        <h3 className="text-[1.4rem] font-heading font-bold text-accent-green mb-3">
                             {t("voyageObjectif.experienceTitle")}
                         </h3>
-                        <p className="text-black/70 leading-relaxed max-w-3xl">
+                        <p className="text-black/70 leading-relaxed text-sm md:text-base">
                             {t("voyageObjectif.experienceDescription")}
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
     );
 };
+
 
 
 
@@ -112,52 +173,80 @@ export const VoyagePourquoi: React.FC = () => {
     const advantages: string[] = t("voyagePourquoi.advantages", { returnObjects: true }) as string[];
 
     return (
-        <section className="bg-white px-6 md:px-[10%] py-16 relative overflow-hidden">
-
+        <section className="bg-white px-6 md:px-[10%] py-20 relative overflow-hidden">
+            {/* Décor de fond subtil */}
             <img
-                src="/images/decor.png"
+                src="/images/voyage/ga1.png"
                 alt="Décoration"
-                className="hidden md:block absolute bottom-0 right-0  opacity-25 -rotate-6"
+                className="hidden md:block absolute bottom-0 right-0 opacity-20 -rotate-6 pointer-events-none"
             />
 
-            <div className="mx-auto grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+            <div className="mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+                {/* Texte principal */}
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-4 leading-tight">
                         {t("voyagePourquoi.title")}
                     </h2>
+
                     <h3 className="text-xl md:text-2xl font-heading font-bold text-accent-green mb-6">
                         {t("voyagePourquoi.subtitle")}
                     </h3>
+
                     <p className="text-black/70 leading-relaxed mb-6 text-sm md:text-base">
                         {t("voyagePourquoi.description")}
                     </p>
 
-                    <ul className="list-disc ml-0 md:ml-6 space-y-2 mb-8 text-sm md:text-base">
+                    <ul className="list-none space-y-3 mb-8 text-sm md:text-base">
                         {advantages.map((item, index) => (
-                            <li key={index}>{item}</li>
+                            <motion.li
+                                key={index}
+                                className="flex items-start gap-2"
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                            >
+                                <span className="w-2.5 h-2.5 bg-accent-green rounded-full mt-2"></span>
+                                <span>{item}</span>
+                            </motion.li>
                         ))}
                     </ul>
 
-                    <a
+                    <motion.a
                         href="/contact"
-                        className="group inline-flex items-center gap-2 bg-accent-green text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all"
+                        className="group inline-flex items-center gap-2 bg-accent-green text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:bg-green-700 transition-all"
+                        whileHover={{ scale: 1.03 }}
                     >
                         {t("voyagePourquoi.ctaButton")}
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </a>
-                </div>
+                    </motion.a>
+                </motion.div>
 
-                <div className="relative flex justify-center items-center">
+                {/* Image avec effet */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="relative flex justify-center items-center"
+                >
+                    <div className="absolute -z-10 w-60 h-60 bg-accent-green/10 rounded-full blur-3xl"></div>
                     <img
-                        src="/images/femme.png"
+                        src="/images/voyage/g9.png"
                         alt={t("voyagePourquoi.imageAlt")}
-                        className="w-full md:w-[350px] rounded-xl shadow-lg mb-6 md:mb-0"
+                        className="w-full md:w-[360px] rounded-2xl shadow-xl object-cover"
                     />
-                </div>
+                </motion.div>
             </div>
         </section>
     );
 };
+
 
 
 
@@ -169,7 +258,7 @@ export const VoyagePerspectives: React.FC = () => {
     return (
         <section
             className="relative bg-cover bg-center bg-no-repeat text-white h-[100vh] flex items-center px-6 md:px-[10%]"
-            style={{ backgroundImage: "url('/images/avenir.png')" }}
+            style={{ backgroundImage: "url('/images/voyage/ga18.png')" }}
         >
             <div className="absolute inset-0 bg-black/60"></div>
 
@@ -230,7 +319,7 @@ export const VoyageImmersion: React.FC = () => {
 
                 <div className="relative">
                     <img
-                        src="/images/lache.png"
+                        src="/images/voyage/g1.png"
                         alt={t("voyageImmersion.imageAlt")}
                         className="w-full h-[500px] object-cover rounded-2xl shadow-lg"
                     />
@@ -314,7 +403,7 @@ export const VoyageIntro: React.FC = () => {
                     className="hidden md:block"
                 >
                     <img
-                        src="/images/touriste.png"
+                        src="/images/voyage/ga5.png"
                         alt="Voyages Illustration"
                         className="rounded-3xl shadow-2xl object-cover w-full h-[500px]"
                     />

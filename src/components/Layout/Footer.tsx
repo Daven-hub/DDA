@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import logoPng from "/DC.png";
+import { motion } from "framer-motion";
+import logoPng from "/images/ddaFond.png";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -13,105 +13,143 @@ const Footer = () => {
         { icon: FaTiktok, href: "https://www.tiktok.com/@duchessedafricart?_t=8ooPX80PdEf&_r=1", label: "TikTok" },
     ];
 
-
+    const quickLinks = [
+        { href: "/", label: t("footer.quick_links.home") },
+        { href: "/about", label: t("footer.quick_links.about") },
+        // { href: "/services", label: t("footer.quick_links.services") },
+        { href: "/galerie", label: "galerie" },
+        { href: "/contact", label: t("footer.quick_links.contact") },
+    ];
 
     return (
-        <footer className="bg-gray-950 text-gray-200 pt-16 pb-8 px-[10%]">
+        <footer className="relative overflow-hidden bg-black text-gray-200 px-[10%] pt-20 pb-10">
 
-            {/* Grid principal */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 border-b border-gray-800 pb-10">
+            {/* Effet d’ambiance en fond */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-900/10 to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,255,128,0.05),transparent_70%)] pointer-events-none animate-pulse-slow"></div>
 
-                {/* Logo & description */}
-                <div className="space-y-4">
-                    <Link to="/" className="flex items-center gap-2">
-                        <img src={logoPng} alt="Logo" className="h-16 bg-white" />
-                    </Link>
-                    <p className="text-sm sm:text-sm md:text-base text-gray-400 leading-relaxed">
-                        {t("footer.description")}
-                    </p>
-                    <div className="flex gap-3 mt-4">
+            {/* Grille principale */}
+            <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+
+                {/* Logo & Socials */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="space-y-6"
+                >
+                    <a href="/" className="flex items-center gap-2 group">
+                        <img
+                            src={logoPng}
+                            alt="Logo"
+                            className="h-16 w-auto  transition-transform group-hover:scale-105"
+                        />
+                    </a>
+                    <div className="flex gap-4 mt-4">
                         {socialLinks.map((social) => (
-                            <a
+                            <motion.a
+                                whileHover={{ scale: 1.15, rotate: 5 }}
+                                whileTap={{ scale: 0.95 }}
                                 key={social.label}
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-accent-green to-accent-yellow text-white shadow-md hover:scale-110 transition-transform"
+                                className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-accent-green to-accent-yellow text-white shadow-md transition-all hover:shadow-lg"
                             >
-                                <social.icon className="text-sm sm:text-base" />
-                            </a>
+                                <social.icon className="text-lg" />
+                            </motion.a>
                         ))}
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Liens rapides */}
-                <div>
-                    <h3 className="text-[.8rem] sm:text-[1rem] md:text-[1.4rem] font-heading font-bold text-white mb-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                >
+                    <h3 className="text-lg font-heading font-bold text-white mb-4 relative inline-block after:absolute after:left-0 after:-bottom-1 after:w-8 after:h-[2px] after:bg-accent-yellow after:rounded-full">
                         {t("footer.quick_links_title")}
                     </h3>
-                    <ul className="space-y-2 text-sm sm:text-sm md:text-base">
-                        <li><a href="/" className="hover:text-accent-yellow">{t("footer.quick_links.home")}</a></li>
-                        <li><a href="/about" className="hover:text-accent-yellow">{t("footer.quick_links.about")}</a></li>
-                        <li><a href="/services" className="hover:text-accent-yellow">{t("footer.quick_links.services")}</a></li>
-                        <li><a href="/galerie" className="hover:text-accent-yellow">{t("footer.quick_links.businesses")}</a></li>
-                        <li><a href="/contact" className="hover:text-accent-yellow">{t("footer.quick_links.contact")}</a></li>
+                    <ul className="space-y-2 text-sm text-gray-400">
+                        {quickLinks.map((link) => (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    className="relative group hover:text-accent-yellow transition"
+                                >
+                                    <span className="group-hover:translate-x-1 inline-block transition-transform">
+                                        {link.label}
+                                    </span>
+                                    <span className="absolute -left-3 opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-300 text-accent-yellow">
+                                        →
+                                    </span>
+                                </a>
+                            </li>
+                        ))}
                     </ul>
-                </div>
-
-
+                </motion.div>
 
                 {/* Contact */}
-                <div>
-                    <h3 className="text-[.8rem] sm:text-[1rem] md:text-[1.4rem] font-heading font-bold text-white mb-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <h3 className="text-lg font-heading font-bold text-white mb-4 relative inline-block after:absolute after:left-0 after:-bottom-1 after:w-8 after:h-[2px] after:bg-accent-green after:rounded-full">
                         {t("footer.contact_title")}
                     </h3>
-                    <ul className="space-y-2 text-xs sm:text-sm md:text-sm text-gray-400">
+                    <ul className="space-y-2 text-sm text-gray-400">
                         <li>
-                            <strong>{t("footer.contact.phone_label")} :</strong> {t("footer.contact.phone")}
+                            <strong>{t("footer.contact.phone_label")} :</strong>{" "}
+                            {t("footer.contact.phone")}
                         </li>
                         <li>
-                            <strong>{t("footer.contact.email_label")} :</strong> {t("footer.contact.email")}
+                            <strong>{t("footer.contact.email_label")} :</strong>{" "}
+                            {t("footer.contact.email")}
                         </li>
                         <li>
-                            <strong>{t("footer.contact.hours_label")} :</strong> {t("footer.contact.hours")}
+                            <strong>{t("footer.contact.hours_label")} :</strong>{" "}
+                            {t("footer.contact.hours")}
                         </li>
                     </ul>
-                </div>
-
+                </motion.div>
             </div>
 
             {/* Newsletter */}
-            <div className="mt-10 flex flex-col sm:flex-row justify-between items-center border-t border-gray-800 pt-8 gap-4">
-                <p className="text-gray-400 text-sm sm:text-base md:flex-1">{t("footer.newsletter_text")}</p>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="relative mt-12 border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-6"
+            >
+                <p className="text-gray-400 text-sm sm:text-base max-w-md text-center sm:text-left">
+                    {t("footer.newsletter_text")}
+                </p>
                 <form className="flex w-full sm:w-auto justify-center sm:justify-start">
                     <input
                         type="email"
                         placeholder={t("footer.newsletter_placeholder")}
-                        className="w-2/3 sm:w-auto px-3 py-1.5 sm:px-4 sm:py-2 rounded-l-md bg-gray-800 text-white focus:outline-none placeholder-gray-400 text-xs sm:text-sm"
+                        className="w-2/3 sm:w-auto px-4 py-2 rounded-l-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-green placeholder-gray-500 text-sm"
                     />
                     <button
                         type="submit"
-                        className="px-3 sm:px-4 py-1.5 sm:py-2 bg-accent-green text-white font-semibold rounded-r-md hover:bg-accent-yellow transition text-xs sm:text-sm"
+                        className="px-5 py-2 bg-accent-green text-white font-semibold rounded-r-md hover:bg-accent-yellow transition-all"
                     >
                         {t("footer.newsletter_button")}
                     </button>
                 </form>
-            </div>
+            </motion.div>
 
             {/* Bas du footer */}
-            <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-gray-500 mt-8 gap-2">
-                <p>© {new Date().getFullYear()} Duchesse d’Afric-Art. {t("footer.rights_reserved")}</p>
-                {/* <p>
-                    {t("footer.design_by")}{" "}
-                    <a
-                        href="https://franchise-it-tech.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent-yellow hover:underline"
-                    >
-                        Franchise-it
-                    </a>
-                </p> */}
+            <div className="relative mt-8 flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-gray-500 gap-2">
+                <p>
+                    © {new Date().getFullYear()} Duchesse d’Afric-Art.{" "}
+                    {t("footer.rights_reserved")}
+                </p>
+                <p className=" transition">
+                    Design by <a target="_blank" rel="noopener noreferrer" href="https://franchise-it-tech.com/" className="font-semibold text-accent-yellow">Franchise-IT</a>
+                </p>
             </div>
         </footer>
     );

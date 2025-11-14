@@ -27,8 +27,8 @@ export default function VisionValeurs() {
 
     const galleryImages = [
         { src: "/images/lampe.png", alt: "Voyage culturel en Afrique centrale", description: t("visionValeurs.gallery.0.description") },
-        { src: "/images/ziba.png", alt: "Collaboration avec les communautés locales", description: t("visionValeurs.gallery.1.description") },
-        { src: "/images/danse.png", alt: "Service client d'excellence", description: t("visionValeurs.gallery.2.description") },
+        { src: "/images/akiba/a16.png", alt: "Collaboration avec les communautés locales", description: t("visionValeurs.gallery.1.description") },
+        { src: "/images/dda/s28.png", alt: "Service client d'excellence", description: t("visionValeurs.gallery.2.description") },
     ];
 
     return (

@@ -8,7 +8,7 @@ const sectors = [
     {
         key: "voyages",
         titleKey: "sectors.voyages",
-        logo: "/d.jpg",
+        logo: "/images/ddaFond.png",
     },
     {
         key: "vins",

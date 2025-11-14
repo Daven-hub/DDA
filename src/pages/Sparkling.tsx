@@ -10,7 +10,7 @@ export const Sparkling = () => {
     return (
         <>
             <div className="relative w-full min-h-screen scroll-mt-32 overflow-hidden mt-[120px]">
-                <Banner imageSrc={"/images/sparking.png"} imageAlt={""} title={"Duchesse d’Afric-Art Sparkling"} />
+                <Banner imageSrc={"/images/sparking.png"} imageAlt={""} title={"DDA Sparkling"} />
                 <DDASparklingSection />
                 <VinsmoselleSection />
                 <SparklingExperience />
@@ -75,7 +75,7 @@ export const SparklingExperience: React.FC = () => {
                     viewport={{ once: true }}
                 >
                     <img
-                        src="/images/dda/d0.png"
+                        src="/images/dda/s22.png"
                         alt="Expérience sensorielle"
                         className="rounded-2xl shadow-lg object-cover w-full h-[450px]"
                     />
@@ -473,7 +473,7 @@ export default function DDASparklingSection() {
                     className="w-full lg:w-1/2"
                 >
                     <img
-                        src="/images/dda/dda.png"
+                        src="/images/dda/s28.png"
                         alt="DDA Sparkling"
                         className="rounded-2xl shadow-lg w-full object-cover"
                     />
@@ -514,7 +514,7 @@ export default function DDASparklingSection() {
                     className="w-full lg:w-1/2"
                 >
                     <img
-                        src="/images/vins2.png"
+                        src="/images/dda/s16.png"
                         alt="Poll-Fabaire"
                         className="rounded-2xl shadow-lg w-full object-cover"
                     />
@@ -550,6 +550,14 @@ export default function DDASparklingSection() {
         </section>
     );
 }
+
+
+
+
+
+
+
+
 
 
 

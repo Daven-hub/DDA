@@ -164,7 +164,7 @@ export const Objectif: React.FC = () => {
                 <div className="flex flex-col items-center text-center md:text-left">
                     <div className="w-full">
                         <img
-                            src="/images/aki1.png"
+                            src="/images/akiba/a1.png"
                             alt={t("objectif.culture.title")}
                             className="w-full rounded-2xl object-cover h-[380px]"
                         />
@@ -189,12 +189,12 @@ export const Objectif: React.FC = () => {
                         </p>
                         <div className="flex gap-4">
                             <img
-                                src="/images/aki2.png"
+                                src="/images/akiba/a17.png"
                                 alt={t("objectif.rencontre.img1Alt")}
                                 className="w-1/2 rounded-2xl object-cover h-[200px]"
                             />
                             <img
-                                src="/images/danse.png"
+                                src="/images/akiba/a12.png"
                                 alt={t("objectif.rencontre.img2Alt")}
                                 className="w-1/2 rounded-2xl object-cover h-[200px]"
                             />
@@ -271,7 +271,7 @@ export const SponsorSection: React.FC = () => {
                 <div className="relative flex justify-center items-center">
                     <div className="relative">
                         <img
-                            src="/images/plage.png"
+                            src="/images/akiba/a6.png"
                             alt={t("sponsorSection.imageAlt")}
                             className="w-[280px] md:w-[350px] rounded-xl shadow-lg"
                         />
@@ -292,7 +292,7 @@ export const PerspectivesAvenir: React.FC = () => {
     return (
         <section
             className="relative bg-cover bg-center bg-no-repeat text-white px-[10%] py-12"
-            style={{ backgroundImage: "url('/images/toupouri.png')" }}
+            style={{ backgroundImage: "url('/images/akiba/a5.png')" }}
         >
             <div className="absolute inset-0 bg-black/60"></div>
 
@@ -387,7 +387,7 @@ export const AkibaSection: React.FC = () => {
 
                 <div className="relative">
                     <img
-                        src="/images/akiba.png"
+                        src="/images/akiba/a2.png"
                         alt={t("akibaSection.imageAlt")}
                         className="w-full h-[500px] object-cover rounded-2xl shadow-lg"
                     />

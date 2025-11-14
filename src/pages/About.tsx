@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import Banner from "../components/Ux/Banner";
 import MissionsSection from "../components/Section/MissionsSection";
 import CtaSection from "../components/Section/CtaSection";
-import EvenementSection from "../components/Section/EvenementSection";
 import VisionValeurs from "../components/Section/VisionValeurs";
+import FreightOptions from "../components/Section/AbstractService";
 
 const About = () => {
     const { t } = useTranslation();
@@ -127,7 +127,7 @@ const About = () => {
             <VisionValeurs />
             <MissionsSection />
             <CtaSection />
-            <EvenementSection />
+            <FreightOptions />
         </div>
     );
 };

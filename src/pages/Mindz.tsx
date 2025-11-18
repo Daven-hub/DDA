@@ -9,19 +9,38 @@ import { useTranslation } from "react-i18next";
 
 export const Mindz = () => {
   return (
-    <div className="relative w-full min-h-screen mt-[120px] overflow-hidden">
-      <Banner imageSrc={"/images/mindz.png"} imageAlt={""} title={"Mindz Studio"} />
-      <MindzStudioImportance />
-      <MindzStudioPourquoi />
-      <MindzStudioSection />
-      <MindzStudioObjectif />
-      <MindzStudioProcess />
-      {/* <MindzStudioRealisations />
-      <MindzStudioEquipe /> */}
-      <MindzStudioValeurs />
-      <PartnersSection />
-      <MindzStudioCTA />
-    </div>
+    <>
+      <head>
+        <title>Mindz Studio – Agence digitale & Stratégie commerciale</title>
+        <meta
+          name="description"
+          content="Mindz Studio accompagne entreprises et entrepreneurs en création de contenu, community management, branding, design, création de sites web, stratégie commerciale et gestion d’image. Structure, visibilité et performance pour votre activité."
+        />
+        <meta
+          name="keywords"
+          content="Mindz Studio, agence digitale, stratégie commerciale, création de contenu, community management, branding, design, création site web, gestion d’image, communication, marketing digital"
+        />
+        <meta property="og:title" content="Mindz Studio – Agence digitale & Stratégie commerciale" />
+        <meta
+          property="og:description"
+          content="Agence digitale spécialisée en création de contenu, branding, web design, communication et stratégie commerciale. Nous boostons la visibilité et la performance de votre activité."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/mindz.png" />
+      </head>
+
+      <div className="relative w-full min-h-screen mt-[120px] overflow-hidden">
+        <Banner imageSrc={"/images/mindz.png"} imageAlt={"Bannière Mindz Studio"} title={"Mindz Studio"} />
+        <MindzStudioImportance />
+        <MindzStudioPourquoi />
+        <MindzStudioSection />
+        <MindzStudioObjectif />
+        <MindzStudioProcess />
+        <MindzStudioValeurs />
+        <PartnersSection />
+        <MindzStudioCTA />
+      </div>
+    </>
   );
 };
 

@@ -9,6 +9,24 @@ import { motion } from "framer-motion"
 export const Voyages = () => {
     return (
         <>
+            <head>
+                <title>DDA Voyages – Explorez l’Afrique autrement</title>
+                <meta
+                    name="description"
+                    content="Circuits culturels responsables, immersions sur mesure et expériences haut de gamme en Afrique : Cameroun, Bénin, Côte d’Ivoire, Ghana, Togo, Tanzanie, Zanzibar, Rwanda et Afrique du Sud. Découvrez des voyages authentiques valorisant l’histoire, les traditions et la modernité africaine."
+                />
+                <meta
+                    name="keywords"
+                    content="voyage Afrique, circuits culturels, tourisme responsable, voyages sur mesure, Cameroun, Bénin, Côte d’Ivoire, Ghana, Togo, Tanzanie, Zanzibar, Rwanda, Afrique du Sud, expériences haut de gamme, immersion culturelle"
+                />
+                <meta property="og:title" content="DDA Voyages – Explorez l’Afrique autrement" />
+                <meta
+                    property="og:description"
+                    content="Voyages responsables et immersifs dans 8 destinations africaines. Circuits haut de gamme, expériences authentiques et rencontres culturelles."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/images/ddaFond.png" />
+            </head>
             <div className="relative w-full min-h-screen scroll-mt-32 overflow-hidden mt-[120px]">
                 <Banner imageSrc={"/images/ddaFond.png"} imageAlt={""} title={"DDA Voyages"} />
                 <VoyageIntro />

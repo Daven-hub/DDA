@@ -9,8 +9,27 @@ import { useState } from "react";
 export const Akiba = () => {
     return (
         <>
+            <head>
+                <title>The Akiba Brunch – Culture, Network & Lifestyle africain</title>
+                <meta
+                    name="description"
+                    content="The Akiba Brunch met en lumière le savoir-faire local, les artistes, créateurs et talents africains. Un rendez-vous mêlant gastronomie, culture, networking et célébration des identités créatives du continent."
+                />
+                <meta
+                    name="keywords"
+                    content="Akiba Brunch, événement Afrique, lifestyle africain, gastronomie africaine, networking, culture africaine, créateurs africains, talents africains, événement premium Cameroun"
+                />
+                <meta property="og:title" content="The Akiba Brunch – Culture, Network & Lifestyle africain" />
+                <meta
+                    property="og:description"
+                    content="Événement signature célébrant gastronomie, culture, créativité et talents africains. Un moment unique de partage et de mise en lumière du savoir-faire local."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/images/brunch.jpg" />
+            </head>
+
             <div className="relative w-full min-h-screen scroll-mt-32 overflow-hidden mt-[120px]">
-                <Banner imageSrc={"/images/brunch.jpg"} imageAlt={""} title={"The Akiba Brunch"} />
+                <Banner imageSrc={"/images/brunch.jpg"} imageAlt={"The Akiba Brunch"} title={"The Akiba Brunch"} />
                 <AkibaWelcomeSection />
                 <AkibaBrunchSection />
                 <Objectif />
@@ -18,15 +37,12 @@ export const Akiba = () => {
                 <SponsorSection />
                 <PerspectivesAvenir />
                 <AkibaSection />
-                <AkibaGallery/>
+                <AkibaGallery />
                 <PartnersSection />
             </div>
-
-
-
         </>
-    )
-}
+    );
+};
 
 
 

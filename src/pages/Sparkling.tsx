@@ -9,8 +9,27 @@ import { useState } from "react";
 export const Sparkling = () => {
     return (
         <>
+            <head>
+                <title>DDA Sparkling – Import-Export & Représentation Poll-Fabaire</title>
+                <meta
+                    name="description"
+                    content="DDA Sparkling, représentant officiel Cameroun de Domaines Vinsmoselle – Poll-Fabaire. Import-export, distribution de crémants premium, dégustations, activations événementielles et partenariats gastronomiques avec restaurants, lounges, hôtels et événements d’exception."
+                />
+                <meta
+                    name="keywords"
+                    content="DDA Sparkling, Poll-Fabaire, Domaines Vinsmoselle, crémants premium, import-export Cameroun, dégustations, activations événementielles, partenariats gastronomiques, distribution boissons haut de gamme"
+                />
+                <meta property="og:title" content="DDA Sparkling – Import-Export & Représentation Poll-Fabaire" />
+                <meta
+                    property="og:description"
+                    content="Distribution de crémants premium et organisation d’expériences gastronomiques au Cameroun. Partenaire officiel de Domaines Vinsmoselle – Poll-Fabaire."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/images/sparking.png" />
+            </head>
+
             <div className="relative w-full min-h-screen scroll-mt-32 overflow-hidden mt-[120px]">
-                <Banner imageSrc={"/images/sparking.png"} imageAlt={""} title={"DDA Sparkling"} />
+                <Banner imageSrc={"/images/sparking.png"} imageAlt={"Bannière DDA Sparkling"} title={"DDA Sparkling"} />
                 <DDASparklingSection />
                 <VinsmoselleSection />
                 <SparklingExperience />
@@ -20,9 +39,8 @@ export const Sparkling = () => {
                 <PartnersSection />
             </div>
         </>
-    )
-}
-
+    );
+};
 
 
 
